@@ -1,6 +1,6 @@
 # Publish the repository on GitHub
 
-This guide starts with the included `live-canvas-1.3.0-github-repository.zip` and ends with a public project page and installable release.
+This guide starts with the included `live-canvas-1.3.1-github-repository.zip` and ends with a public project page and installable release.
 
 ## 1. Create the repository
 
@@ -16,10 +16,10 @@ This guide starts with the included `live-canvas-1.3.0-github-repository.zip` an
 The safest beginner-friendly method is GitHub Desktop because it includes hidden folders such as `.github`.
 
 1. Install and open GitHub Desktop.
-2. Extract `live-canvas-1.3.0-github-repository.zip`.
+2. Extract `live-canvas-1.3.1-github-repository.zip`.
 3. In GitHub Desktop, select **File → Add local repository → choose…** and choose the extracted `live-canvas` folder.
 4. If GitHub Desktop says it is not a repository, select **create a repository** and keep the existing folder and name.
-5. Enter `Initial Live Canvas 1.3.0 release` as the summary and commit all files to `main`.
+5. Enter `Prepare Live Canvas 1.3.1` as the summary and commit all files to `main`.
 6. Select **Publish repository**. Choose the same visibility as the empty GitHub repository. If GitHub Desktop creates a duplicate instead of connecting to the empty repository, use **Repository → Repository settings → Remote** and set the URL shown on the empty repository page.
 7. Select **Push origin**.
 
@@ -38,29 +38,29 @@ On the repository page:
 
 The repository home page automatically uses `README.md`, including the banner, feature overview, installation section, documentation links, and license.
 
-## 4. Create version 1.3.0
+## 4. Create version 1.3.1
 
 The release automation starts when the exact version tag is pushed.
 
 Using a terminal in the repository folder:
 
 ```bash
-git tag 1.3.0
-git push origin 1.3.0
+git tag 1.3.1
+git push origin 1.3.1
 ```
 
 Do not prefix the tag with `v`. Open the **Actions** tab and wait for the **Release** workflow. It validates the plugin, runs Obsidian's community scanner rules, builds the plugin, attests the files, and creates a draft GitHub release.
 
-Open **Releases**, review the `1.3.0` draft, paste the `1.3.0` section from `CHANGELOG.md` into the release notes, test the attached ZIP in a clean vault, then select **Publish release**.
+Open **Releases**, review the `1.3.1` draft and its automatically added changelog notes, test the attached ZIP in a clean vault, then select **Publish release** as a normal release.
 
 ## 5. Verify the public experience
 
 In a private browser window:
 
 1. Open the repository page and check the banner and documentation links.
-2. Open the `1.3.0` release.
+2. Open the `1.3.1` release.
 3. Confirm the individual assets `main.js`, `manifest.json`, and `styles.css` are present.
-4. Confirm `live-canvas-1.3.0.zip` is present and extracts to one `live-canvas` folder.
+4. Confirm `live-canvas-1.3.1.zip` is present and extracts to one `live-canvas` folder.
 5. Follow the macOS installation guide exactly in a test vault.
 
 ## 6. Submit to Obsidian later

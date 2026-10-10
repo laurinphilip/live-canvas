@@ -1,0 +1,58 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Validate, build, and create draft release
+        uses: obsidianmd/obsidian-workflows@v1
+        with:
+          mode: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Attest Obsidian release assets
+        uses: actions/attest-build-provenance@v4
+        with:
+          subject-path: |
+            main.js
+            manifest.json
+            styles.css
+
+      - name: Add release notes from the changelog
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/extract-release-notes.mjs "$GITHUB_REF_NAME"
+          gh release edit "$GITHUB_REF_NAME" --notes-file .release-notes.md
+
+      - name: Create easy-install ZIP
+        run: node scripts/package-release.mjs
+
+      - name: Attest easy-install ZIP
+        uses: actions/attest-build-provenance@v4
+        with:
+          subject-path: live-canvas-${{ github.ref_name }}.zip
+
+      - name: Add easy-install ZIP to draft release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release upload "$GITHUB_REF_NAME" "live-canvas-${GITHUB_REF_NAME}.zip" --clobber

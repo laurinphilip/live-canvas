@@ -1,14 +1,22 @@
 # Installation
 
-Live Canvas is currently installed from a GitHub release. It has no server, account, API key, or paid dependency.
+Live Canvas has no server, account, API key, or paid dependency.
 
 ## Requirements
 
-- Obsidian 1.5.0 or newer
+- Obsidian 1.13.0 or newer
 - A desktop or mobile vault you can back up
-- The three release files: `main.js`, `manifest.json`, and `styles.css`
 
-## macOS installation
+## Community plugin installation
+
+1. Open **Settings → Community plugins** in Obsidian.
+2. Select **Browse** and search for **Live Canvas**.
+3. Select **Install**, then **Enable**.
+4. Open **Settings → Live Canvas**, choose a source folder or tag, and select **Refresh and open**.
+
+If Live Canvas is still awaiting directory approval, use the manual installation below.
+
+## Manual macOS installation
 
 1. Open the repository's **Releases** page and download `live-canvas-<version>.zip` from the newest release.
 2. Double-click the ZIP to extract it. The extracted folder must be named `live-canvas`.

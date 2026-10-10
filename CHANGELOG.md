@@ -2,6 +2,19 @@
 
 All notable changes to Live Canvas are documented here. The project follows Semantic Versioning.
 
+## [1.3.1] - 2026-10-10
+
+### Changed
+
+- Rebuilt the settings screen with Obsidian's searchable declarative settings API.
+- Updated headings and destructive actions to current Obsidian UI APIs.
+- Aligned the release manifest author with the repository manifest.
+- Added release-asset provenance attestations and automatic release notes.
+
+### Fixed
+
+- Removed an unnecessary TypeScript assertion reported by the community scanner.
+
 ## [1.3.0] - 2026-10-10
 
 ### Added

@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://obsidian.md"><img alt="Obsidian 1.5.0+" src="https://img.shields.io/badge/Obsidian-1.5.0%2B-7C3AED?logo=obsidian&logoColor=white"></a>
-  <img alt="Version 1.3.0" src="https://img.shields.io/badge/version-1.3.0-2563EB">
+  <a href="https://obsidian.md"><img alt="Obsidian 1.13.0+" src="https://img.shields.io/badge/Obsidian-1.13.0%2B-7C3AED?logo=obsidian&logoColor=white"></a>
+  <img alt="Version 1.3.1" src="https://img.shields.io/badge/version-1.3.1-2563EB">
   <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A">
   <img alt="No network required" src="https://img.shields.io/badge/network-none-059669">
   <img alt="Desktop and mobile" src="https://img.shields.io/badge/platform-desktop%20%7C%20mobile-475569">
@@ -12,7 +12,7 @@
 
 Live Canvas is an offline Obsidian community plugin that continuously synchronizes a normal, freely editable `.canvas` file with selected Markdown notes and their relationships.
 
-Move or resize generated cards, add your own text, groups, links, files, and edges, then keep working. Refreshes update Live Canvas-managed items while preserving the rest of your Canvas.
+It is built around one promise: **automation should not take ownership away from you**. Move or resize generated cards, add your own text, groups, links, files, and edges, then keep working. Refreshes update Live Canvas-managed items while preserving the rest of your Canvas.
 
 ## What it does
 
@@ -28,9 +28,17 @@ Move or resize generated cards, add your own text, groups, links, files, and edg
 - Updates after note changes or on demand.
 - Runs locally with no server, account, API key, subscription, analytics, or telemetry.
 
-## Manual installation
+## Install
 
-Download `live-canvas-1.3.0.zip` from the latest GitHub release and extract it to:
+### Community plugins
+
+1. Open **Settings → Community plugins** in Obsidian.
+2. Select **Browse**, search for **Live Canvas**, and select **Install**.
+3. Select **Enable**, then open **Settings → Live Canvas**.
+
+### Manual installation
+
+If the Community listing is not available yet, download `live-canvas-1.3.1.zip` from the latest GitHub release and extract it to:
 
 ```text
 <your-vault>/.obsidian/plugins/live-canvas/
@@ -119,8 +127,6 @@ Back up an important vault before testing any community plugin.
 - [Release and GitHub setup](docs/RELEASING.md)
 - [Changelog](CHANGELOG.md)
 - [Support](SUPPORT.md)
-
-The repository also contains a small [demo note set](examples/demo-vault/README.md) that can be copied into a test vault.
 
 ## Limitations
 

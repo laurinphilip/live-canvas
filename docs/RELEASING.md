@@ -16,17 +16,17 @@ Do not add the generated `main.js` to normal commits. The release workflow build
 2. Run `npm ci` and `npm run package` locally.
 3. Bump the version, for example `npm version patch`.
 4. Push the commit and tag: `git push && git push --tags`.
-5. Use a tag exactly equal to the manifest version, such as `1.3.0`. Do not add a `v` prefix.
-6. The GitHub release workflow creates a draft release with `main.js`, `manifest.json`, `styles.css`, and an easy-install ZIP.
-7. Review the draft, add the matching changelog notes, test the attached files in a clean vault, and publish it.
+5. Use a tag exactly equal to the manifest version, such as `1.3.1`. Do not add a `v` prefix.
+6. The GitHub release workflow creates a draft release with `main.js`, `manifest.json`, `styles.css`, an easy-install ZIP, provenance attestations, and the matching changelog notes.
+7. Test the attached files in a clean vault, then publish the draft as a normal release rather than a pre-release.
 
 ## Submit to the Obsidian community directory
 
-After the first public GitHub release exists:
+The first version is submitted through the Obsidian Community directory. Later versions are discovered from GitHub automatically.
 
-1. Read Obsidian's current plugin submission requirements.
-2. Fork `obsidianmd/obsidian-releases`.
-3. Add one entry to `community-plugins.json` with the plugin ID, name, author, description, and GitHub repository.
-4. Open a pull request and complete every checklist item.
+1. Publish the GitHub release.
+2. Open the Live Canvas management page in the Community directory.
+3. Select **Check for new releases** if the new version is not detected automatically.
+4. Review the automated scan results.
 
-The plugin ID must remain `live-canvas`, and every release must attach `main.js`, `manifest.json`, and `styles.css`.
+The plugin ID must remain `live-canvas`, the tag must exactly match `manifest.json`, and every release must attach `main.js`, `manifest.json`, and `styles.css`.

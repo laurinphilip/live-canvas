@@ -144,7 +144,3 @@ Run **Live Canvas: Smart relayout managed cards** or select **Smart relayout** i
 - **Smart relayout managed cards** confirms and rearranges managed note cards.
 
 The ribbon dashboard icon also refreshes the Canvas.
-
-## Try the included demo
-
-Copy `examples/demo-vault/Knowledge` from the repository into a test vault. Set the source folder to `Knowledge`, enable relationship labels, add `tag:empire = 1` as a color rule, then select **Refresh and open**.

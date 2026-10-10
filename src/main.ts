@@ -7,6 +7,7 @@ import {
   Plugin,
   PluginSettingTab,
   Setting,
+  SettingDefinitionItem,
   TAbstractFile,
   TFile,
   TFolder
@@ -461,7 +462,7 @@ export default class LiveCanvasPlugin extends Plugin {
   ): boolean {
     const cache = this.app.metadataCache.getFileCache(file);
     const tags = cache ? getAllTags(cache) ?? [] : [];
-    const frontmatter = cache?.frontmatter as Record<string, unknown> | undefined;
+    const frontmatter = cache?.frontmatter;
     return matchesExclusionRules(file.path, tags, frontmatter, rules);
   }
 
@@ -597,233 +598,272 @@ class LiveCanvasSettingTab extends PluginSettingTab {
     super(app, plugin);
   }
 
-  display(): void {
-    const { containerEl } = this;
-    containerEl.empty();
-    containerEl.addClass("live-canvas-settings");
-    containerEl.createEl("h2", { text: "Live Canvas" });
-    containerEl.createEl("p", {
-      cls: "live-canvas-setting-status",
-      text: "Local, offline, and serverless. Live Canvas never modifies your Markdown notes."
-    });
-
-    new Setting(containerEl)
-      .setName("Source filter")
-      .setDesc("Include notes from one folder or with one tag.")
-      .addDropdown((dropdown) =>
-        dropdown
-          .addOption("folder", "Folder")
-          .addOption("tag", "Tag")
-          .setValue(this.plugin.settings.filterType)
-          .onChange(async (value) => {
-            this.plugin.settings.filterType = value as FilterType;
-            await this.plugin.saveSettings();
-            this.plugin.scheduleRefresh();
-            this.display();
-          })
-      );
-
+  getSettingDefinitions(): SettingDefinitionItem[] {
     const isFolder = this.plugin.settings.filterType === "folder";
-    new Setting(containerEl)
-      .setName(isFolder ? "Source folder" : "Source tag")
-      .setDesc(
-        isFolder
-          ? "Vault-relative path. Subfolders are included; / selects the entire vault."
-          : "Enter with or without #. Nested tags are included."
-      )
-      .addText((text) =>
-        text
-          .setPlaceholder(isFolder ? "Knowledge/History" : "history")
-          .setValue(this.plugin.settings.filterValue)
-          .onChange(async (value) => {
-            this.plugin.settings.filterValue = value;
-            await this.plugin.saveSettings();
-            this.plugin.scheduleRefresh();
-          })
-      );
-
-    new Setting(containerEl)
-      .setName("Exclusion rules")
-      .setDesc(
-        "Optional, one rule per line. Supports folder:Archive, tag:draft, property:status=archived, or property:hidden."
-      )
-      .addTextArea((text) =>
-        text
-          .setPlaceholder("folder:Archive\ntag:draft\nproperty:status=archived")
-          .setValue(this.plugin.settings.excludeRules)
-          .onChange(async (value) => {
-            this.plugin.settings.excludeRules = value;
-            await this.plugin.saveSettings();
-            this.plugin.scheduleRefresh();
-          })
-      );
-
-    new Setting(containerEl)
-      .setName("Canvas path")
-      .setDesc("Vault-relative path to a .canvas file.")
-      .addText((text) =>
-        text
-          .setPlaceholder("Live Canvas.canvas")
-          .setValue(this.plugin.settings.canvasPath)
-          .onChange(async (value) => {
-            this.plugin.settings.canvasPath = value;
-            await this.plugin.saveSettings();
-          })
-      );
-
-    new Setting(containerEl)
-      .setName("Live sync")
-      .setDesc(
-        "Sync on startup and after note changes. The Canvas must first be created or explicitly adopted."
-      )
-      .addToggle((toggle) =>
-        toggle.setValue(this.plugin.settings.autoRefresh).onChange(async (value) => {
-          this.plugin.settings.autoRefresh = value;
-          await this.plugin.saveSettings();
-          if (value) this.plugin.scheduleRefresh();
-        })
-      );
-
-    new Setting(containerEl)
-      .setName("Category colors")
-      .setDesc(
-        "Optional, one rule per line. Examples: folder:History = 1 or tag:religion = #4A90E2. The first matching rule wins; invalid lines are ignored."
-      )
-      .addTextArea((text) =>
-        text
-          .setPlaceholder("folder:History = 1\ntag:religion = #4A90E2")
-          .setValue(this.plugin.settings.colorRules)
-          .onChange(async (value) => {
-            this.plugin.settings.colorRules = value;
-            await this.plugin.saveSettings();
-            this.plugin.scheduleRefresh();
-          })
-      );
-
-    new Setting(containerEl)
-      .setName("Linked neighbors")
-      .setDesc(
-        "Also include Markdown notes one or two links away, even when they do not match the source filter."
-      )
-      .addDropdown((dropdown) =>
-        dropdown
-          .addOption("0", "None")
-          .addOption("1", "One link away")
-          .addOption("2", "Two links away")
-          .setValue(String(this.plugin.settings.neighborDepth))
-          .onChange(async (value) => {
-            this.plugin.settings.neighborDepth = Number.parseInt(value, 10);
-            await this.plugin.saveSettings();
-            this.plugin.scheduleRefresh();
-          })
-      );
-
-    new Setting(containerEl)
-      .setName("Neighbor direction")
-      .setDesc(
-        "Choose which link direction is followed when adding neighbors."
-      )
-      .addDropdown((dropdown) =>
-        dropdown
-          .addOption("both", "Incoming and outgoing")
-          .addOption("outgoing", "Outgoing only")
-          .addOption("incoming", "Incoming only")
-          .setValue(this.plugin.settings.neighborDirection)
-          .onChange(async (value) => {
-            this.plugin.settings.neighborDirection = value as NeighborDirection;
-            await this.plugin.saveSettings();
-            this.plugin.scheduleRefresh();
-          })
-      );
-
-    new Setting(containerEl)
-      .setName("Label relationships")
-      .setDesc(
-        "Use property names, useful Wikilink aliases, and 'embed' as edge labels. Multiple relationships are combined."
-      )
-      .addToggle((toggle) =>
-        toggle.setValue(this.plugin.settings.showEdgeLabels).onChange(async (value) => {
-          this.plugin.settings.showEdgeLabels = value;
-          await this.plugin.saveSettings();
-          this.plugin.scheduleRefresh();
-        })
-      );
-
-    new Setting(containerEl)
-      .setName("Highlight isolated notes")
-      .setDesc(
-        "Optionally color notes with no visible relationships. Category color rules take priority."
-      )
-      .addDropdown((dropdown) =>
-        dropdown
-          .addOption("", "Off")
-          .addOption("1", "Color 1 — red")
-          .addOption("2", "Color 2 — orange")
-          .addOption("3", "Color 3 — yellow")
-          .addOption("4", "Color 4 — green")
-          .addOption("5", "Color 5 — cyan")
-          .addOption("6", "Color 6 — purple")
-          .setValue(this.plugin.settings.orphanColor)
-          .onChange(async (value) => {
-            this.plugin.settings.clearOrphanHighlights =
-              Boolean(this.plugin.settings.orphanColor) && !value;
-            this.plugin.settings.orphanColor = value;
-            await this.plugin.saveSettings();
-            this.plugin.scheduleRefresh();
-          })
-      );
-
-    new Setting(containerEl)
-      .setName("Maximum notes")
-      .setDesc("Protect large vaults from accidentally huge Canvas files (10–2000).")
-      .addText((text) =>
-        text.setValue(String(this.plugin.settings.maxNotes)).onChange(async (value) => {
-          const parsed = Number.parseInt(value, 10);
-          if (!Number.isFinite(parsed)) return;
-          this.plugin.settings.maxNotes = Math.min(2000, Math.max(10, parsed));
-          await this.plugin.saveSettings();
-        })
-      );
-
-    new Setting(containerEl)
-      .setName("Refresh now")
-      .setDesc("Create the Canvas the first time, then open it.")
-      .addButton((button) =>
-        button
-          .setButtonText("Refresh and open")
-          .setCta()
-          .onClick(async () => {
-            await this.plugin.refreshCanvas({ open: true, notify: true });
-          })
-      );
-
-    new Setting(containerEl)
-      .setName("Smart relayout")
-      .setDesc(
-        "Rearrange only Live Canvas-managed note cards based on their connections. Manual Canvas items stay unchanged."
-      )
-      .addButton((button) =>
-        button.setButtonText("Relayout …").onClick(() => {
-          new RelayoutConfirmModal(this.app, this.plugin).open();
-        })
-      );
-
-    new Setting(containerEl)
-      .setName("Adopt an existing Canvas")
-      .setDesc(
-        "Only needed when a Canvas already exists at the target path. Live Canvas replaces only its own lc-node-/lc-edge- items and retains other content."
-      )
-      .addButton((button) =>
-        button.setButtonText("Adopt explicitly").setWarning().onClick(async () => {
-          try {
-            await this.plugin.adoptCurrentCanvas();
-            new Notice("Live Canvas: The existing Canvas is now managed.");
-          } catch (error) {
-            const message = error instanceof Error ? error.message : String(error);
-            new Notice(`Live Canvas: ${message}`);
+    return [
+      {
+        type: "group",
+        heading: "Live Canvas",
+        items: [
+          {
+            name: "Local and private",
+            desc: "Live Canvas works offline and never modifies your Markdown notes.",
+            searchable: false
           }
-        })
-      );
+        ]
+      },
+      {
+        type: "group",
+        heading: "Source",
+        items: [
+          {
+            name: "Source filter",
+            desc: "Include notes from one folder or with one tag.",
+            control: {
+              type: "dropdown",
+              key: "filterType",
+              options: { folder: "Folder", tag: "Tag" }
+            }
+          },
+          {
+            name: isFolder ? "Source folder" : "Source tag",
+            desc: isFolder
+              ? "Vault-relative path. Subfolders are included; / selects the entire vault."
+              : "Enter with or without #. Nested tags are included.",
+            control: {
+              type: "text",
+              key: "filterValue",
+              placeholder: isFolder ? "Knowledge/History" : "history"
+            }
+          },
+          {
+            name: "Exclusion rules",
+            desc: "Optional, one rule per line. Supports folder:Archive, tag:draft, property:status=archived, or property:hidden.",
+            control: {
+              type: "textarea",
+              key: "excludeRules",
+              placeholder: "folder:Archive\ntag:draft\nproperty:status=archived",
+              rows: 4
+            }
+          }
+        ]
+      },
+      {
+        type: "group",
+        heading: "Canvas",
+        items: [
+          {
+            name: "Canvas path",
+            desc: "Vault-relative path to a .canvas file.",
+            control: {
+              type: "text",
+              key: "canvasPath",
+              placeholder: "Live Canvas.canvas"
+            }
+          },
+          {
+            name: "Live sync",
+            desc: "Sync on startup and after note changes. The Canvas must first be created or explicitly adopted.",
+            control: { type: "toggle", key: "autoRefresh" }
+          },
+          {
+            name: "Maximum notes",
+            desc: "Protect large vaults from accidentally huge Canvas files (10–2000).",
+            control: {
+              type: "number",
+              key: "maxNotes",
+              min: 10,
+              max: 2000,
+              step: 1
+            }
+          }
+        ]
+      },
+      {
+        type: "group",
+        heading: "Relationships and appearance",
+        items: [
+          {
+            name: "Category colors",
+            desc: "Optional, one rule per line. Examples: folder:History = 1 or tag:religion = #4A90E2. The first matching rule wins; invalid lines are ignored.",
+            control: {
+              type: "textarea",
+              key: "colorRules",
+              placeholder: "folder:History = 1\ntag:religion = #4A90E2",
+              rows: 4
+            }
+          },
+          {
+            name: "Linked neighbors",
+            desc: "Also include Markdown notes one or two links away, even when they do not match the source filter.",
+            control: {
+              type: "dropdown",
+              key: "neighborDepth",
+              options: {
+                "0": "None",
+                "1": "One link away",
+                "2": "Two links away"
+              }
+            }
+          },
+          {
+            name: "Neighbor direction",
+            desc: "Choose which link direction is followed when adding neighbors.",
+            control: {
+              type: "dropdown",
+              key: "neighborDirection",
+              options: {
+                both: "Incoming and outgoing",
+                outgoing: "Outgoing only",
+                incoming: "Incoming only"
+              }
+            }
+          },
+          {
+            name: "Label relationships",
+            desc: "Use property names, useful Wikilink aliases, and 'embed' as edge labels. Multiple relationships are combined.",
+            control: { type: "toggle", key: "showEdgeLabels" }
+          },
+          {
+            name: "Highlight isolated notes",
+            desc: "Optionally color notes with no visible relationships. Category color rules take priority.",
+            control: {
+              type: "dropdown",
+              key: "orphanColor",
+              options: {
+                "": "Off",
+                "1": "Color 1 — red",
+                "2": "Color 2 — orange",
+                "3": "Color 3 — yellow",
+                "4": "Color 4 — green",
+                "5": "Color 5 — cyan",
+                "6": "Color 6 — purple"
+              }
+            }
+          }
+        ]
+      },
+      {
+        type: "group",
+        heading: "Actions",
+        items: [
+          {
+            name: "Refresh now",
+            desc: "Create the Canvas the first time, then open it.",
+            render: (setting) => {
+              setting.addButton((button) =>
+                button
+                  .setButtonText("Refresh and open")
+                  .setCta()
+                  .onClick(async () => {
+                    await this.plugin.refreshCanvas({ open: true, notify: true });
+                  })
+              );
+            }
+          },
+          {
+            name: "Smart relayout",
+            desc: "Rearrange only Live Canvas-managed note cards based on their connections. Manual Canvas items stay unchanged.",
+            render: (setting) => {
+              setting.addButton((button) =>
+                button.setButtonText("Relayout …").onClick(() => {
+                  new RelayoutConfirmModal(this.app, this.plugin).open();
+                })
+              );
+            }
+          },
+          {
+            name: "Adopt an existing Canvas",
+            desc: "Only needed when a Canvas already exists at the target path. Live Canvas replaces only its own lc-node-/lc-edge- items and retains other content.",
+            render: (setting) => {
+              setting.addButton((button) =>
+                button
+                  .setButtonText("Adopt explicitly")
+                  .setDestructive()
+                  .onClick(async () => {
+                    try {
+                      await this.plugin.adoptCurrentCanvas();
+                      new Notice("Live Canvas: The existing Canvas is now managed.");
+                    } catch (error) {
+                      const message = error instanceof Error ? error.message : String(error);
+                      new Notice(`Live Canvas: ${message}`);
+                    }
+                  })
+              );
+            }
+          }
+        ]
+      }
+    ];
+  }
+
+  getControlValue(key: string): unknown {
+    if (key === "neighborDepth") return String(this.plugin.settings.neighborDepth);
+    return this.plugin.settings[key as keyof LiveCanvasSettings];
+  }
+
+  async setControlValue(key: string, value: unknown): Promise<void> {
+    switch (key) {
+      case "filterType":
+        this.plugin.settings.filterType = value === "tag" ? "tag" : "folder";
+        break;
+      case "filterValue":
+      case "excludeRules":
+      case "canvasPath":
+      case "colorRules":
+        this.plugin.settings[key] = String(value ?? "");
+        break;
+      case "autoRefresh":
+      case "showEdgeLabels":
+        this.plugin.settings[key] = Boolean(value);
+        break;
+      case "neighborDepth": {
+        const parsed = Number.parseInt(String(value), 10);
+        this.plugin.settings.neighborDepth = Number.isFinite(parsed)
+          ? Math.min(2, Math.max(0, parsed))
+          : 0;
+        break;
+      }
+      case "neighborDirection":
+        this.plugin.settings.neighborDirection =
+          value === "incoming" || value === "outgoing" ? value : "both";
+        break;
+      case "orphanColor": {
+        const next = typeof value === "string" && /^[1-6]$/.test(value) ? value : "";
+        this.plugin.settings.clearOrphanHighlights =
+          Boolean(this.plugin.settings.orphanColor) && !next;
+        this.plugin.settings.orphanColor = next;
+        break;
+      }
+      case "maxNotes": {
+        const parsed = Number(value);
+        if (!Number.isFinite(parsed)) return;
+        this.plugin.settings.maxNotes = Math.min(2000, Math.max(10, Math.round(parsed)));
+        break;
+      }
+      default:
+        return;
+    }
+
+    await this.plugin.saveSettings();
+
+    if (key === "filterType") this.update();
+    if (key === "autoRefresh") {
+      if (this.plugin.settings.autoRefresh) this.plugin.scheduleRefresh();
+      return;
+    }
+    if (
+      key === "filterType" ||
+      key === "filterValue" ||
+      key === "excludeRules" ||
+      key === "colorRules" ||
+      key === "neighborDepth" ||
+      key === "neighborDirection" ||
+      key === "showEdgeLabels" ||
+      key === "orphanColor"
+    ) {
+      this.plugin.scheduleRefresh();
+    }
   }
 }
 

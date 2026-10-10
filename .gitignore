@@ -1,0 +1,14 @@
+node_modules/
+.npm-cache/
+.test-dist/
+main.js
+main.js.map
+release/
+live-canvas/
+.package-staging/
+.repository-staging/
+.release-notes.md
+.DS_Store
+live-canvas-*.zip
+live-canvas-*-source.zip
+live-canvas-*-github-repository.zip

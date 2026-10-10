@@ -59,7 +59,7 @@ for (const file of [
 ]) {
   await copyFile(path.join(root, file), path.join(sourceStagingDirectory, file));
 }
-for (const directory of [".github", "docs", "examples", "scripts", "src"]) {
+for (const directory of [".github", "docs", "scripts", "src"]) {
   await cp(path.join(root, directory), path.join(sourceStagingDirectory, directory), {
     recursive: true
   });
