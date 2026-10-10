@@ -25,6 +25,7 @@ import {
   parseExclusionRules,
   tagMatches
 } from "./core";
+import { createCanvasPdf, getAvailablePdfPath } from "./pdf";
 
 type FilterType = "folder" | "tag";
 type NeighborDirection = "both" | "outgoing" | "incoming";
@@ -125,6 +126,14 @@ export default class LiveCanvasPlugin extends Plugin {
       name: "Open managed Canvas",
       callback: () => {
         void this.openCanvas();
+      }
+    });
+
+    this.addCommand({
+      id: "export-managed-canvas-pdf",
+      name: "Export managed Canvas as PDF",
+      callback: () => {
+        void this.exportCanvasAsPdf();
       }
     });
 
@@ -294,6 +303,35 @@ export default class LiveCanvasPlugin extends Plugin {
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       new Notice(`Live Canvas: ${message}`);
+    }
+  }
+
+  async exportCanvasAsPdf(): Promise<TFile | null> {
+    try {
+      const canvasPath = this.getValidatedCanvasPath();
+      const canvasFile = this.app.vault.getAbstractFileByPath(canvasPath);
+      if (!(canvasFile instanceof TFile) || canvasFile.extension !== "canvas") {
+        throw new Error("This Canvas has not been created yet. Refresh it first.");
+      }
+
+      const document = parseCanvasDocument(await this.app.vault.read(canvasFile));
+      const existingPaths = new Set(this.app.vault.getFiles().map((file) => file.path));
+      const pdfPath = getAvailablePdfPath(canvasPath, existingPaths);
+      const pdf = createCanvasPdf(document, canvasFile.basename);
+      const pdfFile = await this.app.vault.createBinary(pdfPath, pdf);
+
+      new Notice(`Live Canvas exported a PDF to "${pdfPath}".`);
+      try {
+        await this.app.workspace.getLeaf(true).openFile(pdfFile);
+      } catch (error) {
+        console.warn("Live Canvas created the PDF but could not open it", error);
+      }
+      return pdfFile;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.error("Live Canvas PDF export failed", error);
+      new Notice(`Live Canvas: ${message}`, 8000);
+      return null;
     }
   }
 
@@ -769,6 +807,19 @@ class LiveCanvasSettingTab extends PluginSettingTab {
                 button.setButtonText("Relayout …").onClick(() => {
                   new RelayoutConfirmModal(this.app, this.plugin).open();
                 })
+              );
+            }
+          },
+          {
+            name: "Export to PDF",
+            desc: "Create a print-friendly overview next to the saved Canvas and open it. Existing exports are never overwritten.",
+            render: (setting) => {
+              setting.addButton((button) =>
+                button
+                  .setButtonText("Export PDF")
+                  .onClick(async () => {
+                    await this.plugin.exportCanvasAsPdf();
+                  })
               );
             }
           },

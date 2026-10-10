@@ -13,6 +13,9 @@ Live Canvas is designed to work entirely inside Obsidian.
 
 - The configured `.canvas` file
 - Live Canvas settings in Obsidian's plugin data file
+- A new local `.pdf` file when the user explicitly runs PDF export
+
+PDF export reads only the saved Canvas structure. It does not read note bodies separately, contact a conversion service, or replace an existing PDF.
 
 ## Data it does not collect
 

@@ -25,6 +25,7 @@ It is built around one promise: **automation should not take ownership away from
 - Colors cards by folder or tag and highlights isolated notes.
 - Adds useful relationship labels such as `author`, `embed`, or Wikilink aliases.
 - Offers an optional, confirmed smart relayout for managed cards.
+- Exports the saved Canvas as a print-friendly vector PDF without overwriting earlier exports.
 - Updates after note changes or on demand.
 - Runs locally with no server, account, API key, subscription, analytics, or telemetry.
 
@@ -107,6 +108,7 @@ Back up an important vault before testing any community plugin.
 | Preservation | Managed geometry, manual nodes, and valid manual edges |
 | Styling | First-match folder/tag rules plus isolated-note highlighting |
 | Refresh | Startup, debounced note changes, ribbon, command, or settings |
+| PDF export | Local vector overview with cards, groups, connections, colors, and labels |
 | Privacy | Local-only; no network access or telemetry |
 
 ## Commands
@@ -114,6 +116,7 @@ Back up an important vault before testing any community plugin.
 - **Refresh Canvas now** — synchronize immediately.
 - **Open managed Canvas** — open the configured Canvas.
 - **Smart relayout managed cards** — confirm and rearrange generated note cards.
+- **Export managed Canvas as PDF** — create and open a PDF next to the saved Canvas.
 
 ## Documentation
 
@@ -137,6 +140,7 @@ Back up an important vault before testing any community plugin.
 - A note renamed outside a running Obsidian session cannot always be matched to its former card.
 - Very large Canvas files may become slow; use focused filters and the safety limit.
 - Smart relayout is deterministic and connection-based, not a physics simulation.
+- PDF export is a clean overview rather than a pixel-perfect screenshot. Embedded images, websites, and unsupported characters are represented by text, and very large Canvases may have small text when fitted onto one A4 page.
 
 ## Development
 

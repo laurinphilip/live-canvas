@@ -35,6 +35,14 @@ Live updates are debounced to combine rapid file changes. Confirm that live sync
 
 Lower the maximum-note limit, reduce neighbor depth, narrow the source folder/tag, or add exclusions. Obsidian must render every visible card and edge, so a focused Canvas is often more useful than a vault-wide one.
 
+## The PDF does not show an image or website preview
+
+PDF export creates a stable vector overview from the saved Canvas structure. Image, attachment, and website nodes are represented as labeled cards rather than embedded previews. Open the original Canvas for interactive content.
+
+## Text is very small in the PDF
+
+The complete Canvas is fitted onto one A4 page. Narrow the source filter or export a smaller Canvas when you need larger labels. Wait briefly after moving cards so Obsidian saves the latest layout before export.
+
 ## How to collect diagnostic information
 
 On desktop, open Obsidian's developer tools with `Command+Option+I` on macOS or `Ctrl+Shift+I` on Windows/Linux. Open **Console**, reproduce the problem, and copy only Live Canvas-related errors. Remove private note paths or content before posting.

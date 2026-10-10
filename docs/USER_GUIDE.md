@@ -137,10 +137,21 @@ If the configured path already contains a Canvas not created by Live Canvas, syn
 
 Run **Live Canvas: Smart relayout managed cards** or select **Smart relayout** in settings. Confirm the dialog to arrange managed notes in deterministic connection-based layers. Manual nodes stay in place. Unlike ordinary refresh, this action intentionally replaces the saved positions of managed cards.
 
+## Exporting the Canvas as PDF
+
+1. Open the Canvas and wait a moment so Obsidian can save recent card movements.
+2. Open the command palette and run **Live Canvas: Export managed Canvas as PDF**. You can also select **Export PDF** under **Settings → Live Canvas → Actions**.
+3. Live Canvas creates the PDF next to the configured Canvas and opens it in a new tab.
+
+If the Canvas is `Maps/Live Canvas.canvas`, the first export is `Maps/Live Canvas.pdf`. Later exports are named `Live Canvas 2.pdf`, `Live Canvas 3.pdf`, and so on. Existing files are never replaced.
+
+The PDF is a one-page A4 vector overview containing saved cards, text, groups, colors, connections, arrows, and relationship labels. It is intended for sharing, printing, and getting a full overview. It is not a pixel-perfect screenshot of Obsidian: embedded images and web pages appear as labeled cards, unsupported font characters may be simplified, and text can become small when a very large Canvas is fitted onto one page.
+
 ## Commands
 
 - **Refresh Canvas now** synchronizes immediately.
 - **Open managed Canvas** opens the configured file.
 - **Smart relayout managed cards** confirms and rearranges managed note cards.
+- **Export managed Canvas as PDF** creates a new local PDF without changing the Canvas.
 
 The ribbon dashboard icon also refreshes the Canvas.

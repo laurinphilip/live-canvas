@@ -2,7 +2,18 @@
 
 All notable changes to Live Canvas are documented here. The project follows Semantic Versioning.
 
-## [1.3.2] - 2026-10-10
+## [1.3.2] - 2026-10-11
+
+### Added
+
+- Added a local, serverless PDF export for the configured Canvas.
+- Added an **Export managed Canvas as PDF** command and an **Export PDF** settings action.
+- PDF exports include cards, text, groups, colors, edges, arrows, and relationship labels in a print-friendly A4 overview.
+
+### Safety
+
+- PDF export reads the saved Canvas without modifying it.
+- Existing PDF files are never overwritten; repeated exports receive numbered filenames.
 
 ### Fixed
 

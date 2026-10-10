@@ -6,19 +6,25 @@ import { pathToFileURL } from "node:url";
 import esbuild from "esbuild";
 
 const temporaryDirectory = await mkdtemp(path.join(os.tmpdir(), "live-canvas-tests-"));
-const bundlePath = path.join(temporaryDirectory, "core.mjs");
+const coreBundlePath = path.join(temporaryDirectory, "core.mjs");
+const pdfBundlePath = path.join(temporaryDirectory, "pdf.mjs");
 
 try {
   await esbuild.build({
-    entryPoints: ["src/core.ts"],
+    entryPoints: {
+      core: "src/core.ts",
+      pdf: "src/pdf.ts"
+    },
     bundle: true,
     format: "esm",
     platform: "node",
     target: "node20",
-    outfile: bundlePath
+    outdir: temporaryDirectory,
+    outExtension: { ".js": ".mjs" }
   });
 
-  const core = await import(pathToFileURL(bundlePath).href);
+  const core = await import(pathToFileURL(coreBundlePath).href);
+  const pdf = await import(pathToFileURL(pdfBundlePath).href);
   const tests = [];
   const test = (name, run) => tests.push({ name, run });
 
@@ -261,6 +267,73 @@ try {
     assert.throws(() => core.parseCanvasDocument("not-json"), /valid JSON/);
     assert.deepEqual(core.parseCanvasDocument("{}"), { nodes: [], edges: [] });
     assert.throws(() => core.parseCanvasDocument('{"nodes":{}}'), /JSON Canvas structure/);
+  });
+
+  test("exports Canvas nodes, groups, edges, labels, and colors as a valid PDF", () => {
+    const buffer = pdf.createCanvasPdf(
+      {
+        nodes: [
+          {
+            id: "group",
+            type: "group",
+            label: "Solar system",
+            x: -40,
+            y: -40,
+            width: 900,
+            height: 420,
+            color: "5"
+          },
+          {
+            id: "earth",
+            type: "file",
+            file: "Space/Earth.md",
+            x: 0,
+            y: 0,
+            width: 320,
+            height: 200,
+            color: "#4A90E2"
+          },
+          {
+            id: "moon",
+            type: "text",
+            text: "# Moon\nThe Earth's satellite",
+            x: 500,
+            y: 120,
+            width: 320,
+            height: 200
+          }
+        ],
+        edges: [
+          {
+            id: "orbit",
+            fromNode: "moon",
+            toNode: "earth",
+            toEnd: "arrow",
+            label: "orbits"
+          }
+        ]
+      },
+      "Astronomy Canvas"
+    );
+    const contents = new TextDecoder().decode(new Uint8Array(buffer));
+    assert.equal(contents.startsWith("%PDF-1.4"), true);
+    assert.match(contents, /Astronomy Canvas/);
+    assert.match(contents, /Space\/Earth\.md/);
+    assert.match(contents, /Solar system/);
+    assert.match(contents, /orbits/);
+    assert.doesNotMatch(contents, /NaN|Infinity/);
+    assert.match(contents, /%%EOF\n$/);
+  });
+
+  test("chooses a new PDF filename instead of overwriting an export", () => {
+    assert.equal(pdf.getAvailablePdfPath("Maps/Live Canvas.canvas", new Set()), "Maps/Live Canvas.pdf");
+    assert.equal(
+      pdf.getAvailablePdfPath(
+        "Maps/Live Canvas.canvas",
+        new Set(["Maps/Live Canvas.pdf", "Maps/Live Canvas 2.pdf"])
+      ),
+      "Maps/Live Canvas 3.pdf"
+    );
   });
 
   let failures = 0;
