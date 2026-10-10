@@ -28,7 +28,7 @@ Move or resize generated cards, add your own text, groups, links, files, and edg
 - Updates after note changes or on demand.
 - Runs locally with no server, account, API key, subscription, analytics, or telemetry.
 
-## Install
+## Manual installation
 
 Download `live-canvas-1.3.0.zip` from the latest GitHub release and extract it to:
 
