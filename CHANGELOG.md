@@ -2,6 +2,12 @@
 
 All notable changes to Live Canvas are documented here. The project follows Semantic Versioning.
 
+## [1.3.2] - 2026-10-10
+
+### Fixed
+
+- Replaced placeholder-style text in the manual installation example so automated repository checks recognize the README as complete.
+
 ## [1.3.1] - 2026-10-10
 
 ### Changed

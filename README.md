@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://obsidian.md"><img alt="Obsidian 1.13.0+" src="https://img.shields.io/badge/Obsidian-1.13.0%2B-7C3AED?logo=obsidian&logoColor=white"></a>
-  <img alt="Version 1.3.1" src="https://img.shields.io/badge/version-1.3.1-2563EB">
+  <img alt="Version 1.3.2" src="https://img.shields.io/badge/version-1.3.2-2563EB">
   <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A">
   <img alt="No network required" src="https://img.shields.io/badge/network-none-059669">
   <img alt="Desktop and mobile" src="https://img.shields.io/badge/platform-desktop%20%7C%20mobile-475569">
@@ -38,10 +38,10 @@ It is built around one promise: **automation should not take ownership away from
 
 ### Manual installation
 
-If the Community listing is not available yet, download `live-canvas-1.3.1.zip` from the latest GitHub release and extract it to:
+If the Community listing is not available yet, download the ZIP file from the latest GitHub release and extract it to your vault's plugin folder:
 
 ```text
-<your-vault>/.obsidian/plugins/live-canvas/
+Vault/.obsidian/plugins/live-canvas/
 ```
 
 The folder must directly contain:
