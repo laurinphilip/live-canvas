@@ -1,0 +1,14 @@
+.live-canvas-setting-status {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  margin: 0 0 var(--size-4-4);
+}
+
+.live-canvas-setting-status.is-error {
+  color: var(--text-error);
+}
+
+.live-canvas-settings textarea {
+  min-height: 5.5em;
+  width: 24em;
+}

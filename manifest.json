@@ -1,0 +1,9 @@
+{
+  "id": "live-canvas",
+  "name": "Live Canvas",
+  "version": "1.3.0",
+  "minAppVersion": "1.5.0",
+  "description": "Continuously synchronizes a native, editable Canvas with filtered notes and their relationships.",
+  "author": "Live Canvas Contributors",
+  "isDesktopOnly": false
+}

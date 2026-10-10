@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">Live Canvas</title>
+  <desc id="desc">A visual network of note cards surrounding the Live Canvas name.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171225"/>
+      <stop offset="0.55" stop-color="#2a1850"/>
+      <stop offset="1" stop-color="#12304a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#05030a" flood-opacity=".45"/>
+    </filter>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="#ffffff" opacity=".12"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="28" fill="url(#dots)"/>
+  <g fill="none" stroke="#a78bfa" stroke-width="3" opacity=".62">
+    <path d="M211 108 C330 108 315 205 436 205"/>
+    <path d="M242 307 C340 307 342 228 436 228"/>
+    <path d="M844 196 C952 196 930 104 1040 104"/>
+    <path d="M844 224 C942 224 956 318 1064 318"/>
+  </g>
+  <g fill="#a78bfa">
+    <path d="m426 201 13 4-11 8z"/>
+    <path d="m427 223 12 5-12 7z"/>
+    <path d="m1030 99 13 5-12 8z"/>
+    <path d="m1053 312 13 6-13 7z"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="80" y="64" width="150" height="88" rx="14" fill="#2d2441" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="92" y="79" width="56" height="8" rx="4" fill="#a78bfa"/>
+    <rect x="92" y="98" width="112" height="7" rx="3.5" fill="#ffffff" opacity=".72"/>
+    <rect x="92" y="116" width="82" height="7" rx="3.5" fill="#ffffff" opacity=".38"/>
+
+    <rect x="94" y="265" width="168" height="88" rx="14" fill="#18344a" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="108" y="281" width="74" height="8" rx="4" fill="#38bdf8"/>
+    <rect x="108" y="300" width="126" height="7" rx="3.5" fill="#ffffff" opacity=".72"/>
+    <rect x="108" y="318" width="96" height="7" rx="3.5" fill="#ffffff" opacity=".38"/>
+
+    <rect x="1034" y="61" width="168" height="88" rx="14" fill="#34263e" stroke="#e879f9" stroke-width="2"/>
+    <rect x="1048" y="77" width="62" height="8" rx="4" fill="#e879f9"/>
+    <rect x="1048" y="96" width="126" height="7" rx="3.5" fill="#ffffff" opacity=".72"/>
+    <rect x="1048" y="114" width="91" height="7" rx="3.5" fill="#ffffff" opacity=".38"/>
+
+    <rect x="1050" y="275" width="154" height="88" rx="14" fill="#173b38" stroke="#34d399" stroke-width="2"/>
+    <rect x="1064" y="291" width="68" height="8" rx="4" fill="#34d399"/>
+    <rect x="1064" y="310" width="112" height="7" rx="3.5" fill="#ffffff" opacity=".72"/>
+    <rect x="1064" y="328" width="78" height="7" rx="3.5" fill="#ffffff" opacity=".38"/>
+  </g>
+  <g text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <text x="640" y="178" fill="url(#accent)" font-size="73" font-weight="760" letter-spacing="-2">Live Canvas</text>
+    <text x="640" y="230" fill="#ffffff" font-size="24" font-weight="500" opacity=".9">Your notes. Your layout. Always in sync.</text>
+    <rect x="512" y="266" width="256" height="45" rx="22.5" fill="#ffffff" opacity=".1" stroke="#ffffff" stroke-opacity=".24"/>
+    <text x="640" y="295" fill="#d8ccff" font-size="16" font-weight="650" letter-spacing="1">OFFLINE · NATIVE · EDITABLE</text>
+  </g>
+</svg>
