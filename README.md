@@ -12,7 +12,7 @@
 
 Live Canvas is an offline Obsidian community plugin that continuously synchronizes a normal, freely editable `.canvas` file with selected Markdown notes and their relationships.
 
-It is built around one promise: **automation should not take ownership away from you**. Move or resize generated cards, add your own text, groups, links, files, and edges, then keep working. Refreshes update Live Canvas-managed items while preserving the rest of your Canvas.
+Move or resize generated cards, add your own text, groups, links, files, and edges, then keep working. Refreshes update Live Canvas-managed items while preserving the rest of your Canvas.
 
 ## What it does
 
