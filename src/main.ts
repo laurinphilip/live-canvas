@@ -18,6 +18,7 @@ import {
   CanvasDocument,
   createEmptyCanvas,
   expandPathsByNeighbors,
+  getQuickStartCanvasPath,
   isPathInFolder,
   matchesExclusionRules,
   NoteLink,
@@ -110,6 +111,14 @@ export default class LiveCanvasPlugin extends Plugin {
       name: "Refresh Canvas now",
       callback: () => {
         void this.refreshCanvas({ notify: true });
+      }
+    });
+
+    this.addCommand({
+      id: "create-canvas-from-current-folder",
+      name: "Create Canvas from current note's folder",
+      callback: () => {
+        void this.createCanvasFromCurrentFolder();
       }
     });
 
@@ -304,6 +313,34 @@ export default class LiveCanvasPlugin extends Plugin {
       const message = error instanceof Error ? error.message : String(error);
       new Notice(`Live Canvas: ${message}`);
     }
+  }
+
+  async createCanvasFromCurrentFolder(): Promise<void> {
+    const activeFile = this.app.workspace.getActiveFile();
+    if (!(activeFile instanceof TFile) || activeFile.extension !== "md") {
+      new Notice("Live Canvas: Open a Markdown note first.");
+      return;
+    }
+
+    const sourceFolder = activeFile.parent?.path && activeFile.parent.path !== "/"
+      ? activeFile.parent.path
+      : "/";
+    const occupiedPaths = new Set(
+      this.app.vault.getAllLoadedFiles().map((file) => file.path)
+    );
+    const canvasPath = getQuickStartCanvasPath(
+      sourceFolder,
+      occupiedPaths,
+      new Set(this.settings.managedCanvasPaths)
+    );
+
+    this.settings.filterType = "folder";
+    this.settings.filterValue = sourceFolder;
+    this.settings.canvasPath = canvasPath;
+    await this.saveSettings();
+
+    new Notice(`Live Canvas: Creating a Canvas for "${sourceFolder}".`);
+    await this.refreshCanvas({ open: true, notify: true });
   }
 
   async exportCanvasAsPdf(): Promise<TFile | null> {
@@ -786,13 +823,26 @@ class LiveCanvasSettingTab extends PluginSettingTab {
         heading: "Actions",
         items: [
           {
+            name: "Quick start from current folder",
+            desc: "Open a Markdown note, then create and open a Live Canvas for all notes in the same folder. Existing unmanaged Canvas files are never replaced.",
+            render: (setting) => {
+              setting.addButton((button) =>
+                button
+                  .setButtonText("Use active note")
+                  .setCta()
+                  .onClick(async () => {
+                    await this.plugin.createCanvasFromCurrentFolder();
+                  })
+              );
+            }
+          },
+          {
             name: "Refresh now",
             desc: "Create the Canvas the first time, then open it.",
             render: (setting) => {
               setting.addButton((button) =>
                 button
                   .setButtonText("Refresh and open")
-                  .setCta()
                   .onClick(async () => {
                     await this.plugin.refreshCanvas({ open: true, notify: true });
                   })

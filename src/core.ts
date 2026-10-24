@@ -214,6 +214,23 @@ export function isPathInFolder(filePath: string, folderSetting: string): boolean
   return filePath.startsWith(`${folder}/`);
 }
 
+export function getQuickStartCanvasPath(
+  folderPath: string,
+  occupiedPaths: ReadonlySet<string>,
+  managedPaths: ReadonlySet<string>
+): string {
+  const folder = folderPath.trim().replace(/^\/+|\/+$/g, "");
+  const prefix = folder ? `${folder}/` : "";
+
+  for (let index = 1; index < 10000; index += 1) {
+    const suffix = index === 1 ? "" : ` ${index}`;
+    const candidate = `${prefix}Live Canvas${suffix}.canvas`;
+    if (!occupiedPaths.has(candidate) || managedPaths.has(candidate)) return candidate;
+  }
+
+  throw new Error("Too many Canvas files already exist in this folder.");
+}
+
 export function tagMatches(tags: readonly string[], tagSetting: string): boolean {
   const wanted = tagSetting.trim().replace(/^#+/, "").replace(/\/$/, "");
   if (!wanted) return false;

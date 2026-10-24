@@ -411,7 +411,7 @@ function buildPdf(content: string, width: number, height: number, title: string)
     `<< /Length ${content.length + 1} >>\nstream\n${content}\nendstream`,
     "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>",
     "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>",
-    `<< /Title (${escapePdfText(pdfSafeText(title))}) /Creator (Live Canvas 1.3.2) >>`
+    `<< /Title (${escapePdfText(pdfSafeText(title))}) /Creator (Live Canvas) >>`
   ];
   let pdf = "%PDF-1.4\n";
   const offsets = [0];
