@@ -1,6 +1,6 @@
 {
   "name": "live-canvas",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Offline Obsidian community plugin that continuously synchronizes a native, editable Canvas.",
   "type": "module",
   "main": "main.js",

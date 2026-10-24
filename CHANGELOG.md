@@ -2,6 +2,17 @@
 
 All notable changes to Live Canvas are documented here. The project follows Semantic Versioning.
 
+## [1.3.3] - 2026-10-24
+
+### Added
+
+- Added a one-click command that creates and opens a Live Canvas for the current Markdown note's folder.
+- Added the same quick-start action to the settings screen for easier onboarding.
+
+### Safety
+
+- Quick start reuses only Canvas files already managed by Live Canvas. If the preferred filename belongs to another file, it chooses a numbered filename instead of overwriting it.
+
 ## [1.3.2] - 2026-10-11
 
 ### Added

@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://obsidian.md"><img alt="Obsidian 1.13.0+" src="https://img.shields.io/badge/Obsidian-1.13.0%2B-7C3AED?logo=obsidian&logoColor=white"></a>
-  <img alt="Version 1.3.2" src="https://img.shields.io/badge/version-1.3.2-2563EB">
+  <img alt="Version 1.3.3" src="https://img.shields.io/badge/version-1.3.3-2563EB">
   <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A">
   <img alt="No network required" src="https://img.shields.io/badge/network-none-059669">
   <img alt="Desktop and mobile" src="https://img.shields.io/badge/platform-desktop%20%7C%20mobile-475569">
@@ -17,6 +17,7 @@ It is built around one promise: **automation should not take ownership away from
 ## What it does
 
 - Selects notes from an explicit folder or tag.
+- Creates a ready-to-use Canvas from the current note's folder with one command.
 - Adds internal links, embeds, and linked properties as directed edges.
 - Preserves manually moved and resized note cards during normal synchronization.
 - Keeps manual Canvas nodes and valid manual edges.
@@ -56,6 +57,10 @@ styles.css
 Restart Obsidian, open **Settings → Community plugins**, and enable **Live Canvas**. For step-by-step macOS, Windows, Linux, mobile, update, and uninstall instructions, read the [installation guide](docs/INSTALLATION.md).
 
 ## Quick start
+
+The fastest option is to open any Markdown note and run **Live Canvas: Create Canvas from current note's folder**. Live Canvas selects that folder, chooses a safe Canvas filename, builds it, and opens it automatically.
+
+For manual setup:
 
 1. Create a few notes in a folder such as `Knowledge` and connect them with `[[internal links]]`.
 2. Open **Settings → Live Canvas**.
@@ -114,6 +119,7 @@ Back up an important vault before testing any community plugin.
 ## Commands
 
 - **Refresh Canvas now** — synchronize immediately.
+- **Create Canvas from current note's folder** — configure, create, and open a Canvas in one step.
 - **Open managed Canvas** — open the configured Canvas.
 - **Smart relayout managed cards** — confirm and rearrange generated note cards.
 - **Export managed Canvas as PDF** — create and open a PDF next to the saved Canvas.
