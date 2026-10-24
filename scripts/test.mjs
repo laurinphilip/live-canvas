@@ -35,6 +35,29 @@ try {
     assert.equal(core.isPathInFolder("Anywhere.md", "/"), true);
   });
 
+  test("chooses a safe Canvas path for one-click folder setup", () => {
+    assert.equal(
+      core.getQuickStartCanvasPath("Knowledge/History", new Set(), new Set()),
+      "Knowledge/History/Live Canvas.canvas"
+    );
+    assert.equal(
+      core.getQuickStartCanvasPath(
+        "Knowledge/History",
+        new Set(["Knowledge/History/Live Canvas.canvas"]),
+        new Set()
+      ),
+      "Knowledge/History/Live Canvas 2.canvas"
+    );
+    assert.equal(
+      core.getQuickStartCanvasPath(
+        "/",
+        new Set(["Live Canvas.canvas"]),
+        new Set(["Live Canvas.canvas"])
+      ),
+      "Live Canvas.canvas"
+    );
+  });
+
   test("matches tags and their descendants", () => {
     assert.equal(core.tagMatches(["#history/byzantium"], "#history"), true);
     assert.equal(core.tagMatches(["#historical"], "history"), false);
