@@ -54,6 +54,10 @@ Use a test vault or back up your current vault first.
 7. Select **Refresh and open**.
 8. The Canvas should show three note cards and two arrows from `Planets`.
 
+### Faster one-click setup
+
+Open any Markdown note, open the command palette, and run **Live Canvas: Create Canvas from current note's folder**. Live Canvas automatically selects the note's folder, chooses a safe Canvas filename in that folder, builds it, and opens it. If an unrelated `Live Canvas.canvas` file already exists, a numbered filename is used instead of replacing it.
+
 ## Learn the Canvas controls
 
 - Scroll or pinch to zoom.
@@ -150,6 +154,7 @@ The PDF is a one-page A4 vector overview containing saved cards, text, groups, c
 ## Commands
 
 - **Refresh Canvas now** synchronizes immediately.
+- **Create Canvas from current note's folder** provides a safe one-click setup for the active note's folder.
 - **Open managed Canvas** opens the configured file.
 - **Smart relayout managed cards** confirms and rearranges managed note cards.
 - **Export managed Canvas as PDF** creates a new local PDF without changing the Canvas.
