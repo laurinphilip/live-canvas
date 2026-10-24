@@ -1,68 +1,26 @@
-# Publish the repository on GitHub
-
-This guide starts with the included `live-canvas-1.3.1-github-repository.zip` and ends with a public project page and installable release.
-
-## 1. Create the repository
-
-1. Sign in to GitHub and select **New repository**.
-2. Set **Repository name** to `live-canvas`.
-3. Add the description: `Keep a native Obsidian Canvas synchronized with filtered notes and their relationships â€” locally and non-destructively.`
-4. Choose **Public** when the project is ready for everyone, or **Private** while testing.
-5. Do not add a README, `.gitignore`, or license; they are already included.
-6. Select **Create repository**.
-
-## 2. Upload the prepared files
-
-The safest beginner-friendly method is GitHub Desktop because it includes hidden folders such as `.github`.
-
-1. Install and open GitHub Desktop.
-2. Extract `live-canvas-1.3.1-github-repository.zip`.
-3. In GitHub Desktop, select **File â†’ Add local repository â†’ chooseâ€¦** and choose the extracted `live-canvas` folder.
-4. If GitHub Desktop says it is not a repository, select **create a repository** and keep the existing folder and name.
-5. Enter `Prepare Live Canvas 1.3.1` as the summary and commit all files to `main`.
-6. Select **Publish repository**. Choose the same visibility as the empty GitHub repository. If GitHub Desktop creates a duplicate instead of connecting to the empty repository, use **Repository â†’ Repository settings â†’ Remote** and set the URL shown on the empty repository page.
-7. Select **Push origin**.
-
-Advanced Git users can instead initialize the extracted folder, add the GitHub remote, commit, and push to `main`.
-
-## 3. Configure the GitHub page
-
-On the repository page:
-
-1. Select the gear icon beside **About**.
-2. Add the website later if you create one.
-3. Add topics: `obsidian`, `obsidian-plugin`, `canvas`, `knowledge-graph`, `visual-notes`, `offline-first`.
-4. Enable **Releases**, **Issues**, and **Discussions**.
-5. Open **Settings â†’ Security â†’ Code security and analysis** and enable **Private vulnerability reporting**.
-6. Open **Settings â†’ Actions â†’ General** and keep Actions enabled. The included workflows need permission to create releases; under **Workflow permissions**, allow read and write permissions if GitHub asks for it.
-
-The repository home page automatically uses `README.md`, including the banner, feature overview, installation section, documentation links, and license.
-
-## 4. Create version 1.3.1
-
-The release automation starts when the exact version tag is pushed.
-
-Using a terminal in the repository folder:
-
-```bash
-git tag 1.3.1
-git push origin 1.3.1
-```
-
-Do not prefix the tag with `v`. Open the **Actions** tab and wait for the **Release** workflow. It validates the plugin, runs Obsidian's community scanner rules, builds the plugin, attests the files, and creates a draft GitHub release.
-
-Open **Releases**, review the `1.3.1` draft and its automatically added changelog notes, test the attached ZIP in a clean vault, then select **Publish release** as a normal release.
-
-## 5. Verify the public experience
-
-In a private browser window:
-
-1. Open the repository page and check the banner and documentation links.
-2. Open the `1.3.1` release.
-3. Confirm the individual assets `main.js`, `manifest.json`, and `styles.css` are present.
-4. Confirm `live-canvas-1.3.1.zip` is present and extracts to one `live-canvas` folder.
-5. Follow the macOS installation guide exactly in a test vault.
-
-## 6. Submit to Obsidian later
-
-Once the public release has been tested by several people, follow the [release guide](RELEASING.md) to submit the plugin to Obsidian's community directory. Keep the repository name, plugin ID, release tag, and manifest version consistent.
+şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçHÈX›\ÚH™\ÜÚ]ÜHÛˆÚ]X‚‚•\ÈİZYHİ\ÈÚ]H[˜ÛYY]™KXØ[˜\ËLKŒËŒKYÚ]X‹\™\ÜÚ]ÜKš\[™[™ÈÚ]HX›XÈ›Ú™XİYÙH[™[œİ[X›H™[X\ÙK‚‚ˆÈÈKˆÜ™X]HH™\ÜÚ]ÜB‚ŒKˆÚYÛˆ[ˆÈÚ]Xˆ[™Ù[Xİ
+Š“™]È™\ÜÚ]ÜJŠ‹‚Œ‹ˆÙ]
+Š”™\ÜÚ]ÜH˜[YJŠˆÈ]™KXØ[˜\Ø‚ŒËˆYH\ØÜš\[ÛˆÙY\H˜]]™HØœÚYX[ˆØ[˜\ÈŞ[˜Ú›Ûš^™YÚ]š[\™Y›İ\È[™Z\ˆ™[][ÛœÚ\È8 %ØØ[H[™›Û‹Y\İXİ]™[K˜ˆÚÛÜÙH
+Š”X›XÊŠˆÚ[ˆH›Ú™Xİ\È™XYH›Üˆ]™\[Û™KÜˆ
+Š”š]˜]JŠˆÚ[H\İ[™Ë‚KˆÈ›İYH‘PQQK™Ú]YÛ›Ü™XÜˆXÙ[œÙNÈ^H\™H[™XYH[˜ÛYY‚‹ˆÙ[Xİ
+ŠÜ™X]H™\ÜÚ]ÜJŠ‹‚‚ˆÈÈ‹ˆ\ØYH™\\™Yš[\Â‚•HØY™\İ™YÚ[›™\‹YœšY[™HY]Ù\ÈÚ]Xˆ\ÚİÜ™XØ]\ÙH][˜ÛY\ÈY[ˆ›Û\œÈİXÚ\È™Ú]X˜‚‚ŒKˆ[œİ[[™Ü[ˆÚ]Xˆ\ÚİÜ‚Œ‹ˆ^˜Xİ]™KXØ[˜\ËLKŒËŒKYÚ]X‹\™\ÜÚ]ÜKš\‚ŒËˆ[ˆÚ]Xˆ\ÚİÜÙ[Xİ
+Š‘š[H8¡¤ˆYØØ[™\ÜÚ]ÜH8¡¤ˆÚÛÜÙx )ŠŠˆ[™ÚÛÜÙHH^˜XİY]™KXØ[˜\Ø›Û\‹‚ˆYˆÚ]Xˆ\ÚİÜØ^\È]\È›İH™\ÜÚ]ÜKÙ[Xİ
+Š˜Ü™X]HH™\ÜÚ]ÜJŠˆ[™ÙY\H^\İ[™È›Û\ˆ[™˜[YK‚Kˆ[\ˆ™\\™H]™HØ[˜\ÈKŒËŒX\ÈHİ[[X\H[™ÛÛ[Z][š[\ÈÈXZ[˜‚‹ˆÙ[Xİ
+Š”X›\Ú™\ÜÚ]ÜJŠ‹ˆÚÛÜÙHHØ[YHš\ÚXš[]H\ÈH[\HÚ]Xˆ™\ÜÚ]ÜKˆYˆÚ]Xˆ\ÚİÜÜ™X]\ÈH\XØ]H[œİXYÙˆÛÛ›™Xİ[™ÈÈH[\H™\ÜÚ]ÜK\ÙH
+Š”™\ÜÚ]ÜH8¡¤ˆ™\ÜÚ]ÜHÙ][™ÜÈ8¡¤ˆ™[[İJŠˆ[™Ù]HT“ÚİÛˆÛˆH[\H™\ÜÚ]ÜHYÙK‚ËˆÙ[Xİ
+Š”\ÚÜšYÚ[ŠŠ‹‚‚Y˜[˜ÙYÚ]\Ù\œÈØ[ˆ[œİXY[š]X[^™HH^˜XİY›Û\‹YHÚ]Xˆ™[[İKÛÛ[Z][™\ÚÈXZ[˜‚‚ˆÈÈËˆÛÛ™šYİ\™HHÚ]XˆYÙB‚“ÛˆH™\ÜÚ]ÜHYÙN‚‚ŒKˆÙ[XİHÙX\ˆXÛÛˆ™\ÚYH
+ŠX›İ]
+Š‹‚Œ‹ˆYHÙXœÚ]H]\ˆYˆ[İHÜ™X]HÛ™K‚ŒËˆYÜXÜÎˆØœÚYX[˜ØœÚYX[‹\YÚ[˜Ø[˜\ØÛ›İÛYÙKYÜ˜\š\İX[[›İ\ØÙ™›[™KYš\œİ‚ˆ[˜X›H
+Š”™[X\Ù\ÊŠ‹
+Š’\ÜİY\ÊŠ‹[™
+Š‘\Øİ\ÜÚ[ÛœÊŠ‹‚KˆÜ[ˆ
+Š”Ù][™ÜÈ8¡¤ˆÙXİ\š]H8¡¤ˆÛÙHÙXİ\š]H[™[˜[\Ú\ÊŠˆ[™[˜X›H
+Š”š]˜]H[™\˜Xš[]H™\Ü[™ÊŠ‹‚‹ˆÜ[ˆ
+Š”Ù][™ÜÈ8¡¤ˆXİ[ÛœÈ8¡¤ˆÙ[™\˜[
+Šˆ[™ÙY\Xİ[ÛœÈ[˜X›YˆH[˜ÛYYÛÜšÙ›İÜÈ™YY\›Z\ÜÚ[ÛˆÈÜ™X]H™[X\Ù\ÎÈ[™\ˆ
+Š•ÛÜšÙ›İÈ\›Z\ÜÚ[ÛœÊŠ‹[İÈ™XY[™Üš]H\›Z\ÜÚ[ÛœÈYˆÚ]Xˆ\ÚÜÈ›Üˆ]‚‚•H™\ÜÚ]ÜHÛYHYÙH]]ÛX]XØ[H\Ù\È‘PQQK›Y[˜ÛY[™ÈH˜[›™\‹™X]\™Hİ™\šY]Ë[œİ[][ÛˆÙXİ[Û‹Øİ[Y[][Ûˆ[šÜË[™XÙ[œÙK‚‚ˆÈÈˆÜ™X]H™\œÚ[ÛˆKŒËŒB‚•H™[X\ÙH]]ÛX][Ûˆİ\ÈÚ[ˆH^Xİ™\œÚ[ÛˆYÈ\È\ÚY‚‚•\Ú[™ÈH\›Z[˜[[ˆH™\ÜÚ]ÜH›Û\‚‚˜˜\Ú™Ú]YÈKŒËŒB™Ú]\ÚÜšYÚ[ˆKŒËŒB˜‚‘È›İ™Yš^HYÈÚ]˜ˆÜ[ˆH
+ŠXİ[ÛœÊŠˆXˆ[™ØZ]›ÜˆH
+Š”™[X\ÙJŠˆÛÜšÙ›İËˆ]˜[Y]\ÈHYÚ[‹[œÈØœÚYX[‰ÜÈÛÛ[][š]HØØ[›™\ˆ[\ËZ[ÈHYÚ[‹]\İÈHš[\Ë[™Ü™X]\ÈH˜YÚ]Xˆ™[X\ÙK‚‚“Ü[ˆ
+Š”™[X\Ù\ÊŠ‹™]šY]ÈHKŒËŒX˜Y[™]È]]ÛX]XØ[HYYÚ[™Ù[ÙÈ›İ\Ë\İH™YH]XÚYYÚ[ˆš[\È[ˆHÛX[ˆ˜][[ˆÙ[Xİ
+Š”X›\Ú™[X\ÙJŠˆ\ÈH›Ü›X[™[X\ÙK‚‚ˆÈÈKˆ™\šYHHX›XÈ^\šY[˜ÙB‚’[ˆHš]˜]Hœ›İÜÙ\ˆÚ[™İÎ‚‚ŒKˆÜ[ˆH™\ÜÚ]ÜHYÙH[™ÚXÚÈH˜[›™\ˆ[™Øİ[Y[][Ûˆ[šÜË‚Œ‹ˆÜ[ˆHKŒËŒX™[X\ÙK‚ŒËˆÛÛ™š\›HH[™]šYX[\ÜÙ]ÈXZ[‹šœØX[šY™\İšœÛÛ˜[™İ[\Ë˜ÜÜØ\™H™\Ù[‚ˆÛÛ™š\›H\™H\™H›È[œİ\ÜY^˜H™[X\ÙHš[\Ë‚Kˆ›ÛİÈHXXÓÔÈ[œİ[][ÛˆİZYH^XİH[ˆH\İ˜][‚‚ˆÈÈ‹ˆİX›Z]ÈØœÚYX[ˆ]\‚‚“Û˜ÙHHX›XÈ™[X\ÙH\È™Y[ˆ\İYHÙ]™\˜[[ÜK›ÛİÈHÜ™[X\ÙHİZYWJ‘SPTÒS‘Ë›Y
+HÈİX›Z]HYÚ[ˆÈØœÚYX[‰ÜÈÛÛ[][š]H\™XİÜKˆÙY\H™\ÜÚ]ÜH˜[YKYÚ[ˆQ™[X\ÙHYË[™X[šY™\İ™\œÚ[ÛˆÛÛœÚ\İ[‚

@@ -1,58 +1,1 @@
-name: Release
-
-on:
-  push:
-    tags:
-      - "*"
-
-jobs:
-  release:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      id-token: write
-      attestations: write
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v7
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          cache: npm
-
-      - name: Validate, build, and create draft release
-        uses: obsidianmd/obsidian-workflows@v1
-        with:
-          mode: release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Attest Obsidian release assets
-        uses: actions/attest-build-provenance@v4
-        with:
-          subject-path: |
-            main.js
-            manifest.json
-            styles.css
-
-      - name: Add release notes from the changelog
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          node scripts/extract-release-notes.mjs "$GITHUB_REF_NAME"
-          gh release edit "$GITHUB_REF_NAME" --notes-file .release-notes.md
-
-      - name: Create easy-install ZIP
-        run: node scripts/package-release.mjs
-
-      - name: Attest easy-install ZIP
-        uses: actions/attest-build-provenance@v4
-        with:
-          subject-path: live-canvas-${{ github.ref_name }}.zip
-
-      - name: Add easy-install ZIP to draft release
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload "$GITHUB_REF_NAME" "live-canvas-${GITHUB_REF_NAME}.zip" --clobber
+şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µç[˜[YNˆ™[X\ÙB‚›Û‚ˆ\Ú‚ˆYÜÎ‚ˆHŠˆ‚‚š›ØœÎ‚ˆ™[X\ÙN‚ˆ[œË[ÛˆX[K[]\İˆ\›Z\ÜÚ[ÛœÎ‚ˆÛÛ[ÎˆÜš]BˆY]ÚÙ[ˆÜš]Bˆ]\İ][ÛœÎˆÜš]Bˆİ\Î‚ˆH˜[YNˆÚXÚÈİ]™\ÜÚ]ÜBˆ\Ù\ÎˆXİ[ÛœËØÚXÚÛİ]Â‚ˆH˜[YNˆÙ]\›ÙKšœÂˆ\Ù\ÎˆXİ[ÛœËÜÙ]\[›ÙPÂˆÚ]‚ˆ›ÙK]™\œÚ[ÛˆˆØXÚNˆœB‚ˆH˜[YNˆ˜[Y]KZ[[™Ü™X]H˜Y™[X\ÙBˆ\Ù\ÎˆØœÚYX[›YÛØœÚYX[‹]ÛÜšÙ›İÜĞŒBˆÚ]‚ˆ[ÙNˆ™[X\ÙBˆ[‚ˆÒUP—ÕÒÑSˆ	ŞÈÙXÜ™]Ë‘ÒUP—ÕÒÑSˆ_B‚ˆH˜[YNˆ]\İØœÚYX[ˆ™[X\ÙH\ÜÙ]Âˆ\Ù\ÎˆXİ[ÛœËØ]\İXZ[\›İ™[˜[˜ÙPˆÚ]‚ˆİXš™Xİ\]ˆˆXZ[‹šœÂˆX[šY™\İšœÛÛ‚ˆİ[\Ë˜ÜÜÂ‚ˆH˜[YNˆ]XÚØœÚYX[ˆ™[X\ÙH\ÜÙ]Âˆ[‚ˆÒÕÒÑSˆ	ŞÈÙXÜ™]Ë‘ÒUP—ÕÒÑSˆ_Bˆ[ˆÚ™[X\ÙH\ØY‰ÒUP—Ô‘Q—ÓSQHˆXZ[‹šœÈX[šY™\İšœÛÛˆİ[\Ë˜ÜÜÈKXÛØ˜™\‚‚ˆH˜[YNˆY™[X\ÙH›İ\Èœ›ÛHHÚ[™Ù[ÙÂˆ[‚ˆÒÕÒÑSˆ	ŞÈÙXÜ™]Ë‘ÒUP—ÕÒÑSˆ_Bˆ[ˆˆ›ÙHØÜš\ËÙ^˜Xİ\™[X\ÙK[›İ\Ë›ZœÈ‰ÒUP—Ô‘Q—ÓSQH‚ˆÚ™[X\ÙHY]‰ÒUP—Ô‘Q—ÓSQHˆK[›İ\ËYš[Hœ™[X\ÙK[›İ\Ë›Y

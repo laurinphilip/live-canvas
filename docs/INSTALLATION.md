@@ -1,73 +1,23 @@
-# Installation
-
-Live Canvas has no server, account, API key, or paid dependency.
-
-## Requirements
-
-- Obsidian 1.13.0 or newer
-- A desktop or mobile vault you can back up
-
-## Community plugin installation
-
-1. Open **Settings â†’ Community plugins** in Obsidian.
-2. Select **Browse** and search for **Live Canvas**.
-3. Select **Install**, then **Enable**.
-4. Open **Settings â†’ Live Canvas**, choose a source folder or tag, and select **Refresh and open**.
-
-If Live Canvas is still awaiting directory approval, use the manual installation below.
-
-## Manual macOS installation
-
-1. Open the repository's **Releases** page and download `live-canvas-<version>.zip` from the newest release.
-2. Double-click the ZIP to extract it. The extracted folder must be named `live-canvas`.
-3. Quit Obsidian completely with `Command+Q`.
-4. Open the vault folder in Finder. In Obsidian, **Settings â†’ Files and links â†’ Default location for new attachments** does not show the vault path; use **Show in system explorer** from the vault switcher when needed.
-5. Press `Command+Shift+.` in Finder to show hidden files.
-6. Open `.obsidian`, then `plugins`. Create the `plugins` folder if it does not exist.
-7. Move the extracted `live-canvas` folder into `.obsidian/plugins/`.
-8. Confirm this exact structure:
-
-   ```text
-   Your Vault/
-   â””â”€â”€ .obsidian/
-       â””â”€â”€ plugins/
-           â””â”€â”€ live-canvas/
-               â”œâ”€â”€ main.js
-               â”œâ”€â”€ manifest.json
-               â””â”€â”€ styles.css
-   ```
-
-9. Reopen Obsidian.
-10. Go to **Settings â†’ Community plugins**, turn on community plugins if asked, and enable **Live Canvas**.
-11. Open **Settings â†’ Live Canvas**, choose a source folder or tag, and select **Refresh and open**.
-
-If Obsidian does not list the plugin, the most common cause is one extra nested folder such as `live-canvas/live-canvas/main.js`.
-
-## Windows installation
-
-1. Download and extract the release ZIP.
-2. Close Obsidian.
-3. In File Explorer, enable **View â†’ Show â†’ Hidden items**.
-4. Move the extracted `live-canvas` folder to `Your Vault\.obsidian\plugins\`.
-5. Reopen Obsidian and enable Live Canvas under **Settings â†’ Community plugins**.
-
-## Linux installation
-
-Extract the release folder to `Your Vault/.obsidian/plugins/live-canvas/`, restart Obsidian, and enable the plugin under **Settings â†’ Community plugins**.
-
-## Mobile installation
-
-Manual mobile installation depends on the operating system's file manager and sync provider. Place the same three files in `.obsidian/plugins/live-canvas/`, reload the vault, and enable the plugin. Large Canvases may be less comfortable on smaller devices.
-
-## Updating
-
-1. Back up the vault.
-2. Download the newest release ZIP.
-3. Quit Obsidian.
-4. Replace `main.js`, `manifest.json`, and `styles.css` inside `.obsidian/plugins/live-canvas/`.
-5. Keep `data.json`; it contains your settings.
-6. Reopen Obsidian and verify the version in **Settings â†’ Community plugins**.
-
-## Uninstalling
-
-Disable Live Canvas, close Obsidian, then remove `.obsidian/plugins/live-canvas/`. The generated `.canvas` file is a normal Obsidian Canvas and remains usable. Your Markdown notes are unaffected.
+şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçHÈ[œİ[][Û‚‚“]™HØ[˜\È\È›ÈÙ\™\‹XØÛİ[THÙ^KÜˆZY\[™[˜ŞK‚‚ˆÈÈ™\]Z\™[Y[Â‚‹HØœÚYX[ˆKŒLËŒÜˆ™]Ù\‚‹HH\ÚİÜÜˆ[Øš[H˜][[İHØ[ˆ˜XÚÈ\‚ˆÈÈÛÛ[][š]HYÚ[ˆ[œİ[][Û‚‚ŒKˆÜ[ˆ
+Š”Ù][™ÜÈ8¡¤ˆÛÛ[][š]HYÚ[œÊŠˆ[ˆØœÚYX[‹‚Œ‹ˆÙ[Xİ
+Šœ›İÜÙJŠˆ[™ÙX\˜Ú›Üˆ
+Š“]™HØ[˜\ÊŠ‹‚ŒËˆÙ[Xİ
+Š’[œİ[
+Š‹[ˆ
+Š‘[˜X›JŠ‹‚ˆÜ[ˆ
+Š”Ù][™ÜÈ8¡¤ˆ]™HØ[˜\ÊŠ‹ÚÛÜÙHHÛİ\˜ÙH›Û\ˆÜˆYË[™Ù[Xİ
+Š”™Yœ™\Ú[™Ü[ŠŠ‹‚‚’Yˆ]™HØ[˜\È\Èİ[]ØZ][™È\™XİÜH\›İ˜[\ÙHHX[X[[œİ[][Ûˆ™[İË‚‚ˆÈÈX[X[XXÓÔÈ[œİ[][Û‚‚ŒKˆÜ[ˆH™\ÜÚ]ÜIÜÈ
+Š”™[X\Ù\ÊŠˆYÙH[™İÛ›ØYXZ[‹šœØX[šY™\İšœÛÛ˜[™İ[\Ë˜ÜÜØœ›ÛHH™]Ù\İ™[X\ÙK‚Œ‹ˆÜ™X]HH›Û\ˆ˜[YY]™KXØ[˜\Ø[™[İ™HH™YHİÛ›ØYYš[\È[È]‚ŒËˆ]Z]ØœÚYX[ˆÛÛ\][HÚ]ÛÛ[X[™
+ÔX‚ˆÜ[ˆH˜][›Û\ˆ[ˆš[™\‹ˆ[ˆØœÚYX[‹
+Š”Ù][™ÜÈ8¡¤ˆš[\È[™[šÜÈ8¡¤ˆY˜][ØØ][Ûˆ›Üˆ™]È]XÚY[ÊŠˆÙ\È›İÚİÈH˜][]È\ÙH
+Š”ÚİÈ[ˆŞ\İ[H^Ü™\ŠŠˆœ›ÛHH˜][İÚ]Ú\ˆÚ[ˆ™YYY‚Kˆ™\ÜÈÛÛ[X[™
+ÔÚY
+Ë˜[ˆš[™\ˆÈÚİÈY[ˆš[\Ë‚‹ˆÜ[ˆ›ØœÚYX[˜[ˆYÚ[œØˆÜ™X]HHYÚ[œØ›Û\ˆYˆ]Ù\È›İ^\İ‚Ëˆ[İ™HH™\\™Y]™KXØ[˜\Ø›Û\ˆ[È›ØœÚYX[‹ÜYÚ[œËØ‚ˆÛÛ™š\›H\È^XİİXİ\™N‚‚ˆ^ˆ[İ\ˆ˜][Âˆ8¥%8¥ 8¥ ›ØœÚYX[‹Âˆ8¥%8¥ 8¥ YÚ[œËÂˆ8¥%8¥ 8¥ ]™KXØ[˜\ËÂˆ8¥'8¥ 8¥ XZ[‹šœÂˆ8¥'8¥ 8¥ X[šY™\İšœÛÛ‚ˆ8¥%8¥ 8¥ İ[\Ë˜ÜÜÂˆ‚Kˆ™[Ü[ˆØœÚYX[‹‚ŒLˆÛÈÈ
+Š”Ù][™ÜÈ8¡¤ˆÛÛ[][š]HYÚ[œÊŠ‹\›ˆÛˆÛÛ[][š]HYÚ[œÈYˆ\ÚÙY[™[˜X›H
+Š“]™HØ[˜\ÊŠ‹‚ŒLKˆÜ[ˆ
+Š”Ù][™ÜÈ8¡¤ˆ]™HØ[˜\ÊŠ‹ÚÛÜÙHHÛİ\˜ÙH›Û\ˆÜˆYË[™Ù[Xİ
+Š”™Yœ™\Ú[™Ü[ŠŠ‹‚‚’YˆØœÚYX[ˆÙ\È›İ\İHYÚ[‹H[ÜİÛÛ[[ÛˆØ]\ÙH\ÈÛ™H^˜H™\İY›Û\ˆİXÚ\È]™KXØ[˜\ËÛ]™KXØ[˜\ËÛXZ[‹šœØ‚‚ˆÈÈÚ[™İÜÈ[œİ[][Û‚‚ŒKˆİÛ›ØYXZ[‹šœØX[šY™\İšœÛÛ˜[™İ[\Ë˜ÜÜØœ›ÛHH™]Ù\İ™[X\ÙH[™XÙH[H[ˆH›Û\ˆ˜[YY]™KXØ[˜\Ø‚Œ‹ˆÛÜÙHØœÚYX[‹‚ŒËˆ[ˆš[H^Ü™\‹[˜X›H
+Š•šY]È8¡¤ˆÚİÈ8¡¤ˆY[ˆ][\ÊŠ‹‚ˆ[İ™HH^˜XİY]™KXØ[˜\Ø›Û\ˆÈ[İ\ˆ˜][›ØœÚYX[—YÚ[œ×‚Kˆ™[Ü[ˆØœÚYX[ˆ[™[˜X›H]™HØ[˜\È[™\ˆ
+Š”Ù][™ÜÈ8¡¤ˆÛÛ[][š]HYÚ[œÊŠ‹‚‚ˆÈÈ[^[œİ[][Û‚‚‘İÛ›ØYXZ[‹šœØX[šY™\İšœÛÛ˜[™İ[\Ë˜ÜÜØœ›ÛHH™]Ù\İ™[X\ÙKXÙH[H[ˆ[İ\ˆ˜][Ë›ØœÚYX[‹ÜYÚ[œËÛ]™KXØ[˜\ËØ™\İ\ØœÚYX[‹[™[˜X›HHYÚ[ˆ[™\ˆ
+Š”Ù][™ÜÈ8¡¤ˆÛÛ[][š]HYÚ[œÊŠ‹‚‚ˆÈÈ[Øš[H[œİ[][Û‚‚“X[X[[Øš[H[œİ[][Ûˆ\[™ÈÛˆHÜ\˜][™ÈŞ\İ[IÜÈš[HX[˜YÙ\ˆ[™Ş[˜È›İšY\‹ˆXÙHHØ[YH™YHš[\È[ˆ›ØœÚYX[‹ÜYÚ[œËÛ]™KXØ[˜\ËØ™[ØYH˜][[™[˜X›HHYÚ[‹ˆ\™ÙHØ[˜\Ù\ÈX^H™H\ÜÈÛÛY›ÜX›HÛˆÛX[\ˆ]šXÙ\Ë‚‚ˆÈÈ\][™Â‚ŒKˆ˜XÚÈ\H˜][‚Œ‹ˆİÛ›ØYH™]Ù\İXZ[‹šœØX[šY™\İšœÛÛ˜[™İ[\Ë˜ÜÜØ™[X\ÙH\ÜÙ]Ë‚ŒËˆ]Z]ØœÚYX[‹‚ˆ™\XÙHXZ[‹šœØX[šY™\İšœÛÛ˜[™İ[\Ë˜ÜÜØ[œÚYH›ØœÚYX[‹ÜYÚ[œËÛ]™KXØ[˜\ËØ‚KˆÙY\]KšœÛÛ˜È]ÛÛZ[œÈ[İ\ˆÙ][™ÜË‚‹ˆ™[Ü[ˆØœÚYX[ˆ[™™\šYHH™\œÚ[Ûˆ[ˆ
+Š”Ù][™ÜÈ8¡¤ˆÛÛ[][š]HYÚ[œÊŠ‹‚‚ˆÈÈ[š[œİ[[™Â‚‘\ØX›H]™HØ[˜\ËÛÜÙHØœÚYX[‹[ˆ™[[İ™H›ØœÚYX[‹ÜYÚ[œËÛ]™KXØ[˜\ËØˆHÙ[™\˜]Y˜Ø[˜\Øš[H\ÈH›Ü›X[ØœÚYX[ˆØ[˜\È[™™[XZ[œÈ\ØX›Kˆ[İ\ˆX\šÙİÛˆ›İ\È\™H[˜Y™™XİY‚

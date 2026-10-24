@@ -1,32 +1,5 @@
-# Releasing
-
-## One-time GitHub setup
-
-1. Create an empty GitHub repository named `live-canvas`.
-2. Upload the contents of `live-canvas-<version>-github-repository.zip` or push the repository with Git.
-3. Use `main` as the default branch.
-4. Enable **Issues**, **Discussions**, and **Private vulnerability reporting** in repository settings.
-5. Add a short description, the topic tags `obsidian`, `obsidian-plugin`, `canvas`, `knowledge-graph`, and the MIT license.
-
-Do not add the generated `main.js` to normal commits. The release workflow builds it from source.
-
-## Create a release
-
-1. Update `CHANGELOG.md`.
-2. Run `npm ci` and `npm run package` locally.
-3. Bump the version, for example `npm version patch`.
-4. Push the commit and tag: `git push && git push --tags`.
-5. Use a tag exactly equal to the manifest version, such as `1.3.1`. Do not add a `v` prefix.
-6. The GitHub release workflow creates a draft release with `main.js`, `manifest.json`, `styles.css`, an easy-install ZIP, provenance attestations, and the matching changelog notes.
-7. Test the attached files in a clean vault, then publish the draft as a normal release rather than a pre-release.
-
-## Submit to the Obsidian community directory
-
-The first version is submitted through the Obsidian Community directory. Later versions are discovered from GitHub automatically.
-
-1. Publish the GitHub release.
-2. Open the Live Canvas management page in the Community directory.
-3. Select **Check for new releases** if the new version is not detected automatically.
-4. Review the automated scan results.
-
-The plugin ID must remain `live-canvas`, the tag must exactly match `manifest.json`, and every release must attach `main.js`, `manifest.json`, and `styles.css`.
+şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçHÈ™[X\Ú[™Â‚ˆÈÈÛ™K][YHÚ]XˆÙ]\‚ŒKˆÜ™X]H[ˆ[\HÚ]Xˆ™\ÜÚ]ÜH˜[YY]™KXØ[˜\Ø‚Œ‹ˆ\ØYHÛÛ[ÈÙˆ]™KXØ[˜\ËO™\œÚ[Û‹YÚ]X‹\™\ÜÚ]ÜKš\Üˆ\ÚH™\ÜÚ]ÜHÚ]Ú]‚ŒËˆ\ÙHXZ[˜\ÈHY˜][œ˜[˜Ú‚ˆ[˜X›H
+Š’\ÜİY\ÊŠ‹
+Š‘\Øİ\ÜÚ[ÛœÊŠ‹[™
+Š”š]˜]H[™\˜Xš[]H™\Ü[™ÊŠˆ[ˆ™\ÜÚ]ÜHÙ][™ÜË‚KˆYHÚÜ\ØÜš\[Û‹HÜXÈYÜÈØœÚYX[˜ØœÚYX[‹\YÚ[˜Ø[˜\ØÛ›İÛYÙKYÜ˜\[™HRUXÙ[œÙK‚‚‘È›İYHÙ[™\˜]YXZ[‹šœØÈ›Ü›X[ÛÛ[Z]ËˆH™[X\ÙHÛÜšÙ›İÈZ[È]œ›ÛHÛİ\˜ÙK‚‚ˆÈÈÜ™X]HH™[X\ÙB‚ŒKˆ\]HÒS‘ÑSÑË›Y‚Œ‹ˆ[ˆœHÚX[™œH[ˆXÚØYÙXØØ[K‚ŒËˆ[\H™\œÚ[Û‹›Üˆ^[\HœH™\œÚ[Ûˆ]Ú‚ˆ\ÚHÛÛ[Z][™YÎˆÚ]\Ú	‰ˆÚ]\ÚK]YÜØ‚Kˆ\ÙHHYÈ^XİH\]X[ÈHX[šY™\İ™\œÚ[Û‹İXÚ\ÈKŒËŒXˆÈ›İYH˜™Yš^‚‹ˆHÚ]Xˆ™[X\ÙHÛÜšÙ›İÈÜ™X]\ÈH˜Y™[X\ÙHÚ]XZ[‹šœØX[šY™\İšœÛÛ˜İ[\Ë˜ÜÜØ›İ™[˜[˜ÙH]\İ][ÛœË[™HX]Ú[™ÈÚ[™Ù[ÙÈ›İ\Ë‚Ëˆ\İH]XÚYš[\È[ˆHÛX[ˆ˜][[ˆX›\ÚH˜Y\ÈH›Ü›X[™[X\ÙH˜]\ˆ[ˆH™K\™[X\ÙK‚‚ˆÈÈİX›Z]ÈHØœÚYX[ˆÛÛ[][š]H\™XİÜB‚•Hš\œİ™\œÚ[Ûˆ\ÈİX›Z]Y›İYÚHØœÚYX[ˆÛÛ[][š]H\™XİÜKˆ]\ˆ™\œÚ[ÛœÈ\™H\ØÛİ™\™Yœ›ÛHÚ]Xˆ]]ÛX]XØ[K‚‚ŒKˆX›\ÚHÚ]Xˆ™[X\ÙK‚Œ‹ˆÜ[ˆH]™HØ[˜\ÈX[˜YÙ[Y[YÙH[ˆHÛÛ[][š]H\™XİÜK‚ŒËˆÙ[Xİ
+ŠÚXÚÈ›Üˆ™]È™[X\Ù\ÊŠˆYˆH™]È™\œÚ[Ûˆ\È›İ]XİY]]ÛX]XØ[K‚ˆ™]šY]ÈH]]ÛX]YØØ[ˆ™\İ[Ë‚‚•HYÚ[ˆQ]\İ™[XZ[ˆ]™KXØ[˜\ØHYÈ]\İ^XİHX]ÚX[šY™\İšœÛÛ˜[™]™\H™[X\ÙH]\İ]XÚXZ[‹šœØX[šY™\İšœÛÛ˜[™İ[\Ë˜ÜÜØ‚
