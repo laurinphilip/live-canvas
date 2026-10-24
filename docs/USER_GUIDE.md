@@ -1,30 +1,164 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçHÈ\Ù\ˆİZYB‚•\ÈİZYH\Üİ[Y\È[İH]™H™]™\ˆ\ÙYØœÚYX[ˆØ[˜\Ë‚‚ˆÈÈÚ]\ÈØ[˜\ÏÂ‚Ø[˜\È\ÈØœÚYX[‰ÜÈš\İX[ÛÜšÜÜXÙKˆHØ[˜\È\ÈH™Yİ[\ˆš[H[™[™È[ˆ˜Ø[˜\Øˆ]Ø[ˆÛÛZ[ˆ›İHØ\™Ë^Ø\™ËÙXˆ[šÜËÜ›İ\Ë[™\œ›İÜËˆ[İHØ[ˆ›ÛÛK[‹[İ™HØ\™Ë™\Ú^™H[K[™Ü[ˆH›İHHİX›KXÛXÚÚ[™È]ÈØ\™‚‚“]™HØ[˜\ÈÜ™X]\È[™XZ[Z[œÈ›İHØ\™È]]ÛX]XØ[HÚ[HX]š[™ÈHØ[˜\ÈY]X›K‚‚ˆÈÈš]™K[Z[]Hš\œİ\İ‚•\ÙHH\İ˜][Üˆ˜XÚÈ\[İ\ˆİ\œ™[˜][š\œİ‚‚ŒKˆÜ™X]HH›Û\ˆ˜[YY]™HØ[˜\È\İ‚Œ‹ˆ[œÚYH]Ü™X]H™YH›İ\Î‚‚ˆ[™]Ë›Y‚ˆX\šÙİÛ‚ˆÈ[™]Â‚ˆHÖÑX\WH\ÈH[™]ˆÛÈ\ÈÖÓX\œ×WK‚ˆ‚ˆX\›Y‚ˆX\šÙİÛ‚ˆKKBˆYÜÎˆÜÜXÙKÛYWBˆKKB‚ˆÈX\‚ˆX\\ÈÛ™H[ÛÛ‹‚ˆ‚ˆX\œË›Y‚ˆX\šÙİÛ‚ˆKKBˆYÜÎˆÜÜXÙWBˆKKB‚ˆÈX\œÂ‚ˆX\œÈ\ÈÛÈÛX[[ÛÛœË‚ˆ‚ŒËˆÜ[ˆ
-Š”Ù][™ÜÈ8¡¤ˆ]™HØ[˜\ÊŠ‹‚ˆÙ]
-Š”Ûİ\˜ÙHš[\ŠŠˆÈ
-Š‘›Û\ŠŠ‹‚KˆÙ]HÛİ\˜ÙH›Û\ˆÈ]™HØ[˜\È\İ‚‹ˆX]™H
-ŠØ[˜\È]
-Šˆ\È]™HØ[˜\Ë˜Ø[˜\Ø‚ËˆÙ[Xİ
-Š”™Yœ™\Ú[™Ü[ŠŠ‹‚ˆHØ[˜\ÈÚİ[ÚİÈ™YH›İHØ\™È[™ÛÈ\œ›İÜÈœ›ÛH[™]Ø‚‚ˆÈÈÈ˜\İ\ˆÛ™KXÛXÚÈÙ]\‚’[ˆHš[H^Ü™\‹šYÚXÛXÚÈH›Û\ˆÜˆHX\šÙİÛˆ›İH[™Ù[Xİ
-ŠÜ™X]H]™HØ[˜\È›Üˆ\È›Û\ŠŠ‹ˆ]™HØ[˜\È]]ÛX]XØ[HÙ[XİÈH›Û\‹ÚÛÜÙ\ÈHØY™HØ[˜\Èš[[˜[YH[œÚYH]Z[ÈHØ[˜\Ë[™Ü[œÈ]‚‚–[İHØ[ˆ[ÛÈÜ[ˆ[HX\šÙİÛˆ›İKÜ[ˆHÛÛ[X[™[]K[™[ˆ
-Š“]™HØ[˜\ÎˆÜ™X]HØ[˜\Èœ›ÛHİ\œ™[›İIÜÈ›Û\ŠŠ‹ˆYˆ[ˆ[œ™[]Y]™HØ[˜\Ë˜Ø[˜\Øš[H[™XYH^\İËZ]\ˆ]ZXÚË\İ\Y]Ù\Ù\ÈH[X™\™Yš[[˜[YH[œİXYÙˆ™\XÚ[™È]‚‚ˆÈÈX\›ˆHØ[˜\ÈÛÛ›ÛÂ‚‹HØÜ›ÛÜˆ[˜ÚÈ›ÛÛK‚‹H˜YÈ[\HÜXÙHÈ[‹‚‹H˜YÈHØ\™È[İ™H]‚‹H˜YÈHØ\™YÙHÜˆÛÜ›™\ˆÈ™\Ú^™H]‚‹HİX›KXÛXÚÈH›İHØ\™ÈÜ[ˆ]›İK‚‹HšYÚXÛXÚÈ[\HÜXÙHÈYX[X[ÛÛ[‚‹H\ÙHHØ[˜\ÈÛÛ˜\ˆÈYH^Ø\™š[K[šËÜˆÜ›İ\‚‚“[İ™HX\ÈH™]ÈÜÚ][Û‹ØZ]›ÜˆØœÚYX[ˆÈØ]™KY]Û™HÙˆH›İ\Ë[™[ˆ
-Š“]™HØ[˜\Îˆ™Yœ™\ÚØ[˜\È›İÊŠˆœ›ÛHHÛÛ[X[™[]KˆH™]ÈÜÚ][ÛˆÚİ[™[XZ[ˆ[˜Ú[™ÙY‚‚ˆÈÈÚÛÜÚ[™È›İ\Â‚ˆÈÈÈ›Û\ˆÛİ\˜ÙB‚‘[\ˆH˜][\™[]]™H›Û\ˆİXÚ\ÈÛ›İÛYÙKÒ\İÜXˆ›İ\È[ˆ]ÈİX™›Û\œÈ\™H[˜ÛYYˆ[\ˆØÈ\ÙHH[\™H˜][‚‚ˆÈÈÈYÈÛİ\˜ÙB‚‘[\ˆ\İÜXÜˆÚ\İÜXˆH›İHYÙÙYÚ\İÜKØ^˜[][X[ÛÈX]Ú\È\İÜX‚‚•HÛİ\˜ÙHš[\ˆÜ™X]\ÈH[š]X[Ù]Ùˆ›İ\Ëˆ[šÙY[™ZYÚ›ÜˆÙ][™ÜÈØ[ˆY™[]Y›İ\Èœ›ÛH[Ù]Ú\™K‚‚ˆÈÈY[™È[šÙY™ZYÚ›ÜœÂ‚ÚÛÜÙH
-Š“›Û™JŠ‹
-Š“Û™H[šÈ]Ø^JŠ‹Üˆ
-Š•ÛÈ[šÜÈ]Ø^JŠ‹ˆ[ˆÙ[XİH\™Xİ[Û‚‚‹H
-Š’[˜ÛÛZ[™È[™İ]ÛÚ[™ÊŠˆ›ÛİÜÈ›İ[šÜÈ[™˜XÚÛ[šÜË‚‹H
-Š“İ]ÛÚ[™ÈÛ›JŠˆ›ÛİÜÈ[šÜÈÜ™X]YHÙ[XİY›İ\Ë‚‹H
-Š’[˜ÛÛZ[™ÈÛ›JŠˆ›ÛİÜÈ›İ\È][šÈÈÙ[XİY›İ\Ë‚‚”Ûİ\˜ÙKYš[\ˆX]Ú\È\™HYYš\œİˆHX^[][K[›İH[Z]\È\YYY\ˆ™ZYÚ›Üˆ^[œÚ[Û‹‚‚ˆÈÈ^ÛY[™È›İ\Â‚YÛ™H[H\ˆ[™N‚‚˜^™›Û\\˜Ú]™BYÎ™˜Yœ›Ü\Nœİ]\ÏX\˜Ú]™Yœ›Ü\NšY[‚˜‚‘^Û\Ú[ÛœÈ\™HXœÛÛ]Kˆ[ˆ^ÛYY›İH\È›İ™Z[›ÙXÙY\ÈH[šÙY™ZYÚ›Ü‹‚‚ˆÈÈÛÛÜš[™ÈØ]YÛÜšY\Â‚YÛ™HÛÛÜˆ[H\ˆ[™KˆHš\œİX]ÚÚ[œÎ‚‚˜^™›Û\“]™HØ[˜\È\İH‚YÎšÛYHHÌPLNNYÎš[\Ü[HB˜‚“[X™\œÈX›İYÚ˜\ÙHØœÚYX[‰ÜÈ˜]]™HØ[˜\È[]KˆHÚ^YYÚ]^ÛÛÜˆİXÚ\ÈÌPLNN\È[ÛÈİ\ÜY‚‚ˆÈÈ™[][ÛœÚ\X™[Â‚‘[˜X›H
-Š“X™[™[][ÛœÚ\ÊŠˆÈXZÙHYÙ\È[Ü™H\ØÜš\]™N‚‚‹H]]Üˆ–ÖĞYHİ™[XÙWWH˜Ø[ˆÜ™X]H[ˆYÙHX™[Y]]Ü˜‚‹HÖĞYHİ™[XÙ_[œÜ\™YWWXØ[ˆÜ™X]H[œÜ\™YX‚‹HVÖÑXYÜ˜[WWXØ[ˆÜ™X]H[X™Y‚‚”Ù]™\˜[™[][ÛœÚ\È[ˆHØ[YH\™Xİ[Ûˆ™]ÙY[ˆHØ[YH›İ\È\™HÛÛXš[™YÛˆÛ™HYÙK‚‚ˆÈÈ\ÛÛ]Y›İ\Â‚‘[˜X›H
-Š’YÚYÚ\ÛÛ]Y›İ\ÊŠˆÈY[YHØ\™ÈÚ]›Èš\ÚX›H[˜ÛÛZ[™ÈÜˆİ]ÛÚ[™ÈYÙKˆØ]YÛÜHÛÛÜˆ[\ÈZÙHš[Üš]K‚‚ˆÈÈX[X[Y]È[™İÛ™\œÚ\‚–[İHØ[ˆØY™[H[İ™H[™™\Ú^™HÙ[™\˜]Y›İHØ\™Ëˆ[İHØ[ˆ[ÛÈY[İ\ˆİÛˆ^[šËš[KÜ›İ\[™YÙH][\Ëˆ]™HØ[˜\È™XÛÙÛš^™\ÈH][\È]X[˜YÙ\ÈH[\›˜[QÈ[™X]™\Èİ\ˆ˜[Y][\È[Û™K‚‚’YˆHÛÛ™šYİ\™Y][™XYHÛÛZ[œÈHØ[˜\È›İÜ™X]YH]™HØ[˜\ËŞ[˜Ú›Ûš^˜][ÛˆİÜËˆ™]šY]ÈH][™\ÙH
-ŠYÜ^XÚ]JŠˆÛ›HYˆ[İHØ[]™HØ[˜\ÈÈX[˜YÙHÙ[™\˜]Y›İHØ\™È[œÚYH]š[K‚‚ˆÈÈÛX\™[^[İ]‚”[ˆ
-Š“]™HØ[˜\ÎˆÛX\™[^[İ]X[˜YÙYØ\™ÊŠˆÜˆÙ[Xİ
-Š”ÛX\™[^[İ]
-Šˆ[ˆÙ][™ÜËˆÛÛ™š\›HHX[ÙÈÈ\œ˜[™ÙHX[˜YÙY›İ\È[ˆ]\›Z[š\İXÈÛÛ›™Xİ[Û‹X˜\ÙY^Y\œËˆX[X[›Ù\Èİ^H[ˆXÙKˆ[›ZÙHÜ™[˜\H™Yœ™\Ú\ÈXİ[Ûˆ[[[Û˜[H™\XÙ\ÈHØ]™YÜÚ][ÛœÈÙˆX[˜YÙYØ\™Ë‚‚ˆÈÈ^Ü[™ÈHØ[˜\È\È‚‚ŒKˆÜ[ˆHØ[˜\È[™ØZ]H[ÛY[ÛÈØœÚYX[ˆØ[ˆØ]™H™XÙ[Ø\™[İ™[Y[Ë‚Œ‹ˆÜ[ˆHÛÛ[X[™[]H[™[ˆ
-Š“]™HØ[˜\Îˆ^ÜX[˜YÙYØ[˜\È\ÈŠŠ‹ˆ[İHØ[ˆ[ÛÈÙ[Xİ
-Š‘^ÜŠŠˆ[™\ˆ
-Š”Ù][™ÜÈ8¡¤ˆ]™HØ[˜\È8¡¤ˆXİ[ÛœÊŠ‹‚ŒËˆ]™HØ[˜\ÈÜ™X]\ÈHˆ™^ÈHÛÛ™šYİ\™YØ[˜\È[™Ü[œÈ][ˆH™]ÈX‹‚‚’YˆHØ[˜\È\ÈX\ËÓ]™HØ[˜\Ë˜Ø[˜\ØHš\œİ^Ü\ÈX\ËÓ]™HØ[˜\Ëœ˜ˆ]\ˆ^ÜÈ\™H˜[YY]™HØ[˜\È‹œ˜]™HØ[˜\ÈËœ˜[™ÛÈÛ‹ˆ^\İ[™Èš[\È\™H™]™\ˆ™\XÙY‚‚•Hˆ\ÈHÛ™K\YÙHM™XİÜˆİ™\šY]ÈÛÛZ[š[™ÈØ]™YØ\™Ë^Ü›İ\ËÛÛÜœËÛÛ›™Xİ[ÛœË\œ›İÜË[™™[][ÛœÚ\X™[Ëˆ]\È[[™Y›ÜˆÚ\š[™Ëš[[™Ë[™Ù][™ÈH[İ™\šY]Ëˆ]\È›İH^[\\™™XİØÜ™Y[œÚİÙˆØœÚYX[ˆ[X™YY[XYÙ\È[™ÙXˆYÙ\È\X\ˆ\ÈX™[YØ\™Ë[œİ\ÜY›ÛÚ\˜Xİ\œÈX^H™HÚ[\YšYY[™^Ø[ˆ™XÛÛYHÛX[Ú[ˆH™\H\™ÙHØ[˜\È\Èš]YÛÈÛ™HYÙK‚‚ˆÈÈÛÛ[X[™Â‚‹H
-Š”™Yœ™\ÚØ[˜\È›İÊŠˆŞ[˜Ú›Ûš^™\È[[YYX][K‚‹H
-ŠÜ™X]HØ[˜\Èœ›ÛHİ\œ™[›İIÜÈ›Û\ŠŠˆ›İšY\ÈHØY™HÛ™KXÛXÚÈÙ]\›ÜˆHXİ]™H›İIÜÈ›Û\‹‚‹H
-Š“Ü[ˆX[˜YÙYØ[˜\ÊŠˆÜ[œÈHÛÛ™šYİ\™Yš[K‚‹H
-Š”ÛX\™[^[İ]X[˜YÙYØ\™ÊŠˆÛÛ™š\›\È[™™X\œ˜[™Ù\ÈX[˜YÙY›İHØ\™Ë‚‹H
-Š‘^ÜX[˜YÙYØ[˜\È\ÈŠŠˆÜ™X]\ÈH™]ÈØØ[ˆÚ]İ]Ú[™Ú[™ÈHØ[˜\Ë‚‚•HšX˜›Ûˆ\Ú›Ø\™XÛÛˆ[ÛÈ™Yœ™\Ú\ÈHØ[˜\Ë‚
+# User guide
+
+This guide assumes you have never used Obsidian Canvas.
+
+## What is Canvas?
+
+Canvas is Obsidian's visual workspace. A Canvas is a regular file ending in `.canvas`. It can contain note cards, text cards, web links, groups, and arrows. You can zoom, pan, move cards, resize them, and open a note by double-clicking its card.
+
+Live Canvas creates and maintains note cards automatically while leaving the Canvas editable.
+
+## Five-minute first test
+
+Use a test vault or back up your current vault first.
+
+1. Create a folder named `Live Canvas Test`.
+2. Inside it, create three notes:
+
+   `Planets.md`
+
+   ```markdown
+   # Planets
+
+   The [[Earth]] is a planet. So is [[Mars]].
+   ```
+
+   `Earth.md`
+
+   ```markdown
+   ---
+   tags: [space, home]
+   ---
+
+   # Earth
+
+   Earth has one moon.
+   ```
+
+   `Mars.md`
+
+   ```markdown
+   ---
+   tags: [space]
+   ---
+
+   # Mars
+
+   Mars has two small moons.
+   ```
+
+3. Open **Settings â†’ Live Canvas**.
+4. Set **Source filter** to **Folder**.
+5. Set the source folder to `Live Canvas Test`.
+6. Leave **Canvas path** as `Live Canvas.canvas`.
+7. Select **Refresh and open**.
+8. The Canvas should show three note cards and two arrows from `Planets`.
+
+### Faster one-click setup
+
+In the file explorer, right-click a folder or a Markdown note and select **Create Live Canvas for this folder**. Live Canvas automatically selects the folder, chooses a safe Canvas filename inside it, builds the Canvas, and opens it.
+
+You can also open any Markdown note, open the command palette, and run **Live Canvas: Create Canvas from current note's folder**. If an unrelated `Live Canvas.canvas` file already exists, either quick-start method uses a numbered filename instead of replacing it.
+
+## Learn the Canvas controls
+
+- Scroll or pinch to zoom.
+- Drag empty space to pan.
+- Drag a card to move it.
+- Drag a card edge or corner to resize it.
+- Double-click a note card to open that note.
+- Right-click empty space to add manual content.
+- Use the Canvas toolbar to add a text card, file, link, or group.
+
+Move `Earth` to a new position, wait for Obsidian to save, edit one of the notes, and run **Live Canvas: Refresh Canvas now** from the command palette. The new position should remain unchanged.
+
+## Choosing notes
+
+### Folder source
+
+Enter a vault-relative folder such as `Knowledge/History`. Notes in its subfolders are included. Enter `/` to use the entire vault.
+
+### Tag source
+
+Enter `history` or `#history`. A note tagged `#history/byzantium` also matches `history`.
+
+The source filter creates the initial set of notes. Linked-neighbor settings can add related notes from elsewhere.
+
+## Adding linked neighbors
+
+Choose **None**, **One link away**, or **Two links away**. Then select the direction:
+
+- **Incoming and outgoing** follows both links and backlinks.
+- **Outgoing only** follows links created by selected notes.
+- **Incoming only** follows notes that link to selected notes.
+
+Source-filter matches are added first. The maximum-note limit is applied after neighbor expansion.
+
+## Excluding notes
+
+Add one rule per line:
+
+```text
+folder:Archive
+tag:draft
+property:status=archived
+property:hidden
+```
+
+Exclusions are absolute. An excluded note is not reintroduced as a linked neighbor.
+
+## Coloring categories
+
+Add one color rule per line. The first match wins:
+
+```text
+folder:Live Canvas Test = 2
+tag:home = #2AA198
+tag:important = 1
+```
+
+Numbers `1` through `6` use Obsidian's native Canvas palette. A six-digit hex color such as `#2AA198` is also supported.
+
+## Relationship labels
+
+Enable **Label relationships** to make edges more descriptive:
+
+- `author: "[[Ada Lovelace]]"` can create an edge labeled `author`.
+- `[[Ada Lovelace|inspired by]]` can create `inspired by`.
+- `![[Diagram]]` can create `embed`.
+
+Several relationships in the same direction between the same notes are combined on one edge.
+
+## Isolated notes
+
+Enable **Highlight isolated notes** to identify cards with no visible incoming or outgoing edge. Category color rules take priority.
+
+## Manual edits and ownership
+
+You can safely move and resize generated note cards. You can also add your own text, link, file, group, and edge items. Live Canvas recognizes the items it manages by internal IDs and leaves other valid items alone.
+
+If the configured path already contains a Canvas not created by Live Canvas, synchronization stops. Review the path and use **Adopt explicitly** only if you want Live Canvas to manage generated note cards inside that file.
+
+## Smart relayout
+
+Run **Live Canvas: Smart relayout managed cards** or select **Smart relayout** in settings. Confirm the dialog to arrange managed notes in deterministic connection-based layers. Manual nodes stay in place. Unlike ordinary refresh, this action intentionally replaces the saved positions of managed cards.
+
+## Exporting the Canvas as PDF
+
+1. Open the Canvas and wait a moment so Obsidian can save recent card movements.
+2. Open the command palette and run **Live Canvas: Export managed Canvas as PDF**. You can also select **Export PDF** under **Settings â†’ Live Canvas â†’ Actions**.
+3. Live Canvas creates the PDF next to the configured Canvas and opens it in a new tab.
+
+If the Canvas is `Maps/Live Canvas.canvas`, the first export is `Maps/Live Canvas.pdf`. Later exports are named `Live Canvas 2.pdf`, `Live Canvas 3.pdf`, and so on. Existing files are never replaced.
+
+The PDF is a one-page A4 vector overview containing saved cards, text, groups, colors, connections, arrows, and relationship labels. It is intended for sharing, printing, and getting a full overview. It is not a pixel-perfect screenshot of Obsidian: embedded images and web pages appear as labeled cards, unsupported font characters may be simplified, and text can become small when a very large Canvas is fitted onto one page.
+
+## Commands
+
+- **Refresh Canvas now** synchronizes immediately.
+- **Create Canvas from current note's folder** provides a safe one-click setup for the active note's folder.
+- **Open managed Canvas** opens the configured file.
+- **Smart relayout managed cards** confirms and rearranges managed note cards.
+- **Export managed Canvas as PDF** creates a new local PDF without changing the Canvas.
+
+The ribbon dashboard icon also refreshes the Canvas.
