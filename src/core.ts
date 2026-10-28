@@ -1,424 +1,648 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçY^ÜÛÛœİÑS‘TUQÓ“ÑWÔ‘Q’VH›Ë[›ÙKHÂ™^ÜÛÛœİÑS‘TUQÑQÑWÔ‘Q’VH›ËYYÙKHÂ™^ÜÛÛœİÑS‘TUQÑÔ“ÕTÔ‘Q’VH›ËYÜ›İ\HÂ‚™^Ü\HØ[˜\ÔÚYHHÜˆœšYÚˆ˜›İÛHˆ›YÂ‚™^Ü[\™˜XÙHØ[˜\Ó›ÙHÂˆYˆİš[™ÎÂˆ\Nˆİš[™ÎÂˆˆ[X™\ÂˆNˆ[X™\ÂˆÚYˆ[X™\ÂˆZYÚˆ[X™\Âˆš[OÎˆİš[™ÎÂˆÚÙ^Nˆİš[™×Nˆ[šÛ›İÛÂŸB‚™^Ü[\™˜XÙHØ[˜\ÑYÙHÂˆYˆİš[™ÎÂˆœ›ÛS›ÙNˆİš[™ÎÂˆÓ›ÙNˆİš[™ÎÂˆœ›ÛTÚYOÎˆØ[˜\ÔÚYNÂˆÔÚYOÎˆØ[˜\ÔÚYNÂˆœ›ÛQ[™Îˆ››Û™Hˆ˜\œ›İÈÂˆÑ[™Îˆ››Û™Hˆ˜\œ›İÈÂˆÚÙ^Nˆİš[™×Nˆ[šÛ›İÛÂŸB‚™^Ü[\™˜XÙHØ[˜\ÑØİ[Y[Âˆ›Ù\ÎˆØ[˜\Ó›ÙV×NÂˆYÙ\ÎˆØ[˜\ÑYÙV×NÂˆÚÙ^Nˆİš[™×Nˆ[šÛ›İÛÂŸB‚™^Ü[\™˜XÙH›İS[šÈÂˆœ›ÛNˆİš[™ÎÂˆÎˆİš[™ÎÂˆX™[Îˆİš[™ÎÂŸB‚™^Ü[\™˜XÙHZ[Ø[˜\Ò[œ]Âˆ^\İ[™ÎˆØ[˜\ÑØİ[Y[Âˆ›İT]Îˆİš[™Ö×NÂˆ[šÜÎˆ›İS[šÖ×NÂˆ›İPÛÛÜœÏÎˆ™XYÛ›SX\İš[™Ëİš[™ÏÂˆÊŠˆH\Ü^HX™[›ÜˆXXÚ›İH]Úİ[™HXÙY[ˆ[ˆ]]ÛX]XÈØ[˜\ÈÜ›İ\ˆ
-‹Âˆ›İQÜ›İ\ÏÎˆ™XYÛ›SX\İš[™Ëİš[™ÏÂˆÛX\“›İPÛÛÜœÏÎˆ™XYÛ›TÙ]İš[™ÏÂˆ›Ü˜ÙS^[İ]Îˆ›ÛÛX[ÂŸB‚™^Ü[\™˜XÙH^Û\Ú[Û”[HÂˆ\Nˆ™›Û\ˆˆYÈˆœ›Ü\HÂˆ˜[YNˆİš[™ÎÂˆ›Ü\U˜[YOÎˆİš[™ÎÂŸB‚™^Ü[\™˜XÙHZ[Ø[˜\Ô™\İ[ÂˆØİ[Y[ˆØ[˜\ÑØİ[Y[ÂˆÙ[™\˜]Y›ÙPÛİ[ˆ[X™\ÂˆÙ[™\˜]YYÙPÛİ[ˆ[X™\ÂˆÙ[™\˜]YÜ›İ\Ûİ[ˆ[X™\ÂŸB‚˜ÛÛœİ“ÑWÕÒQHÍŒÂ˜ÛÛœİ“ÑWÒRQÒHŒŒÂ˜ÛÛœİÓÓSS—ÑĞTHLŒÂ˜ÛÛœİ“Õ×ÑĞTHLÂ˜ÛÛœİÓÓTÒSÓ—ÔQS‘ÈHÌÂ˜ÛÛœİÔ“ÕTÔQS‘ÈHÂ˜ÛÛœİÔ“ÕTÓP‘SÒRQÒHÌÂ˜ÛÛœİÔ“ÕTÑĞTHNÂ‚™^Ü[˜İ[Ûˆ\œÙPØ[˜\ÑØİ[Y[
-˜]Îˆİš[™ÊNˆØ[˜\ÑØİ[Y[Âˆ]˜[YNˆ[šÛ›İÛÂ‚ˆHÂˆ˜[YHH”ÓÓ‹œ\œÙJ˜]ÊNÂˆHØ]ÚÂˆ›İÈ™]È\œ›ÜŠ•HØ[˜\Èš[HÙ\È›İÛÛZ[ˆ˜[Y”ÓÓ‹ˆŠNÂˆB‚ˆYˆ
-Z\Ô™XÛÜ™
-˜[YJJHÂˆ›İÈ™]È\œ›ÜŠ•HØ[˜\Èš[HÙ\È›İ]™HH˜[Y”ÓÓˆØ[˜\ÈİXİ\™KˆŠNÂˆB‚ˆÛÛœİ˜]Ó›Ù\ÈH˜[YK››Ù\ÈÏÈ×NÂˆÛÛœİ˜]ÑYÙ\ÈH˜[YK™YÙ\ÈÏÈ×NÂˆYˆ
-P\œ˜^Kš\Ğ\œ˜^J˜]Ó›Ù\ÊHP\œ˜^Kš\Ğ\œ˜^J˜]ÑYÙ\ÊJHÂˆ›İÈ™]È\œ›ÜŠ•HØ[˜\Èš[HÙ\È›İ]™HH˜[Y”ÓÓˆØ[˜\ÈİXİ\™KˆŠNÂˆB‚ˆÛÛœİ›Ù\ÈH˜]Ó›Ù\Ë™š[\Š\ĞØ[˜\Ó›ÙJNÂˆÛÛœİYÙ\ÈH˜]ÑYÙ\Ë™š[\Š\ĞØ[˜\ÑYÙJNÂ‚ˆYˆ
-›Ù\Ë›[™İOOH˜]Ó›Ù\Ë›[™İYÙ\Ë›[™İOOH˜]ÑYÙ\Ë›[™İ
-HÂˆ›İÈ™]È\œ›ÜŠ•HØ[˜\Èš[HÛÛZ[œÈ[˜[Y›Ù\ÈÜˆYÙ\ËˆŠNÂˆB‚ˆ™]\›ˆÈ‹‹˜[YK›Ù\ËYÙ\ÈNÂŸB‚™^Ü[˜İ[ÛˆÜ™X]Q[\PØ[˜\Ê
-NˆØ[˜\ÑØİ[Y[Âˆ™]\›ˆÈ›Ù\Îˆ×KYÙ\Îˆ×HNÂŸB‚™^Ü[˜İ[ÛˆZ[Ø[˜\ÑØİ[Y[
-[œ]ˆZ[Ø[˜\Ò[œ]
-NˆZ[Ø[˜\Ô™\İ[ÂˆÛÛœİ[š\]YT]ÈHË‹‹›™]ÈÙ]
-[œ]››İT]ÊWKœÛÜ
-ÛÛ\\™T]ÊNÂˆÛÛœİ^\İ[™ÑÙ[™\˜]YT]H™]ÈX\İš[™ËØ[˜\Ó›ÙOŠ
-NÂˆÛÛœİX[X[›Ù\ÎˆØ[˜\Ó›ÙV×HH×NÂ‚ˆ›Üˆ
-ÛÛœİ›ÙHÙˆ[œ]™^\İ[™Ë››Ù\ÊHÂˆYˆ
-\ÑÙ[™\˜]Yš[S›ÙJ›ÙJH	‰ˆ\[Ùˆ›ÙK™š[HOOHœİš[™ÈŠHÂˆ^\İ[™ÑÙ[™\˜]YT]œÙ]
-›ÙK™š[K›ÙJNÂˆH[ÙHYˆ
-Z\ÑÙ[™\˜]YÜ›İ\
-›ÙJJHÂˆX[X[›Ù\Ëœ\Ú
-›ÙJNÂˆBˆB‚ˆÛÛœİÙ[™\˜]Y›Ù\ÎˆØ[˜\Ó›ÙV×HH×NÂˆÛÛœİØØİ\YYHX[X[›Ù\Ë›X\
-Ô™Xİ
-NÂˆÛÛœİ\ÙYYÈH™]ÈÙ]
-X[X[›Ù\Ë›X\
+export const GENERATED_NODE_PREFIX = "lc-node-";
+export const GENERATED_EDGE_PREFIX = "lc-edge-";
+export const GENERATED_GROUP_PREFIX = "lc-group-";
 
-›ÙJHOˆ›ÙKšY
-JNÂˆÛÛœİ]ÒYH™]ÈX\İš[™Ëİš[™ÏŠ
-NÂˆÛÛœİ[™[™Ó›Ù\Îˆ\œ˜^OÈ]ˆİš[™ÎÈÛ›ÙOÎˆØ[˜\Ó›ÙHOˆH×NÂˆÛÛœİ^[İ]ÜÚ][ÛœÈBˆ[œ]››İQÜ›İ\È	‰ˆ[œ]››İQÜ›İ\ËœÚ^™HˆˆÈÜ™X]QÜ›İ\^[İ]
-[š\]YT]Ë[œ]››İQÜ›İ\ÊBˆˆÜ™X]PÛÛ›™Xİ[Û“^[İ]
-[š\]YT]Ë[œ]›[šÜÊNÂ‚ˆ›Üˆ
-ÛÛœİ]Ùˆ[š\]YT]ÊHÂˆÛÛœİÛ›ÙHH^\İ[™ÑÙ[™\˜]YT]™Ù]
-]
-NÂˆÛÛœİYHXZÙU[š\]YRY
-ÑS‘TUQÓ“ÑWÔ‘Q’V
-ÈİX›R\Ú
-]
-K\ÙYYÊNÂˆ\ÙYYË˜Y
-Y
-NÂˆ]ÒYœÙ]
-]Y
-NÂ‚ˆYˆ
-Û›ÙH	‰ˆ\Õ˜[YÙ[ÛY]JÛ›ÙJH	‰ˆZ[œ]™›Ü˜ÙS^[İ]
-HÂˆÛÛœİ™\Ù\™YˆØ[˜\Ó›ÙHHÂˆ‹‹›Û›ÙKˆYˆ\Nˆ™š[H‹ˆš[Nˆ]ˆNÂˆÛÛœİÛÛ™šYİ\™YÛÛÜˆH[œ]››İPÛÛÜœÏË™Ù]
-]
-NÂˆYˆ
-ÛÛ™šYİ\™YÛÛÜŠH™\Ù\™Y˜ÛÛÜˆHÛÛ™šYİ\™YÛÛÜÂˆ[ÙHYˆ
-[œ]˜ÛX\“›İPÛÛÜœÏËš\Ê]
-JH[]H™\Ù\™Y˜ÛÛÜÂˆÙ[™\˜]Y›Ù\Ëœ\Ú
-™\Ù\™Y
-NÂˆØØİ\YYœ\Ú
-Ô™Xİ
-™\Ù\™Y
-JNÂˆH[ÙHÂˆ[™[™Ó›Ù\Ëœ\Ú
-È]Û›ÙHJNÂˆBˆB‚ˆ›Üˆ
-ÛÛœİÈ]Û›ÙHHÙˆ[™[™Ó›Ù\ÊHÂˆÛÛœİÚYHÛ›ÙH	‰ˆ\Õ˜[YÙ[ÛY]JÛ›ÙJHÈÛ›ÙKÚYˆ“ÑWÕÒQÂˆÛÛœİZYÚHÛ›ÙH	‰ˆ\Õ˜[YÙ[ÛY]JÛ›ÙJHÈÛ›ÙKšZYÚˆ“ÑWÒRQÒÂˆÛÛœİ™Y™\œ™YH^[İ]ÜÚ][ÛœË™Ù]
-]
-HÏÈÈˆNˆNÂˆÛÛœİÜÚ][ÛˆHš[™Ü[”ÜÚ][ÛŠ™Y™\œ™YÚYZYÚØØİ\YY
-NÂˆÛÛœİ›ÙNˆØ[˜\Ó›ÙHHÂˆ‹‹ŠÛ›ÙHÏÈßJKˆYˆ]ÒY™Ù]
-]
-HKˆ\Nˆ™š[H‹ˆš[Nˆ]ˆˆÜÚ][Û‹ˆNˆÜÚ][Û‹KˆÚYˆZYÚˆNÂˆÛÛœİÛÛ™šYİ\™YÛÛÜˆH[œ]››İPÛÛÜœÏË™Ù]
-]
-NÂˆYˆ
-ÛÛ™šYİ\™YÛÛÜŠH›ÙK˜ÛÛÜˆHÛÛ™šYİ\™YÛÛÜÂˆ[ÙHYˆ
-[œ]˜ÛX\“›İPÛÛÜœÏËš\Ê]
-JH[]H›ÙK˜ÛÛÜÂˆÙ[™\˜]Y›Ù\Ëœ\Ú
-›ÙJNÂˆB‚ˆÙ[™\˜]Y›Ù\ËœÛÜ
+export type CanvasSide = "top" | "right" | "bottom" | "left";
 
-KŠHOˆÛÛ\\™T]ÊK™š[HÏÈˆ‹‹™š[HÏÈˆŠJNÂˆÛÛœİÙ[™\˜]YÜ›İ\ÈHÜ™X]QÙ[™\˜]YÜ›İ\ÊÙ[™\˜]Y›Ù\Ë[œ]››İQÜ›İ\Ë\ÙYYÊNÂˆÛÛœİ›ÙRYÈH™]ÈÙ]
-Ë‹‹›X[X[›Ù\Ë‹‹™Ù[™\˜]YÜ›İ\Ë‹‹™Ù[™\˜]Y›Ù\×K›X\
+export interface CanvasNode {
+  id: string;
+  type: string;
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  file?: string;
+  [key: string]: unknown;
+}
 
-›ÙJHOˆ›ÙKšY
-JNÂˆÛÛœİX[X[YÙ\ÈH[œ]™^\İ[™Ë™YÙ\Ë™š[\Š
-YÙJHOˆÂˆ™]\›ˆZ\ÑÙ[™\˜]YYÙJYÙJH	‰ˆ›ÙRYËš\ÊYÙK™œ›ÛS›ÙJH	‰ˆ›ÙRYËš\ÊYÙKÓ›ÙJNÂˆJNÂˆÛÛœİ\ÙYYÙRYÈH™]ÈÙ]
-X[X[YÙ\Ë›X\
+export interface CanvasEdge {
+  id: string;
+  fromNode: string;
+  toNode: string;
+  fromSide?: CanvasSide;
+  toSide?: CanvasSide;
+  fromEnd?: "none" | "arrow";
+  toEnd?: "none" | "arrow";
+  [key: string]: unknown;
+}
 
-YÙJHOˆYÙKšY
-JNÂˆÛÛœİÙ[™\˜]YYÙ\ÎˆØ[˜\ÑYÙV×HH×NÂˆÛÛœİ›Ù\ĞRYH™]ÈX\
-Ù[™\˜]Y›Ù\Ë›X\
+export interface CanvasDocument {
+  nodes: CanvasNode[];
+  edges: CanvasEdge[];
+  [key: string]: unknown;
+}
 
-›ÙJHOˆÛ›ÙKšY›ÙWJJNÂˆÛÛœİYÙÜ™YØ]Y[šÜÈHYÙÜ™YØ]S[šÜÊ[œ]›[šÜË]ÒY
-NÂ‚ˆ›Üˆ
-ÛÛœİ[šÈÙˆYÙÜ™YØ]Y[šÜÊHÂˆÛÛœİœ›ÛS›ÙHH]ÒY™Ù]
-[šË™œ›ÛJNÂˆÛÛœİÓ›ÙHH]ÒY™Ù]
-[šËÊNÂˆYˆ
-Yœ›ÛS›ÙH]Ó›ÙHœ›ÛS›ÙHOOHÓ›ÙJHÛÛ[YNÂ‚ˆÛÛœİÚY\ÈHÚÛÜÙTÚY\Ê›Ù\ĞRY™Ù]
-œ›ÛS›ÙJHK›Ù\ĞRY™Ù]
-Ó›ÙJHJNÂˆÛÛœİYHXZÙU[š\]YRY
-ˆÑS‘TUQÑQÑWÔ‘Q’V
-ÈİX›R\Ú
-	Û[šË™œ›Û_WL	Û[šËßX
-Kˆ\ÙYYÙRYÂˆ
-NÂˆ\ÙYYÙRYË˜Y
-Y
-NÂˆÛÛœİYÙNˆØ[˜\ÑYÙHHÂˆYˆœ›ÛS›ÙKˆœ›ÛTÚYNˆÚY\Ë™œ›ÛKˆÓ›ÙKˆÔÚYNˆÚY\ËËˆÑ[™ˆ˜\œ›İÈ‚ˆNÂˆYˆ
-[šË›X™[
-HYÙK›X™[H[šË›X™[ÂˆÙ[™\˜]YYÙ\Ëœ\Ú
-YÙJNÂˆB‚ˆÙ[™\˜]YYÙ\ËœÛÜ
+export interface NoteLink {
+  from: string;
+  to: string;
+  label?: string;
+}
 
-KŠHOˆKšY›ØØ[PÛÛ\\™J‹šY
-JNÂ‚ˆ™]\›ˆÂˆØİ[Y[ˆÂˆ‹‹š[œ]™^\İ[™Ëˆ›Ù\ÎˆË‹‹›X[X[›Ù\Ë‹‹™Ù[™\˜]YÜ›İ\Ë‹‹™Ù[™\˜]Y›Ù\×KˆYÙ\ÎˆË‹‹›X[X[YÙ\Ë‹‹™Ù[™\˜]YYÙ\×BˆKˆÙ[™\˜]Y›ÙPÛİ[ˆÙ[™\˜]Y›Ù\Ë›[™İˆÙ[™\˜]YYÙPÛİ[ˆÙ[™\˜]YYÙ\Ë›[™İˆÙ[™\˜]YÜ›İ\Ûİ[ˆÙ[™\˜]YÜ›İ\Ë›[™İˆNÂŸB‚™^Ü[˜İ[Ûˆ\Ô][‘›Û\Šš[T]ˆİš[™Ë›Û\”Ù][™Îˆİš[™ÊNˆ›ÛÛX[ˆÂˆÛÛœİ›Û\ˆH›Ü›X[^™Qš[\•˜[YJ›Û\”Ù][™ÊNÂˆYˆ
-›Û\ˆOOH‹ÈŠH™]\›ˆYNÂˆYˆ
-Y›Û\ŠH™]\›ˆ˜[ÙNÂˆ™]\›ˆš[T]œİ\ÕÚ]
-	Ù›Û\ŸKØ
-NÂŸB‚™^Ü[˜İ[ÛˆÙ]]ZXÚÔİ\Ø[˜\Ô]
-ˆ›Û\”]ˆİš[™ËˆØØİ\YY]Îˆ™XYÛ›TÙ]İš[™Ï‹ˆX[˜YÙY]Îˆ™XYÛ›TÙ]İš[™Ï‚ŠNˆİš[™ÈÂˆÛÛœİ›Û\ˆH›Û\”]š[J
-Kœ™\XÙJ×—ÊßÊÉÙËˆŠNÂˆÛÛœİ™Yš^H›Û\ˆÈ	Ù›Û\ŸKØˆˆÂ‚ˆ›Üˆ
-][™^HNÈ[™^LÈ[™^
-ÏHJHÂˆÛÛœİİY™š^H[™^OOHHÈˆˆˆ	Ú[™^XÂˆÛÛœİØ[™Y]HH	Ü™Yš^S]™HØ[˜\ÉÜİY™š^K˜Ø[˜\ØÂˆYˆ
-[ØØİ\YY]Ëš\ÊØ[™Y]JHX[˜YÙY]Ëš\ÊØ[™Y]JJH™]\›ˆØ[™Y]NÂˆB‚ˆ›İÈ™]È\œ›ÜŠ•ÛÈX[HØ[˜\Èš[\È[™XYH^\İ[ˆ\È›Û\‹ˆŠNÂŸB‚™^Ü[˜İ[ÛˆYÓX]Ú\ÊYÜÎˆ™XYÛ›Hİš[™Ö×KYÔÙ][™Îˆİš[™ÊNˆ›ÛÛX[ˆÂˆÛÛœİØ[YHYÔÙ][™Ëš[J
-Kœ™\XÙJ×ˆÊËËˆŠKœ™\XÙJ×ÉËˆŠNÂˆYˆ
-]Ø[Y
-H™]\›ˆ˜[ÙNÂ‚ˆ™]\›ˆYÜËœÛÛYJ
-YÊHOˆÂˆÛÛœİ›Ü›X[^™YHYËš[J
-Kœ™\XÙJ×ˆÊËËˆŠNÂˆ™]\›ˆ›Ü›X[^™YOOHØ[Y›Ü›X[^™Yœİ\ÕÚ]
-	İØ[YKØ
-NÂˆJNÂŸB‚™^Ü[˜İ[Ûˆ\œÙQ^Û\Ú[Û”[\Ê˜[YNˆİš[™ÊNˆ^Û\Ú[Û”[V×HÂˆÛÛœİ[\Îˆ^Û\Ú[Û”[V×HH×NÂ‚ˆ›Üˆ
-ÛÛœİ[™HÙˆ˜[YKœÜ]
-—ˆŠJHÂˆÛÛœİš[[YYH[™Kš[J
-NÂˆYˆ
-]š[[YYš[[YYœİ\ÕÚ]
-ˆÈŠJHÛÛ[YNÂ‚ˆÛÛœİÚ[\SX]ÚH×Š›Û\ŸYÊWÊ—ÊŠŠÊIÚK™^XÊš[[YY
-NÂˆYˆ
-Ú[\SX]Ú
-HÂˆ[\Ëœ\Ú
-Âˆ\NˆÚ[\SX]ÚÌWKÓİÙ\Ø\ÙJ
-H\È™›Û\ˆˆYÈ‹ˆ˜[YNˆÚ[\SX]ÚÌ—Kš[J
-BˆJNÂˆÛÛ[YNÂˆB‚ˆÛÛœİ›Ü\SX]ÚH×œ›Ü\WÊ—ÊŠ×WJÏÊJÎ—ÊWÊŠŠÊJOÉÚK™^XÊš[[YY
-NÂˆYˆ
-›Ü\SX]Ú
-HÂˆ[\Ëœ\Ú
-Âˆ\Nˆœ›Ü\H‹ˆ˜[YNˆ›Ü\SX]ÚÌWKš[J
-Kˆ›Ü\U˜[YNˆ›Ü\SX]ÚÌ—OËš[J
-BˆJNÂˆBˆB‚ˆ™]\›ˆ[\Ë™š[\Š
-[JHOˆ[K˜[YK›[™İˆ
-NÂŸB‚™^Ü[˜İ[ÛˆX]Ú\Ñ^Û\Ú[Û”[\Êˆš[T]ˆİš[™ËˆYÜÎˆ™XYÛ›Hİš[™Ö×Kˆœ›ÛX]\ˆ™XYÛ›O™XÛÜ™İš[™Ë[šÛ›İÛˆ[™Yš[™Yˆ[\Îˆ™XYÛ›H^Û\Ú[Û”[V×BŠNˆ›ÛÛX[ˆÂˆ™]\›ˆ[\ËœÛÛYJ
-[JHOˆÂˆYˆ
-[K\HOOH™›Û\ˆŠH™]\›ˆ\Ô][‘›Û\Šš[T][K˜[YJNÂˆYˆ
-[K\HOOHYÈŠH™]\›ˆYÓX]Ú\ÊYÜË[K˜[YJNÂˆYˆ
-Yœ›ÛX]\ˆJ[K˜[YH[ˆœ›ÛX]\ŠJH™]\›ˆ˜[ÙNÂˆYˆ
-[Kœ›Ü\U˜[YHOOH[™Yš[™Y
-H™]\›ˆYNÂˆ™]\›ˆ›Ü\U˜[YSX]Ú\Êœ›ÛX]\–Ü[K˜[YWK[Kœ›Ü\U˜[YJNÂˆJNÂŸB‚™^Ü[˜İ[Ûˆ^[™]ĞS™ZYÚ›ÜœÊˆÙYY]Îˆ™XYÛ›Hİš[™Ö×KˆY˜XÙ[˜ŞNˆ™XYÛ›SX\İš[™Ë™XYÛ›TÙ]İš[™Ï‹ˆ\ˆ[X™\‚ŠNˆİš[™Ö×HÂˆÛÛœİÙYYÈHË‹‹›™]ÈÙ]
-ÙYY]ÊWKœÛÜ
-ÛÛ\\™T]ÊNÂˆÛÛœİÙ[XİYH™]ÈÙ]
-ÙYYÊNÂˆ]œ›ÛY\ˆHÙYYÎÂˆÛÛœİ›Ü›X[^™Y\HX]›X^
-X]™›ÛÜŠ\
-JNÂ‚ˆ›Üˆ
-]]™[HÈ]™[›Ü›X[^™Y\	‰ˆœ›ÛY\‹›[™İˆÈ]™[
-ÏHJHÂˆÛÛœİ™^H™]ÈÙ]İš[™ÏŠ
-NÂˆ›Üˆ
-ÛÛœİ]Ùˆœ›ÛY\ŠHÂˆÛÛœİ™ZYÚ›ÜœÈHË‹‹ŠY˜XÙ[˜ŞK™Ù]
-]
-HÏÈ×JWKœÛÜ
-ÛÛ\\™T]ÊNÂˆ›Üˆ
-ÛÛœİ™ZYÚ›ÜˆÙˆ™ZYÚ›ÜœÊHÂˆYˆ
-\Ù[XİYš\Ê™ZYÚ›ÜŠJH™^˜Y
-™ZYÚ›ÜŠNÂˆBˆBˆœ›ÛY\ˆHË‹‹›™^KœÛÜ
-ÛÛ\\™T]ÊNÂˆ›Üˆ
-ÛÛœİ]Ùˆœ›ÛY\ŠHÙ[XİY˜Y
-]
-NÂˆB‚ˆ™]\›ˆË‹‹œÙYYË‹‹–Ë‹‹œÙ[XİYK™š[\Š
-]
-HOˆ\ÙYYËš[˜ÛY\Ê]
-JWNÂŸB‚™^Ü[˜İ[Ûˆ\T]™[˜[Y\ÊˆØİ[Y[ˆØ[˜\ÑØİ[Y[ˆ™[˜[Y\Îˆ™XYÛ›SX\İš[™Ëİš[™Ï‚ŠNˆØ[˜\ÑØİ[Y[ÂˆYˆ
-™[˜[Y\ËœÚ^™HOOH
-H™]\›ˆØİ[Y[Â‚ˆ™]\›ˆÂˆ‹‹™Øİ[Y[ˆ›Ù\ÎˆØİ[Y[››Ù\Ë›X\
+export interface BuildCanvasInput {
+  existing: CanvasDocument;
+  notePaths: string[];
+  links: NoteLink[];
+  noteColors?: ReadonlyMap<string, string>;
+  /** A display label for each note that should be placed in an automatic Canvas group. */
+  noteGroups?: ReadonlyMap<string, string>;
+  clearNoteColors?: ReadonlySet<string>;
+  forceLayout?: boolean;
+}
 
-›ÙJHOˆÂˆYˆ
-Z\ÑÙ[™\˜]Yš[S›ÙJ›ÙJH\[Ùˆ›ÙK™š[HOOHœİš[™ÈŠH™]\›ˆ›ÙNÂˆÛÛœİ™[˜[YY]H™[˜[Y\Ë™Ù]
-›ÙK™š[JNÂˆ™]\›ˆ™[˜[YY]ÈÈ‹‹››ÙKš[Nˆ™[˜[YY]Hˆ›ÙNÂˆJBˆNÂŸB‚™[˜İ[Ûˆ›Ü›X[^™Qš[\•˜[YJ˜[YNˆİš[™ÊNˆİš[™ÈÂˆÛÛœİ›Ü›X[^™YH˜[YKš[J
-Kœ™\XÙJ×ÙË‹ÈŠKœ™\XÙJ×——ËËˆŠNÂˆYˆ
-›Ü›X[^™YOOH‹ÈŠH™]\›ˆ›Ü›X[^™YÂˆ™]\›ˆ›Ü›X[^™Yœ™\XÙJ×—ÊßÊÉÙËˆŠNÂŸB‚™[˜İ[Ûˆ›Ü\U˜[YSX]Ú\Ê˜[YNˆ[šÛ›İÛ‹^XİYˆİš[™ÊNˆ›ÛÛX[ˆÂˆYˆ
-\œ˜^Kš\Ğ\œ˜^J˜[YJJH™]\›ˆ˜[YKœÛÛYJ
-][JHOˆ›Ü\U˜[YSX]Ú\Ê][K^XİY
-JNÂˆYˆ
-˜[YHOOH[˜[YHOOH[™Yš[™Y\[Ùˆ˜[YHOOH›Øš™XİŠH™]\›ˆ˜[ÙNÂˆ™]\›ˆİš[™Ê˜[YJKš[J
-KÓİÙ\Ø\ÙJ
-HOOH^XİYš[J
-KÓİÙ\Ø\ÙJ
-NÂŸB‚™[˜İ[ÛˆYÙÜ™YØ]S[šÜÊˆ[šÜÎˆ™XYÛ›H›İS[šÖ×Kˆ]ÒYˆ™XYÛ›SX\İš[™Ëİš[™Ï‚ŠNˆ›İS[šÖ×HÂˆÛÛœİYÙÜ™YØ]YH™]ÈX\İš[™ËÈœ›ÛNˆİš[™ÎÈÎˆİš[™ÎÈX™[ÎˆÙ]İš[™ÏˆOŠ
-NÂ‚ˆ›Üˆ
-ÛÛœİ[šÈÙˆ[šÜÊHÂˆYˆ
-\]ÒYš\Ê[šË™œ›ÛJH\]ÒYš\Ê[šËÊH[šË™œ›ÛHOOH[šËÊHÛÛ[YNÂˆÛÛœİÙ^HH	Û[šË™œ›Û_WL	Û[šËßXÂˆÛÛœİİ\œ™[HYÙÜ™YØ]Y™Ù]
-Ù^JHÏÈÂˆœ›ÛNˆ[šË™œ›ÛKˆÎˆ[šËËˆX™[Îˆ™]ÈÙ]İš[™ÏŠ
-BˆNÂˆÛÛœİX™[H[šË›X™[Ëš[J
-NÂˆYˆ
-X™[
-Hİ\œ™[›X™[Ë˜Y
-X™[
-NÂˆYÙÜ™YØ]YœÙ]
-Ù^Kİ\œ™[
-NÂˆB‚ˆ™]\›ˆË‹‹˜YÙÜ™YØ]Y˜[Y\Ê
-WBˆœÛÜ
+export interface ExclusionRule {
+  type: "folder" | "tag" | "property";
+  value: string;
+  propertyValue?: string;
+}
 
-š\œİÙXÛÛ™
-HOˆÂˆÛÛœİš\œİÙ^HH	Ùš\œİ™œ›Û_WL	Ùš\œİßXÂˆÛÛœİÙXÛÛ™Ù^HH	ÜÙXÛÛ™™œ›Û_WL	ÜÙXÛÛ™ßXÂˆ™]\›ˆÛÛ\\™T]Êš\œİÙ^KÙXÛÛ™Ù^JNÂˆJBˆ›X\
+export interface BuildCanvasResult {
+  document: CanvasDocument;
+  generatedNodeCount: number;
+  generatedEdgeCount: number;
+  generatedGroupCount: number;
+}
 
-[šÊHOˆ
-Âˆœ›ÛNˆ[šË™œ›ÛKˆÎˆ[šËËˆ‹‹Š[šË›X™[ËœÚ^™HˆÈÈX™[ˆË‹‹›[šË›X™[×KœÛÜ
-ÛÛ\\™T]ÊKš›Ú[Šˆ0­ÈŠHHˆßJBˆJJNÂŸB‚™[˜İ[ÛˆÜ™X]PÛÛ›™Xİ[Û“^[İ]
-ˆ]Îˆ™XYÛ›Hİš[™Ö×Kˆ[šÜÎˆ™XYÛ›H›İS[šÖ×BŠNˆX\İš[™ËÈˆ[X™\ÈNˆ[X™\ˆOˆÂˆÛÛœİ]Ù]H™]ÈÙ]
-]ÊNÂˆÛÛœİY˜XÙ[˜ŞHH™]ÈX\İš[™ËÙ]İš[™ÏŠ
-NÂˆ›Üˆ
-ÛÛœİ]Ùˆ]ÊHY˜XÙ[˜ŞKœÙ]
-]™]ÈÙ]
+const NODE_WIDTH = 360;
+const NODE_HEIGHT = 220;
+const COLUMN_GAP = 120;
+const ROW_GAP = 100;
+const COLLISION_PADDING = 32;
+const GROUP_PADDING = 64;
+const GROUP_LABEL_HEIGHT = 32;
+const GROUP_GAP = 180;
 
-JNÂˆ›Üˆ
-ÛÛœİ[šÈÙˆ[šÜÊHÂˆYˆ
-\]Ù]š\Ê[šË™œ›ÛJH\]Ù]š\Ê[šËÊH[šË™œ›ÛHOOH[šËÊHÛÛ[YNÂˆY˜XÙ[˜ŞK™Ù]
-[šË™œ›ÛJHK˜Y
-[šËÊNÂˆY˜XÙ[˜ŞK™Ù]
-[šËÊHK˜Y
-[šË™œ›ÛJNÂˆB‚ˆÛÛœİÜÚ][ÛœÈH™]ÈX\İš[™ËÈˆ[X™\ÈNˆ[X™\ˆOŠ
-NÂˆÛÛœİ[š\Ú]YH™]ÈÙ]
-]ÊNÂˆ]ÛÛ\Û™[ÜHÂ‚ˆÚ[H
-[š\Ú]YœÚ^™Hˆ
-HÂˆÛÛœİÛÛ\Û™[ÙYYHË‹‹[š\Ú]YKœÛÜ
+export function parseCanvasDocument(raw: string): CanvasDocument {
+  let value: unknown;
 
-š\œİÙXÛÛ™
-HOˆÂˆÛÛœİYÜ™YQY™™\™[˜ÙHHY˜XÙ[˜ŞK™Ù]
-ÙXÛÛ™
-HKœÚ^™HHY˜XÙ[˜ŞK™Ù]
-š\œİ
-HKœÚ^™NÂˆ™]\›ˆYÜ™YQY™™\™[˜ÙHÛÛ\\™T]Êš\œİÙXÛÛ™
-NÂˆJVÌNÂˆÛÛœİ^Y\œÎˆİš[™Ö×V×HH×NÂˆÛÛœİ]Y]YYH™]ÈÙ]
-ØÛÛ\Û™[ÙYYJNÂˆ]œ›ÛY\ˆHØÛÛ\Û™[ÙYYNÂ‚ˆÚ[H
-œ›ÛY\‹›[™İˆ
-HÂˆÛÛœİ^Y\ˆHË‹‹™œ›ÛY\—KœÛÜ
+  try {
+    value = JSON.parse(raw);
+  } catch {
+    throw new Error("The Canvas file does not contain valid JSON.");
+  }
 
-š\œİÙXÛÛ™
-HOˆÂˆÛÛœİYÜ™YQY™™\™[˜ÙHHY˜XÙ[˜ŞK™Ù]
-ÙXÛÛ™
-HKœÚ^™HHY˜XÙ[˜ŞK™Ù]
-š\œİ
-HKœÚ^™NÂˆ™]\›ˆYÜ™YQY™™\™[˜ÙHÛÛ\\™T]Êš\œİÙXÛÛ™
-NÂˆJNÂˆ^Y\œËœ\Ú
-^Y\ŠNÂˆÛÛœİ™^H™]ÈÙ]İš[™ÏŠ
-NÂˆ›Üˆ
-ÛÛœİ]Ùˆ^Y\ŠHÂˆ[š\Ú]Y™[]J]
-NÂˆ›Üˆ
-ÛÛœİ™ZYÚ›ÜˆÙˆY˜XÙ[˜ŞK™Ù]
-]
-HÏÈ×JHÂˆYˆ
-\]Y]YYš\Ê™ZYÚ›ÜŠJHÂˆ]Y]YY˜Y
-™ZYÚ›ÜŠNÂˆ™^˜Y
-™ZYÚ›ÜŠNÂˆBˆBˆBˆœ›ÛY\ˆHË‹‹›™^NÂˆB‚ˆÛÛœİ\™Ù\İ^Y\ˆHX]›X^
-‹‹›^Y\œË›X\
+  if (!isRecord(value)) {
+    throw new Error("The Canvas file does not have a valid JSON Canvas structure.");
+  }
 
-^Y\ŠHOˆ^Y\‹›[™İ
-JNÂˆ›Üˆ
-]ÛÛ[[ˆHÈÛÛ[[ˆ^Y\œË›[™İÈÛÛ[[ˆ
-ÏHJHÂˆÛÛœİ^Y\ˆH^Y\œÖØÛÛ[[—NÂˆÛÛœİ™\XØ[Ù™œÙ]H
+  const rawNodes = value.nodes ?? [];
+  const rawEdges = value.edges ?? [];
+  if (!Array.isArray(rawNodes) || !Array.isArray(rawEdges)) {
+    throw new Error("The Canvas file does not have a valid JSON Canvas structure.");
+  }
 
-\™Ù\İ^Y\ˆH^Y\‹›[™İ
-H
-ˆ
-“ÑWÒRQÒ
-È“Õ×ÑĞT
-JHÈÂˆ›Üˆ
-]›İÈHÈ›İÈ^Y\‹›[™İÈ›İÈ
-ÏHJHÂˆÜÚ][ÛœËœÙ]
-^Y\–Ü›İ×KÂˆˆÛÛ[[ˆ
-ˆ
-“ÑWÕÒQ
-ÈÓÓSS—ÑĞT
-KˆNˆÛÛ\Û™[Ü
-È™\XØ[Ù™œÙ]
-È›İÈ
-ˆ
-“ÑWÒRQÒ
-È“Õ×ÑĞT
-BˆJNÂˆBˆBˆÛÛ\Û™[Ü
-ÏH\™Ù\İ^Y\ˆ
-ˆ
-“ÑWÒRQÒ
-È“Õ×ÑĞT
-H
-È“Õ×ÑĞT
-ˆÂˆB‚ˆ™]\›ˆÜÚ][ÛœÎÂŸB‚™[˜İ[ÛˆÜ™X]QÜ›İ\^[İ]
-ˆ]Îˆ™XYÛ›Hİš[™Ö×Kˆ›İQÜ›İ\Îˆ™XYÛ›SX\İš[™Ëİš[™Ï‚ŠNˆX\İš[™ËÈˆ[X™\ÈNˆ[X™\ˆOˆÂˆÛÛœİÜ›İ\ÈH™]ÈX\İš[™Ëİš[™Ö×OŠ
-NÂˆ›Üˆ
-ÛÛœİ]Ùˆ]ÊHÂˆÛÛœİX™[H›İQÜ›İ\Ë™Ù]
-]
-OËš[J
-H“İ\ˆ›İ\ÈÂˆÛÛœİY[X™\œÈHÜ›İ\Ë™Ù]
-X™[
-HÏÈ×NÂˆY[X™\œËœ\Ú
-]
-NÂˆÜ›İ\ËœÙ]
-X™[Y[X™\œÊNÂˆB‚ˆÛÛœİÜÚ][ÛœÈH™]ÈX\İš[™ËÈˆ[X™\ÈNˆ[X™\ˆOŠ
-NÂˆ]YHÂˆ›Üˆ
-ÛÛœİÛX™[Y[X™\œ×HÙˆË‹‹™Ü›İ\Ë™[šY\Ê
-WKœÛÜ
+  const nodes = rawNodes.filter(isCanvasNode);
+  const edges = rawEdges.filter(isCanvasEdge);
 
-Ùš\œİKÜÙXÛÛ™JHO‚ˆÛÛ\\™T]Êš\œİÙXÛÛ™
-Bˆ
-JHÂˆ›ÚYX™[ÂˆÛÛœİÛÜYY[X™\œÈHË‹‹›Y[X™\œ×KœÛÜ
-ÛÛ\\™T]ÊNÂˆ›Üˆ
-][™^HÈ[™^ÛÜYY[X™\œË›[™İÈ[™^
-ÏHJHÂˆÜÚ][ÛœËœÙ]
-ÛÜYY[X™\œÖÚ[™^KÂˆˆYˆNˆ[™^
-ˆ
-“ÑWÒRQÒ
-È“Õ×ÑĞT
-BˆJNÂˆBˆY
-ÏH“ÑWÕÒQ
-ÈÔ“ÕTÔQS‘È
-ˆˆ
-ÈÔ“ÕTÑĞTÂˆB‚ˆ™]\›ˆÜÚ][ÛœÎÂŸB‚™[˜İ[ÛˆÜ™X]QÙ[™\˜]YÜ›İ\ÊˆÙ[™\˜]Y›Ù\Îˆ™XYÛ›HØ[˜\Ó›ÙV×Kˆ›İQÜ›İ\Îˆ™XYÛ›SX\İš[™Ëİš[™Ïˆ[™Yš[™Yˆ\ÙYYÎˆÙ]İš[™Ï‚ŠNˆØ[˜\Ó›ÙV×HÂˆYˆ
-[›İQÜ›İ\È›İQÜ›İ\ËœÚ^™HOOH
-H™]\›ˆ×NÂ‚ˆÛÛœİY[X™\œĞSX™[H™]ÈX\İš[™ËØ[˜\Ó›ÙV×OŠ
-NÂˆ›Üˆ
-ÛÛœİ›ÙHÙˆÙ[™\˜]Y›Ù\ÊHÂˆYˆ
-\[Ùˆ›ÙK™š[HOOHœİš[™ÈŠHÛÛ[YNÂˆÛÛœİX™[H›İQÜ›İ\Ë™Ù]
-›ÙK™š[JOËš[J
-NÂˆYˆ
-[X™[
-HÛÛ[YNÂˆÛÛœİY[X™\œÈHY[X™\œĞSX™[™Ù]
-X™[
-HÏÈ×NÂˆY[X™\œËœ\Ú
-›ÙJNÂˆY[X™\œĞSX™[œÙ]
-X™[Y[X™\œÊNÂˆB‚ˆ™]\›ˆË‹‹›Y[X™\œĞSX™[™[šY\Ê
-WBˆœÛÜ
+  if (nodes.length !== rawNodes.length || edges.length !== rawEdges.length) {
+    throw new Error("The Canvas file contains invalid nodes or edges.");
+  }
 
-Ùš\œİKÜÙXÛÛ™JHOˆÛÛ\\™T]Êš\œİÙXÛÛ™
-JBˆ›X\
+  return { ...value, nodes, edges };
+}
 
-ÛX™[Y[X™\œ×JHOˆÂˆÛÛœİYHX]›Z[Š‹‹›Y[X™\œË›X\
+export function createEmptyCanvas(): CanvasDocument {
+  return { nodes: [], edges: [] };
+}
 
-›ÙJHOˆ›ÙK
-JNÂˆÛÛœİÜHX]›Z[Š‹‹›Y[X™\œË›X\
+export function buildCanvasDocument(input: BuildCanvasInput): BuildCanvasResult {
+  const uniquePaths = [...new Set(input.notePaths)].sort(comparePaths);
+  const existingGeneratedByPath = new Map<string, CanvasNode>();
+  const manualNodes: CanvasNode[] = [];
 
-›ÙJHOˆ›ÙKJJNÂˆÛÛœİšYÚHX]›X^
-‹‹›Y[X™\œË›X\
+  for (const node of input.existing.nodes) {
+    if (isGeneratedFileNode(node) && typeof node.file === "string") {
+      existingGeneratedByPath.set(node.file, node);
+    } else if (!isGeneratedGroup(node)) {
+      manualNodes.push(node);
+    }
+  }
 
-›ÙJHOˆ›ÙK
-È›ÙKÚY
-JNÂˆÛÛœİ›İÛHHX]›X^
-‹‹›Y[X™\œË›X\
+  const generatedNodes: CanvasNode[] = [];
+  const occupied = manualNodes.map(toRect);
+  const usedIds = new Set(manualNodes.map((node) => node.id));
+  const pathToId = new Map<string, string>();
+  const pendingNodes: Array<{ path: string; oldNode?: CanvasNode }> = [];
+  const layoutPositions =
+    input.noteGroups && input.noteGroups.size > 0
+      ? createGroupLayout(uniquePaths, input.noteGroups)
+      : createConnectionLayout(uniquePaths, input.links);
 
-›ÙJHOˆ›ÙKH
-È›ÙKšZYÚ
-JNÂˆÛÛœİYHXZÙU[š\]YRY
-ÑS‘TUQÑÔ“ÕTÔ‘Q’V
-ÈİX›R\Ú
-X™[
-K\ÙYYÊNÂˆ\ÙYYË˜Y
-Y
-NÂˆ™]\›ˆÂˆYˆ\Nˆ™Ü›İ\‹ˆX™[ˆˆYHÔ“ÕTÔQS‘ËˆNˆÜHÔ“ÕTÔQS‘ÈHÔ“ÕTÓP‘SÒRQÒˆÚYˆX]›X^
-“ÑWÕÒQ
-ÈÔ“ÕTÔQS‘È
-ˆ‹šYÚHY
-ÈÔ“ÕTÔQS‘È
-ˆŠKˆZYÚˆX]›X^
-ˆ“ÑWÒRQÒ
-ÈÔ“ÕTÔQS‘È
-ˆˆ
-ÈÔ“ÕTÓP‘SÒRQÒˆ›İÛHHÜ
-ÈÔ“ÕTÔQS‘È
-ˆˆ
-ÈÔ“ÕTÓP‘SÒRQÒˆ
-BˆNÂˆJNÂŸB‚™[˜İ[Ûˆš[™Ü[”ÜÚ][ÛŠˆ™Y™\œ™YˆÈˆ[X™\ÈNˆ[X™\ˆKˆÚYˆ[X™\‹ˆZYÚˆ[X™\‹ˆØØİ\YYˆ\œ˜^OÈˆ[X™\ÈNˆ[X™\ÈÚYˆ[X™\ÈZYÚˆ[X™\ˆO‚ŠNˆÈˆ[X™\ÈNˆ[X™\ˆHÂˆ]][\HÂˆÚ[H
-YJHÂˆÛÛœİØ[™Y]HHÂˆˆ™Y™\œ™YˆNˆ™Y™\œ™YH
-È][\
-ˆ
-ZYÚ
-È“Õ×ÑĞT
-BˆNÂˆÛÛœİ™Xİ[™ÛHHÈ‹‹˜Ø[™Y]KÚYZYÚNÂˆYˆ
-[ØØİ\YYœÛÛYJ
-İ\ŠHOˆ™Xİ[™Û\Óİ™\›\
-™Xİ[™ÛKİ\‹ÓÓTÒSÓ—ÔQS‘ÊJJHÂˆØØİ\YYœ\Ú
-™Xİ[™ÛJNÂˆ™]\›ˆØ[™Y]NÂˆBˆ][\
-ÏHNÂˆBŸB‚™[˜İ[Ûˆ\ÑÙ[™\˜]Yš[S›ÙJ›ÙNˆØ[˜\Ó›ÙJNˆ›ÛÛX[ˆÂˆ™]\›ˆ›ÙKšYœİ\ÕÚ]
-ÑS‘TUQÓ“ÑWÔ‘Q’V
-NÂŸB‚™[˜İ[Ûˆ\ÑÙ[™\˜]YÜ›İ\
-›ÙNˆØ[˜\Ó›ÙJNˆ›ÛÛX[ˆÂˆ™]\›ˆ›ÙKšYœİ\ÕÚ]
-ÑS‘TUQÑÔ“ÕTÔ‘Q’V
-NÂŸB‚™[˜İ[Ûˆ\ÑÙ[™\˜]YYÙJYÙNˆØ[˜\ÑYÙJNˆ›ÛÛX[ˆÂˆ™]\›ˆYÙKšYœİ\ÕÚ]
-ÑS‘TUQÑQÑWÔ‘Q’V
-NÂŸB‚™[˜İ[ÛˆÚÛÜÙTÚY\Êœ›ÛNˆØ[˜\Ó›ÙKÎˆØ[˜\Ó›ÙJNˆÈœ›ÛNˆØ[˜\ÔÚYNÈÎˆØ[˜\ÔÚYHHÂˆÛÛœİœ›ÛPÙ[\ˆHÈˆœ›ÛK
-Èœ›ÛKÚYÈ‹Nˆœ›ÛKH
-Èœ›ÛKšZYÚÈˆNÂˆÛÛœİĞÙ[\ˆHÈˆË
-ÈËÚYÈ‹NˆËH
-ÈËšZYÚÈˆNÂˆÛÛœİHĞÙ[\‹Hœ›ÛPÙ[\‹ÂˆÛÛœİHHĞÙ[\‹HHœ›ÛPÙ[\‹NÂ‚ˆYˆ
-X]˜XœÊ
-HHX]˜XœÊJJHÂˆ™]\›ˆHˆÈÈœ›ÛNˆœšYÚ‹Îˆ›YˆBˆˆÈœ›ÛNˆ›Y‹ÎˆœšYÚˆNÂˆB‚ˆ™]\›ˆHHˆÈÈœ›ÛNˆ˜›İÛH‹ÎˆÜˆBˆˆÈœ›ÛNˆÜ‹Îˆ˜›İÛHˆNÂŸB‚™[˜İ[ÛˆİX›R\Ú
-˜[YNˆİš[™ÊNˆİš[™ÈÂˆ]š\œİHLXÎYÍNÂˆ]ÙXÛÛ™HYLÍÍÎXNÂ‚ˆ›Üˆ
-][™^HÈ[™^˜[YK›[™İÈ[™^
-ÏHJHÂˆÛÛœİÛÙHH˜[YK˜Ú\ÛÙP]
-[™^
-NÂˆš\œİHÛÙNÂˆš\œİHX]š[][
-š\œİLNLÊNÂˆÙXÛÛ™HÛÙH
-È[™^ÂˆÙXÛÛ™HX]š[][
-ÙXÛÛ™YX˜ØM˜ŠNÂˆB‚ˆ™]\›ˆ	Êš\œİˆ
-KÔİš[™ÊMŠKœYİ\
-ŒŠ_IÊÙXÛÛ™ˆ
-BˆÔİš[™ÊMŠBˆœYİ\
-ŒŠ_XÂŸB‚™[˜İ[ÛˆXZÙU[š\]YRY
-˜\ÙNˆİš[™Ë\ÙYˆÙ]İš[™ÏŠNˆİš[™ÈÂˆYˆ
-]\ÙYš\Ê˜\ÙJJH™]\›ˆ˜\ÙNÂˆ]İY™š^HÂˆÚ[H
-\ÙYš\Ê	Ø˜\Ù_KIÜİY™š^X
-JHİY™š^
-ÏHNÂˆ™]\›ˆ	Ø˜\Ù_KIÜİY™š^XÂŸB‚™[˜İ[ÛˆÛÛ\\™T]ÊNˆİš[™Ëˆİš[™ÊNˆ[X™\ˆÂˆ™]\›ˆHˆÈLHˆHˆˆÈHˆÂŸB‚™[˜İ[Ûˆ\Õ˜[YÙ[ÛY]J›ÙNˆØ[˜\Ó›ÙJNˆ›ÛÛX[ˆÂˆ™]\›ˆ
-ˆ[X™\‹š\Ñš[š]J›ÙK
-H	‰‚ˆ[X™\‹š\Ñš[š]J›ÙKJH	‰‚ˆ[X™\‹š\Ñš[š]J›ÙKÚY
-H	‰‚ˆ[X™\‹š\Ñš[š]J›ÙKšZYÚ
-H	‰‚ˆ›ÙKÚYˆ	‰‚ˆ›ÙKšZYÚˆˆ
-NÂŸB‚™[˜İ[ÛˆÔ™Xİ
-›ÙNˆØ[˜\Ó›ÙJNˆÈˆ[X™\ÈNˆ[X™\ÈÚYˆ[X™\ÈZYÚˆ[X™\ˆHÂˆ™]\›ˆÈˆ›ÙKNˆ›ÙKKÚYˆ›ÙKÚYZYÚˆ›ÙKšZYÚNÂŸB‚™[˜İ[Ûˆ™Xİ[™Û\Óİ™\›\
-ˆš\œİˆÈˆ[X™\ÈNˆ[X™\ÈÚYˆ[X™\ÈZYÚˆ[X™\ˆKˆÙXÛÛ™ˆÈˆ[X™\ÈNˆ[X™\ÈÚYˆ[X™\ÈZYÚˆ[X™\ˆKˆY[™Îˆ[X™\‚ŠNˆ›ÛÛX[ˆÂˆ™]\›ˆJˆš\œİ
-Èš\œİÚY
-ÈY[™ÈHÙXÛÛ™ˆÙXÛÛ™
-ÈÙXÛÛ™ÚY
-ÈY[™ÈHš\œİˆš\œİH
-Èš\œİšZYÚ
-ÈY[™ÈHÙXÛÛ™HˆÙXÛÛ™H
-ÈÙXÛÛ™šZYÚ
-ÈY[™ÈHš\œİBˆ
-NÂŸB‚™[˜İ[Ûˆ\Ô™XÛÜ™
-˜[YNˆ[šÛ›İÛŠNˆ˜[YH\È™XÛÜ™İš[™Ë[šÛ›İÛˆÂˆ™]\›ˆ\[Ùˆ˜[YHOOH›Øš™Xİˆ	‰ˆ˜[YHOOH[ÂŸB‚™[˜İ[Ûˆ\ĞØ[˜\Ó›ÙJ˜[YNˆ[šÛ›İÛŠNˆ˜[YH\ÈØ[˜\Ó›ÙHÂˆ™]\›ˆ
-ˆ\Ô™XÛÜ™
-˜[YJH	‰‚ˆ\[Ùˆ˜[YKšYOOHœİš[™Èˆ	‰‚ˆ\[Ùˆ˜[YK\HOOHœİš[™Èˆ	‰‚ˆ\[Ùˆ˜[YKOOH›[X™\ˆˆ	‰‚ˆ\[Ùˆ˜[YKHOOH›[X™\ˆˆ	‰‚ˆ\[Ùˆ˜[YKÚYOOH›[X™\ˆˆ	‰‚ˆ\[Ùˆ˜[YKšZYÚOOH›[X™\ˆ‚ˆ
-NÂŸB‚™[˜İ[Ûˆ\ĞØ[˜\ÑYÙJ˜[YNˆ[šÛ›İÛŠNˆ˜[YH\ÈØ[˜\ÑYÙHÂˆ™]\›ˆ
-ˆ\Ô™XÛÜ™
-˜[YJH	‰‚ˆ\[Ùˆ˜[YKšYOOHœİš[™Èˆ	‰‚ˆ\[Ùˆ˜[YK™œ›ÛS›ÙHOOHœİš[™Èˆ	‰‚ˆ\[Ùˆ˜[YKÓ›ÙHOOHœİš[™È‚ˆ
-NÂŸB
+  for (const path of uniquePaths) {
+    const oldNode = existingGeneratedByPath.get(path);
+    const id = makeUniqueId(GENERATED_NODE_PREFIX + stableHash(path), usedIds);
+    usedIds.add(id);
+    pathToId.set(path, id);
+
+    if (oldNode && hasValidGeometry(oldNode) && !input.forceLayout) {
+      const preserved: CanvasNode = {
+        ...oldNode,
+        id,
+        type: "file",
+        file: path
+      };
+      const configuredColor = input.noteColors?.get(path);
+      if (configuredColor) preserved.color = configuredColor;
+      else if (input.clearNoteColors?.has(path)) delete preserved.color;
+      generatedNodes.push(preserved);
+      occupied.push(toRect(preserved));
+    } else {
+      pendingNodes.push({ path, oldNode });
+    }
+  }
+
+  for (const { path, oldNode } of pendingNodes) {
+    const width = oldNode && hasValidGeometry(oldNode) ? oldNode.width : NODE_WIDTH;
+    const height = oldNode && hasValidGeometry(oldNode) ? oldNode.height : NODE_HEIGHT;
+    const preferred = layoutPositions.get(path) ?? { x: 0, y: 0 };
+    const position = findOpenPosition(preferred, width, height, occupied);
+    const node: CanvasNode = {
+      ...(oldNode ?? {}),
+      id: pathToId.get(path)!,
+      type: "file",
+      file: path,
+      x: position.x,
+      y: position.y,
+      width,
+      height
+    };
+    const configuredColor = input.noteColors?.get(path);
+    if (configuredColor) node.color = configuredColor;
+    else if (input.clearNoteColors?.has(path)) delete node.color;
+    generatedNodes.push(node);
+  }
+
+  generatedNodes.sort((a, b) => comparePaths(a.file ?? "", b.file ?? ""));
+  const generatedGroups = createGeneratedGroups(generatedNodes, input.noteGroups, usedIds);
+  const nodeIds = new Set([...manualNodes, ...generatedGroups, ...generatedNodes].map((node) => node.id));
+  const manualEdges = input.existing.edges.filter((edge) => {
+    return !isGeneratedEdge(edge) && nodeIds.has(edge.fromNode) && nodeIds.has(edge.toNode);
+  });
+  const usedEdgeIds = new Set(manualEdges.map((edge) => edge.id));
+  const generatedEdges: CanvasEdge[] = [];
+  const nodesById = new Map(generatedNodes.map((node) => [node.id, node]));
+  const aggregatedLinks = aggregateLinks(input.links, pathToId);
+
+  for (const link of aggregatedLinks) {
+    const fromNode = pathToId.get(link.from);
+    const toNode = pathToId.get(link.to);
+    if (!fromNode || !toNode || fromNode === toNode) continue;
+
+    const sides = chooseSides(nodesById.get(fromNode)!, nodesById.get(toNode)!);
+    const id = makeUniqueId(
+      GENERATED_EDGE_PREFIX + stableHash(`${link.from}\u0000${link.to}`),
+      usedEdgeIds
+    );
+    usedEdgeIds.add(id);
+    const edge: CanvasEdge = {
+      id,
+      fromNode,
+      fromSide: sides.from,
+      toNode,
+      toSide: sides.to,
+      toEnd: "arrow"
+    };
+    if (link.label) edge.label = link.label;
+    generatedEdges.push(edge);
+  }
+
+  generatedEdges.sort((a, b) => a.id.localeCompare(b.id));
+
+  return {
+    document: {
+      ...input.existing,
+      nodes: [...manualNodes, ...generatedGroups, ...generatedNodes],
+      edges: [...manualEdges, ...generatedEdges]
+    },
+    generatedNodeCount: generatedNodes.length,
+    generatedEdgeCount: generatedEdges.length,
+    generatedGroupCount: generatedGroups.length
+  };
+}
+
+export function isPathInFolder(filePath: string, folderSetting: string): boolean {
+  const folder = normalizeFilterValue(folderSetting);
+  if (folder === "/") return true;
+  if (!folder) return false;
+  return filePath.startsWith(`${folder}/`);
+}
+
+export function getQuickStartCanvasPath(
+  folderPath: string,
+  occupiedPaths: ReadonlySet<string>,
+  managedPaths: ReadonlySet<string>
+): string {
+  const folder = folderPath.trim().replace(/^\/+|\/+$/g, "");
+  const prefix = folder ? `${folder}/` : "";
+
+  for (let index = 1; index < 10000; index += 1) {
+    const suffix = index === 1 ? "" : ` ${index}`;
+    const candidate = `${prefix}Live Canvas${suffix}.canvas`;
+    if (!occupiedPaths.has(candidate) || managedPaths.has(candidate)) return candidate;
+  }
+
+  throw new Error("Too many Canvas files already exist in this folder.");
+}
+
+export function tagMatches(tags: readonly string[], tagSetting: string): boolean {
+  const wanted = tagSetting.trim().replace(/^#+/, "").replace(/\/$/, "");
+  if (!wanted) return false;
+
+  return tags.some((tag) => {
+    const normalized = tag.trim().replace(/^#+/, "");
+    return normalized === wanted || normalized.startsWith(`${wanted}/`);
+  });
+}
+
+export function parseExclusionRules(value: string): ExclusionRule[] {
+  const rules: ExclusionRule[] = [];
+
+  for (const line of value.split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("# ")) continue;
+
+    const simpleMatch = /^(folder|tag)\s*:\s*(.+)$/i.exec(trimmed);
+    if (simpleMatch) {
+      rules.push({
+        type: simpleMatch[1].toLowerCase() as "folder" | "tag",
+        value: simpleMatch[2].trim()
+      });
+      continue;
+    }
+
+    const propertyMatch = /^property\s*:\s*([^=]+?)(?:\s*=\s*(.+))?$/i.exec(trimmed);
+    if (propertyMatch) {
+      rules.push({
+        type: "property",
+        value: propertyMatch[1].trim(),
+        propertyValue: propertyMatch[2]?.trim()
+      });
+    }
+  }
+
+  return rules.filter((rule) => rule.value.length > 0);
+}
+
+export function matchesExclusionRules(
+  filePath: string,
+  tags: readonly string[],
+  frontmatter: Readonly<Record<string, unknown>> | undefined,
+  rules: readonly ExclusionRule[]
+): boolean {
+  return rules.some((rule) => {
+    if (rule.type === "folder") return isPathInFolder(filePath, rule.value);
+    if (rule.type === "tag") return tagMatches(tags, rule.value);
+    if (!frontmatter || !(rule.value in frontmatter)) return false;
+    if (rule.propertyValue === undefined) return true;
+    return propertyValueMatches(frontmatter[rule.value], rule.propertyValue);
+  });
+}
+
+export function expandPathsByNeighbors(
+  seedPaths: readonly string[],
+  adjacency: ReadonlyMap<string, ReadonlySet<string>>,
+  depth: number
+): string[] {
+  const seeds = [...new Set(seedPaths)].sort(comparePaths);
+  const selected = new Set(seeds);
+  let frontier = seeds;
+  const normalizedDepth = Math.max(0, Math.floor(depth));
+
+  for (let level = 0; level < normalizedDepth && frontier.length > 0; level += 1) {
+    const next = new Set<string>();
+    for (const path of frontier) {
+      const neighbors = [...(adjacency.get(path) ?? [])].sort(comparePaths);
+      for (const neighbor of neighbors) {
+        if (!selected.has(neighbor)) next.add(neighbor);
+      }
+    }
+    frontier = [...next].sort(comparePaths);
+    for (const path of frontier) selected.add(path);
+  }
+
+  return [...seeds, ...[...selected].filter((path) => !seeds.includes(path))];
+}
+
+export function applyPathRenames(
+  document: CanvasDocument,
+  renames: ReadonlyMap<string, string>
+): CanvasDocument {
+  if (renames.size === 0) return document;
+
+  return {
+    ...document,
+    nodes: document.nodes.map((node) => {
+      if (!isGeneratedFileNode(node) || typeof node.file !== "string") return node;
+      const renamedPath = renames.get(node.file);
+      return renamedPath ? { ...node, file: renamedPath } : node;
+    })
+  };
+}
+
+function normalizeFilterValue(value: string): string {
+  const normalized = value.trim().replace(/\\/g, "/").replace(/^\.\//, "");
+  if (normalized === "/") return normalized;
+  return normalized.replace(/^\/+|\/+$/g, "");
+}
+
+function propertyValueMatches(value: unknown, expected: string): boolean {
+  if (Array.isArray(value)) return value.some((item) => propertyValueMatches(item, expected));
+  if (value === null || value === undefined || typeof value === "object") return false;
+  return String(value).trim().toLowerCase() === expected.trim().toLowerCase();
+}
+
+function aggregateLinks(
+  links: readonly NoteLink[],
+  pathToId: ReadonlyMap<string, string>
+): NoteLink[] {
+  const aggregated = new Map<string, { from: string; to: string; labels: Set<string> }>();
+
+  for (const link of links) {
+    if (!pathToId.has(link.from) || !pathToId.has(link.to) || link.from === link.to) continue;
+    const key = `${link.from}\u0000${link.to}`;
+    const current = aggregated.get(key) ?? {
+      from: link.from,
+      to: link.to,
+      labels: new Set<string>()
+    };
+    const label = link.label?.trim();
+    if (label) current.labels.add(label);
+    aggregated.set(key, current);
+  }
+
+  return [...aggregated.values()]
+    .sort((first, second) => {
+      const firstKey = `${first.from}\u0000${first.to}`;
+      const secondKey = `${second.from}\u0000${second.to}`;
+      return comparePaths(firstKey, secondKey);
+    })
+    .map((link) => ({
+      from: link.from,
+      to: link.to,
+      ...(link.labels.size > 0 ? { label: [...link.labels].sort(comparePaths).join(" Â· ") } : {})
+    }));
+}
+
+function createConnectionLayout(
+  paths: readonly string[],
+  links: readonly NoteLink[]
+): Map<string, { x: number; y: number }> {
+  const pathSet = new Set(paths);
+  const adjacency = new Map<string, Set<string>>();
+  for (const path of paths) adjacency.set(path, new Set());
+  for (const link of links) {
+    if (!pathSet.has(link.from) || !pathSet.has(link.to) || link.from === link.to) continue;
+    adjacency.get(link.from)!.add(link.to);
+    adjacency.get(link.to)!.add(link.from);
+  }
+
+  const positions = new Map<string, { x: number; y: number }>();
+  const unvisited = new Set(paths);
+  let componentTop = 0;
+
+  while (unvisited.size > 0) {
+    const componentSeed = [...unvisited].sort((first, second) => {
+      const degreeDifference = adjacency.get(second)!.size - adjacency.get(first)!.size;
+      return degreeDifference || comparePaths(first, second);
+    })[0];
+    const layers: string[][] = [];
+    const queued = new Set([componentSeed]);
+    let frontier = [componentSeed];
+
+    while (frontier.length > 0) {
+      const layer = [...frontier].sort((first, second) => {
+        const degreeDifference = adjacency.get(second)!.size - adjacency.get(first)!.size;
+        return degreeDifference || comparePaths(first, second);
+      });
+      layers.push(layer);
+      const next = new Set<string>();
+      for (const path of layer) {
+        unvisited.delete(path);
+        for (const neighbor of adjacency.get(path) ?? []) {
+          if (!queued.has(neighbor)) {
+            queued.add(neighbor);
+            next.add(neighbor);
+          }
+        }
+      }
+      frontier = [...next];
+    }
+
+    const largestLayer = Math.max(...layers.map((layer) => layer.length));
+    for (let column = 0; column < layers.length; column += 1) {
+      const layer = layers[column];
+      const verticalOffset = ((largestLayer - layer.length) * (NODE_HEIGHT + ROW_GAP)) / 2;
+      for (let row = 0; row < layer.length; row += 1) {
+        positions.set(layer[row], {
+          x: column * (NODE_WIDTH + COLUMN_GAP),
+          y: componentTop + verticalOffset + row * (NODE_HEIGHT + ROW_GAP)
+        });
+      }
+    }
+    componentTop += largestLayer * (NODE_HEIGHT + ROW_GAP) + ROW_GAP * 2;
+  }
+
+  return positions;
+}
+
+function createGroupLayout(
+  paths: readonly string[],
+  noteGroups: ReadonlyMap<string, string>
+): Map<string, { x: number; y: number }> {
+  const groups = new Map<string, string[]>();
+  for (const path of paths) {
+    const label = noteGroups.get(path)?.trim() || "Other notes";
+    const members = groups.get(label) ?? [];
+    members.push(path);
+    groups.set(label, members);
+  }
+
+  const positions = new Map<string, { x: number; y: number }>();
+  let left = 0;
+  for (const [label, members] of [...groups.entries()].sort(([first], [second]) =>
+    comparePaths(first, second)
+  )) {
+    void label;
+    const sortedMembers = [...members].sort(comparePaths);
+    for (let index = 0; index < sortedMembers.length; index += 1) {
+      positions.set(sortedMembers[index], {
+        x: left,
+        y: index * (NODE_HEIGHT + ROW_GAP)
+      });
+    }
+    left += NODE_WIDTH + GROUP_PADDING * 2 + GROUP_GAP;
+  }
+
+  return positions;
+}
+
+function createGeneratedGroups(
+  generatedNodes: readonly CanvasNode[],
+  noteGroups: ReadonlyMap<string, string> | undefined,
+  usedIds: Set<string>
+): CanvasNode[] {
+  if (!noteGroups || noteGroups.size === 0) return [];
+
+  const membersByLabel = new Map<string, CanvasNode[]>();
+  for (const node of generatedNodes) {
+    if (typeof node.file !== "string") continue;
+    const label = noteGroups.get(node.file)?.trim();
+    if (!label) continue;
+    const members = membersByLabel.get(label) ?? [];
+    members.push(node);
+    membersByLabel.set(label, members);
+  }
+
+  return [...membersByLabel.entries()]
+    .sort(([first], [second]) => comparePaths(first, second))
+    .map(([label, members]) => {
+      const left = Math.min(...members.map((node) => node.x));
+      const top = Math.min(...members.map((node) => node.y));
+      const right = Math.max(...members.map((node) => node.x + node.width));
+      const bottom = Math.max(...members.map((node) => node.y + node.height));
+      const id = makeUniqueId(GENERATED_GROUP_PREFIX + stableHash(label), usedIds);
+      usedIds.add(id);
+      return {
+        id,
+        type: "group",
+        label,
+        x: left - GROUP_PADDING,
+        y: top - GROUP_PADDING - GROUP_LABEL_HEIGHT,
+        width: Math.max(NODE_WIDTH + GROUP_PADDING * 2, right - left + GROUP_PADDING * 2),
+        height: Math.max(
+          NODE_HEIGHT + GROUP_PADDING * 2 + GROUP_LABEL_HEIGHT,
+          bottom - top + GROUP_PADDING * 2 + GROUP_LABEL_HEIGHT
+        )
+      };
+    });
+}
+
+function findOpenPosition(
+  preferred: { x: number; y: number },
+  width: number,
+  height: number,
+  occupied: Array<{ x: number; y: number; width: number; height: number }>
+): { x: number; y: number } {
+  let attempt = 0;
+  while (true) {
+    const candidate = {
+      x: preferred.x,
+      y: preferred.y + attempt * (height + ROW_GAP)
+    };
+    const rectangle = { ...candidate, width, height };
+    if (!occupied.some((other) => rectanglesOverlap(rectangle, other, COLLISION_PADDING))) {
+      occupied.push(rectangle);
+      return candidate;
+    }
+    attempt += 1;
+  }
+}
+
+function isGeneratedFileNode(node: CanvasNode): boolean {
+  return node.id.startsWith(GENERATED_NODE_PREFIX);
+}
+
+function isGeneratedGroup(node: CanvasNode): boolean {
+  return node.id.startsWith(GENERATED_GROUP_PREFIX);
+}
+
+function isGeneratedEdge(edge: CanvasEdge): boolean {
+  return edge.id.startsWith(GENERATED_EDGE_PREFIX);
+}
+
+function chooseSides(from: CanvasNode, to: CanvasNode): { from: CanvasSide; to: CanvasSide } {
+  const fromCenter = { x: from.x + from.width / 2, y: from.y + from.height / 2 };
+  const toCenter = { x: to.x + to.width / 2, y: to.y + to.height / 2 };
+  const dx = toCenter.x - fromCenter.x;
+  const dy = toCenter.y - fromCenter.y;
+
+  if (Math.abs(dx) >= Math.abs(dy)) {
+    return dx >= 0
+      ? { from: "right", to: "left" }
+      : { from: "left", to: "right" };
+  }
+
+  return dy >= 0
+    ? { from: "bottom", to: "top" }
+    : { from: "top", to: "bottom" };
+}
+
+function stableHash(value: string): string {
+  let first = 0x811c9dc5;
+  let second = 0x9e3779b9;
+
+  for (let index = 0; index < value.length; index += 1) {
+    const code = value.charCodeAt(index);
+    first ^= code;
+    first = Math.imul(first, 0x01000193);
+    second ^= code + index;
+    second = Math.imul(second, 0x85ebca6b);
+  }
+
+  return `${(first >>> 0).toString(16).padStart(8, "0")}${(second >>> 0)
+    .toString(16)
+    .padStart(8, "0")}`;
+}
+
+function makeUniqueId(base: string, used: Set<string>): string {
+  if (!used.has(base)) return base;
+  let suffix = 2;
+  while (used.has(`${base}-${suffix}`)) suffix += 1;
+  return `${base}-${suffix}`;
+}
+
+function comparePaths(a: string, b: string): number {
+  return a < b ? -1 : a > b ? 1 : 0;
+}
+
+function hasValidGeometry(node: CanvasNode): boolean {
+  return (
+    Number.isFinite(node.x) &&
+    Number.isFinite(node.y) &&
+    Number.isFinite(node.width) &&
+    Number.isFinite(node.height) &&
+    node.width > 0 &&
+    node.height > 0
+  );
+}
+
+function toRect(node: CanvasNode): { x: number; y: number; width: number; height: number } {
+  return { x: node.x, y: node.y, width: node.width, height: node.height };
+}
+
+function rectanglesOverlap(
+  first: { x: number; y: number; width: number; height: number },
+  second: { x: number; y: number; width: number; height: number },
+  padding: number
+): boolean {
+  return !(
+    first.x + first.width + padding <= second.x ||
+    second.x + second.width + padding <= first.x ||
+    first.y + first.height + padding <= second.y ||
+    second.y + second.height + padding <= first.y
+  );
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null;
+}
+
+function isCanvasNode(value: unknown): value is CanvasNode {
+  return (
+    isRecord(value) &&
+    typeof value.id === "string" &&
+    typeof value.type === "string" &&
+    typeof value.x === "number" &&
+    typeof value.y === "number" &&
+    typeof value.width === "number" &&
+    typeof value.height === "number"
+  );
+}
+
+function isCanvasEdge(value: unknown): value is CanvasEdge {
+  return (
+    isRecord(value) &&
+    typeof value.id === "string" &&
+    typeof value.fromNode === "string" &&
+    typeof value.toNode === "string"
+  );
+}

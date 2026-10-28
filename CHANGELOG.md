@@ -1,5 +1,105 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçHÈÚ[™Ù[ÙÂ‚[›İX›HÚ[™Ù\ÈÈ]™HØ[˜\È\™HØİ[Y[Y\™KˆH›Ú™Xİ›ÛİÜÈÙ[X[XÈ™\œÚ[Ûš[™Ë‚‚ˆÈÈÌKŒHHŒ‹LLL‚ˆÈÈÈYY‚‹HYY
-Š”›Ü\HÜ›İ\ÊŠˆÜ[Û˜[HÜ˜\Ø\™È[ˆ˜]]™HØ[˜\ÈÜ›İ\È˜\ÙYÛˆ[Hœ›ÛX]\ˆ›Ü\KİXÚ\Èİ]\Ø›Ú™XİÜˆ\X‚‹HYY[ˆÜ™Ø[š^™Y[š]X[^[İ]›Üˆ›Ü\HÜ›İ\ËXZÚ[™È]X\ŞHÈZ[š\İX[›Ú™Xİ›Ø\™ËİYHİ™\šY]ÜË[™\Ú›Ø\™Èœ›ÛH^\İ[™È›İ\Ë‚‚ˆÈÈÈØY™]B‚‹H]]ÛX]XÈÜ›İ\È\ÙHÙ\\˜]H]™HØ[˜\ÈQËˆ\›š[™ÈH™X]\™HÙ™ˆ™[[İ™\ÈÛ›H]]ÛX]XÈÜ›İ\È[™[Ø^\È™]Z[œÈÜ›İ\ÈÜ™X]YX[X[H[ˆØ[˜\Ë‚‹H\š[™ÈÜ™[˜\HŞ[˜Ú›Ûš^˜][Û‹Ø\™ÈÙY\Z\ˆX[X[ÜÚ][ÛœÈ[™]]ÛX]XÈÜ›İ\›İ[™\šY\ÈY\\›İ[™[K‚‚ˆÈÈÌKŒËHHŒ‹LLL‚ˆÈÈÈYY‚‹HYY
-ŠÜ™X]H]™HØ[˜\È›Üˆ\È›Û\ŠŠˆÈHš[H^Ü™\ˆÛÛ^Y[H›Üˆ›Û\œÈ[™X\šÙİÛˆ›İ\Ë‚‚ˆÈÈÈ[\›İ™Y‚‹H™]\ÙYHØY™H]ZXÚË\İ\›İÈ›Üˆ›İHÛÛ[X[™[]H[™H™]ÈÛÛ^[Y[HXİ[Û‹‚‹HXYHH™[X\ÙHÛÜšÙ›İÈ^XÚ]H]XÚXZ[‹šœØX[šY™\İšœÛÛ˜[™İ[\Ë˜ÜÜØÛÈØœÚYX[ˆØ[ˆ[œİ[\]\È™[XX›K‚‚ˆÈÈÌKŒËŒ×HHŒ‹LLL‚ˆÈÈÈYY‚‹HYYHÛ™KXÛXÚÈÛÛ[X[™]Ü™X]\È[™Ü[œÈH]™HØ[˜\È›ÜˆHİ\œ™[X\šÙİÛˆ›İIÜÈ›Û\‹‚‹HYYHØ[YH]ZXÚË\İ\Xİ[ÛˆÈHÙ][™ÜÈØÜ™Y[ˆ›ÜˆX\ÚY\ˆÛ˜›Ø\™[™Ë‚‚ˆÈÈÈØY™]B‚‹H]ZXÚÈİ\™]\Ù\ÈÛ›HØ[˜\Èš[\È[™XYHX[˜YÙYH]™HØ[˜\ËˆYˆH™Y™\œ™Yš[[˜[YH™[Û™ÜÈÈ[›İ\ˆš[K]ÚÛÜÙ\ÈH[X™\™Yš[[˜[YH[œİXYÙˆİ™\Üš][™È]‚‚ˆÈÈÌKŒËŒ—HHŒ‹LLLLB‚ˆÈÈÈYY‚‹HYYHØØ[Ù\™\›\ÜÈˆ^Ü›ÜˆHÛÛ™šYİ\™YØ[˜\Ë‚‹HYY[ˆ
-Š‘^ÜX[˜YÙYØ[˜\È\ÈŠŠˆÛÛ[X[™[™[ˆ
-Š‘^ÜŠŠˆÙ][™ÜÈXİ[Û‹‚‹Hˆ^ÜÈ[˜ÛYHØ\™Ë^Ü›İ\ËÛÛÜœËYÙ\Ë\œ›İÜË[™™[][ÛœÚ\X™[È[ˆHš[YœšY[™HMİ™\šY]Ë‚‚ˆÈÈÈØY™]B‚‹Hˆ^Ü™XYÈHØ]™YØ[˜\ÈÚ]İ][ÙYZ[™È]‚‹H^\İ[™Èˆš[\È\™H™]™\ˆİ™\Üš][È™\X]Y^ÜÈ™XÙZ]™H[X™\™Yš[[˜[Y\Ë‚‚ˆÈÈÈš^Y‚‹H™\XÙYXÙZÛ\‹\İ[H^[ˆHX[X[[œİ[][Ûˆ^[\HÛÈ]]ÛX]Y™\ÜÚ]ÜHÚXÚÜÈ™XÛÙÛš^™HH‘PQQH\ÈÛÛ\]K‚‚ˆÈÈÌKŒËŒWHHŒ‹LLLL‚ˆÈÈÈÚ[™ÙY‚‹H™XZ[HÙ][™ÜÈØÜ™Y[ˆÚ]ØœÚYX[‰ÜÈÙX\˜ÚX›HXÛ\˜]]™HÙ][™ÜÈTK‚‹H\]YXY[™ÜÈ[™\İXİ]™HXİ[ÛœÈÈİ\œ™[ØœÚYX[ˆRHT\Ë‚‹H[YÛ™YH™[X\ÙHX[šY™\İ]]ÜˆÚ]H™\ÜÚ]ÜHX[šY™\İ‚‹HYY™[X\ÙKX\ÜÙ]›İ™[˜[˜ÙH]\İ][ÛœÈ[™]]ÛX]XÈ™[X\ÙH›İ\Ë‚‚ˆÈÈÈš^Y‚‹H™[[İ™Y[ˆ[›™XÙ\ÜØ\H\TØÜš\\ÜÙ\[Ûˆ™\ÜYHHÛÛ[][š]HØØ[›™\‹‚‚ˆÈÈÌKŒËŒHHŒ‹LLLL‚ˆÈÈÈYY‚‹H^Û\Ú[Ûˆ[\È›Üˆ›Û\œËYÜË›Ü\Y\Ë[™›Ü\H˜[Y\Ë‚‹H[˜ÛÛZ[™Ëİ]ÛÚ[™ËÜˆšY\™Xİ[Û˜[[šÙY[™ZYÚ›Üˆ^[œÚ[Ûˆ\ÈÛÈÜË‚‹H™[][ÛœÚ\X™[È›Üˆ›Ü\Y\ËÚZÚ[[šÈ[X\Ù\Ë[™[X™YË‚‹H›Û\ˆ[™YÈÛÛÜˆ[\È\Ú[™È˜]]™HØ[˜\ÈÛÛÜœÈÜˆ^˜[Y\Ë‚‹HÜ[Û˜[YÚYÚ[™È›Üˆ\ÛÛ]Y›İ\Ë‚‹HÛÛ™š\›YYÛÛ›™Xİ[Û‹X˜\ÙYÛX\™[^[İ]›ÜˆX[˜YÙYØ\™Ë‚‹HÚ]X‹\™XYHØİ[Y[][Û‹ÛÛšX][Ûˆ[\]\ËÒK™[X\Ù\Ë[™[[È˜][‚‚ˆÈÈÈØY™]B‚‹H^\İ[™ÈØ[˜\Èš[\È™\]Z\™H^XÚ]YÜ[Û‹‚‹HX[X[Ø[˜\È›Ù\È[™˜[YX[X[YÙ\È\™H™\Ù\™Y‚‹H›Ü›X[™Yœ™\Ú™\Ù\™\ÈHØ]™YÜÚ][Ûˆ[™Ú^™HÙˆX[˜YÙYØ\™Ë‚‹HX\šÙİÛˆ›İ\È\™H™]™\ˆ[ÙYšYYÜˆ[]Y‚‚ˆÈÈÌKŒ‹ŒHHŒ‹LLLL‚ˆÈÈÈYY‚‹HØ]YÛÜHÛÛÜˆ[\È[™[šÙY[™ZYÚ›Üˆ^[œÚ[Û‹‚‹H™]\ˆ™\Ù\˜][ÛˆÙˆ™[˜[YY[›İHÜÚ][ÛœÈÚ[HØœÚYX[ˆ\È[›š[™Ë‚‚ˆÈÈÌKŒKŒHHŒ‹LLLL‚ˆÈÈÈYY‚‹HYËX˜\ÙYš[\š[™ËX›İ[˜ÙY]™H™Yœ™\Ú[™X[X[™Yœ™\ÚÛÛ[X[™Ë‚‚ˆÈÈÌKŒŒHHŒ‹LLLL‚ˆÈÈÈYY‚‹H[š]X[İX›HU”Ú]›Û\ˆš[\š[™Ë˜]]™Hš[HØ\™Ë[\›˜[[[šÈYÙ\Ë[™ÜÚ][Ûˆ™\Ù\˜][Û‹‚
+# Changelog
+
+All notable changes to Live Canvas are documented here. The project follows Semantic Versioning.
+
+## [1.4.0] - 2026-10-28
+
+### Added
+
+- Added **Property groups**: optionally wrap cards in native Canvas groups based on any frontmatter property, such as `status`, `project`, or `type`.
+- Added an organized initial layout for property groups, making it easy to build visual project boards, study overviews, and dashboards from existing notes.
+
+### Safety
+
+- Automatic groups use separate Live Canvas IDs. Turning the feature off removes only automatic groups and always retains groups created manually in Canvas.
+- During ordinary synchronization, cards keep their manual positions and automatic group boundaries adapt around them.
+
+## [1.3.4] - 2026-10-24
+
+### Added
+
+- Added **Create Live Canvas for this folder** to the file explorer context menu for folders and Markdown notes.
+
+### Improved
+
+- Reused the safe quick-start flow for both the command palette and the new context-menu action.
+- Made the release workflow explicitly attach `main.js`, `manifest.json`, and `styles.css` so Obsidian can install updates reliably.
+
+## [1.3.3] - 2026-10-24
+
+### Added
+
+- Added a one-click command that creates and opens a Live Canvas for the current Markdown note's folder.
+- Added the same quick-start action to the settings screen for easier onboarding.
+
+### Safety
+
+- Quick start reuses only Canvas files already managed by Live Canvas. If the preferred filename belongs to another file, it chooses a numbered filename instead of overwriting it.
+
+## [1.3.2] - 2026-10-11
+
+### Added
+
+- Added a local, serverless PDF export for the configured Canvas.
+- Added an **Export managed Canvas as PDF** command and an **Export PDF** settings action.
+- PDF exports include cards, text, groups, colors, edges, arrows, and relationship labels in a print-friendly A4 overview.
+
+### Safety
+
+- PDF export reads the saved Canvas without modifying it.
+- Existing PDF files are never overwritten; repeated exports receive numbered filenames.
+
+### Fixed
+
+- Replaced placeholder-style text in the manual installation example so automated repository checks recognize the README as complete.
+
+## [1.3.1] - 2026-10-10
+
+### Changed
+
+- Rebuilt the settings screen with Obsidian's searchable declarative settings API.
+- Updated headings and destructive actions to current Obsidian UI APIs.
+- Aligned the release manifest author with the repository manifest.
+- Added release-asset provenance attestations and automatic release notes.
+
+### Fixed
+
+- Removed an unnecessary TypeScript assertion reported by the community scanner.
+
+## [1.3.0] - 2026-10-10
+
+### Added
+
+- Exclusion rules for folders, tags, properties, and property values.
+- Incoming, outgoing, or bidirectional linked-neighbor expansion up to two hops.
+- Relationship labels for properties, Wikilink aliases, and embeds.
+- Folder and tag color rules using native Canvas colors or hex values.
+- Optional highlighting for isolated notes.
+- Confirmed, connection-based smart relayout for managed cards.
+- GitHub-ready documentation, contribution templates, CI, releases, and demo vault.
+
+### Safety
+
+- Existing Canvas files require explicit adoption.
+- Manual Canvas nodes and valid manual edges are preserved.
+- Normal refresh preserves the saved position and size of managed cards.
+- Markdown notes are never modified or deleted.
+
+## [1.2.0] - 2026-10-10
+
+### Added
+
+- Category color rules and linked-neighbor expansion.
+- Better preservation of renamed-note positions while Obsidian is running.
+
+## [1.1.0] - 2026-10-10
+
+### Added
+
+- Tag-based filtering, debounced live refresh, and manual refresh commands.
+
+## [1.0.0] - 2026-10-10
+
+### Added
+
+- Initial stable MVP with folder filtering, native file cards, internal-link edges, and position preservation.

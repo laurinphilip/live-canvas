@@ -1,2 +1,46 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçHÈ[\È™Y™\™[˜ÙB‚ˆÈÈÛİ\˜ÙH›Û\œÂ‚‘›Û\ˆ]È\™H™[]]™HÈH˜][›Ûİˆ›İ\ØX]Ú\È›İ\ËĞK›Y[™›İ\ËÔİX‹Ğ‹›Y]›İ›İX›ÛÚËĞË›YˆH˜Z[[™ÈÛ\Ú\ÈÜ[Û˜[ˆØÙ[XİÈ[X\šÙİÛˆš[\È[ˆH˜][‚‚ˆÈÈÛİ\˜ÙHYÜÂ‚•HXY[™ÈØ\ÈÜ[Û˜[ˆYÈX]Ú[™È[˜ÛY\È\ØÙ[™[Îˆ\İÜXX]Ú\ÈÚ\İÜX[™Ú\İÜKØ^˜[][X]›İÚ\İÜšXØ[‚‚ˆÈÈ^Û\Ú[Ûˆ[\Â‚”[\È\™HØ\ÙKZ[œÙ[œÚ]]™HÚ\™H\›ÜšX]H[™[ˆY\ˆHXZ[ˆÛİ\˜ÙHš[\‹‚‚ŸŞ[^Y™™XİŸKKHKKHŸ›Û\\˜Ú]™X^ÛY\È\˜Ú]™X[™]™\H\ØÙ[™[›Û\‹ˆŸYÎ™˜Y^ÛY\ÈÙ˜Y[™™\İYYÜÈİXÚ\ÈÙ˜YÜ›İYÚˆŸ›Ü\NšY[˜^ÛY\ÈH›İHÚ[ˆH›Ü\H^\İË™YØ\™\ÜÈÙˆ˜[YKˆŸ›Ü\Nœİ]\ÏX\˜Ú]™Y^ÛY\ÈÚ[ˆH›Ü\H˜[YH\]X[È\˜Ú]™Yˆ‚”›Ü\K]˜[YH[\È[ÛÈÛÜšÈÚ[ˆH›Ü\H\ÈH\İˆ[\H[™X[›Ü›YY[™\È\™HYÛ›Ü™Y‚‚ˆÈÈÛÛÜˆ[\Â‚•Hš\œİX]Ú[™È[HÚ[œË‚‚ŸŞ[^Y™™XİŸKKHKKHŸ›Û\’\İÜHHX\Y\ÈØœÚYX[ˆ˜]]™HÛÛÜˆKˆŸYÎœ[ÜHH˜\Y\ÈØœÚYX[ˆ˜]]™HÛÛÜˆ‹ˆŸYÎœ›Ú™XİØXİ]™HHÍNLL˜\Y\ÈHİ\İÛHÚ^YYÚ]^ÛÛÜ‹ˆ‚‘›Û\ˆ[™YÈX]Ú[™È›ÛİÈHØ[YH[\È\ÈÛİ\˜ÙHš[\œËˆ^\İ[™ÈX[X[HÙ[XİYØ\™ÛÛÜœÈ™[XZ[ˆÚ[ˆ›ÈØ]YÛÜH[HX]Ú\Ë^Ù\Ú[ˆ[ˆØœÛÛ]H\ÛÛ]Y[›İHYÚYÚ\È™Z[™ÈÛX\™Y‚‚ˆÈÈ›Ü\HÜ›İ\Â‚‘[\ˆÛ™H^Xİœ›ÛX]\ˆÙ^H[ˆ
-Š‘Ü›İ\Ø\™ÈH›Ü\JŠ‹›Üˆ^[\Hİ]\Ø›Ú™XİÜˆ\Xˆ]™\Hš\ÚX›H›İH\ÈÜ˜\Y[ˆ[ˆ]]ÛX]XÈ˜]]™HØ[˜\ÈÜ›İ\˜[YYÚ]]È˜[YKİXÚ\Èİ]\ÎˆXİ]™XˆZ\ÜÚ[™Ë[\KÜˆ[œİ\ÜYØš™Xİ˜[Y\È\™HXÙY[ˆİ]\Îˆ›İÙ]‚‚”›Ü\H\İÈ\™HÚİÛˆ\ÈÛ™HÛÛXš[™YÜ›İ\X™[›Üˆ^[\H\™XNˆÛÜšÈ0­ÈÛYXˆ]]ÛX]XÈÜ›İ\È\™H™XØ[İ[]YÛˆŞ[˜Ú›Ûš^˜][Û‹Ú[HX[X[HÜ™X]YØ[˜\ÈÜ›İ\È\™H™]™\ˆÚ[™ÙY‚‚ˆÈÈ[šÈ\ØÛİ™\B‚“]™HØ[˜\È\Ù\ÈØœÚYX[‰ÜÈ™\ÛÛ™YY]Y]Kˆİ[™\™ÚZÚ[[šÜËX\šÙİÛˆ[šÜÈ™\ÛÛ™YÈ›İ\Ë[X™YË[™[šÙYœ›ÛX]\ˆ›Ü\Y\ÈØ[ˆÜ™X]H\™XİY™[][ÛœÚ\Ëˆ[ˆYÙH\ÈÜ™X]YÛ›HÚ[ˆ›İÛİ\˜ÙH[™\™Ù]›İ\È\™Hš\ÚX›K‚‚•[œ™\ÛÛ™YÜˆ[XšYİ[İ\È[šÜÈ\™HYÛ›Ü™YˆÙ[‹[[šÜÈÈ›İÜ™X]HYÙ\Ëˆ\XØ]H[šÜÈ[ˆHØ[YH\™Xİ[Ûˆ\™HÛÛXš[™Y‚
+# Rules reference
+
+## Source folders
+
+Folder paths are relative to the vault root. `Notes` matches `Notes/A.md` and `Notes/Sub/B.md`, but not `Notebook/C.md`. A trailing slash is optional. `/` selects all Markdown files in the vault.
+
+## Source tags
+
+The leading `#` is optional. Tag matching includes descendants: `history` matches `#history` and `#history/byzantium`, but not `#historical`.
+
+## Exclusion rules
+
+Rules are case-insensitive where appropriate and run after the main source filter.
+
+| Syntax | Effect |
+| --- | --- |
+| `folder:Archive` | Excludes `Archive` and every descendant folder. |
+| `tag:draft` | Excludes `#draft` and nested tags such as `#draft/rough`. |
+| `property:hidden` | Excludes a note when the property exists, regardless of value. |
+| `property:status=archived` | Excludes when the property value equals `archived`. |
+
+Property-value rules also work when a property is a list. Empty and malformed lines are ignored.
+
+## Color rules
+
+The first matching rule wins.
+
+| Syntax | Effect |
+| --- | --- |
+| `folder:History = 1` | Applies Obsidian native color 1. |
+| `tag:people = 6` | Applies Obsidian native color 6. |
+| `tag:project/active = #4A90E2` | Applies a custom six-digit hex color. |
+
+Folder and tag matching follow the same rules as source filters. Existing manually selected card colors remain when no category rule matches, except when an obsolete isolated-note highlight is being cleared.
+
+## Property groups
+
+Enter one exact frontmatter key in **Group cards by property**, for example `status`, `project`, or `type`. Every visible note is wrapped in an automatic native Canvas group named with its value, such as `Status: Active`. Missing, empty, or unsupported object values are placed in `Status: Not set`.
+
+Property lists are shown as one combined group label, for example `Area: Work Â· Home`. Automatic groups are recalculated on synchronization, while manually created Canvas groups are never changed.
+
+## Link discovery
+
+Live Canvas uses Obsidian's resolved metadata. Standard Wikilinks, Markdown links resolved to notes, embeds, and linked frontmatter properties can create directed relationships. An edge is created only when both source and target notes are visible.
+
+Unresolved or ambiguous links are ignored. Self-links do not create edges. Duplicate links in the same direction are combined.
