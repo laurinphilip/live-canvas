@@ -1,378 +1,251 @@
-import assert from "node:assert/strict";
-import { mkdtemp, rm } from "node:fs/promises";
-import os from "node:os";
-import path from "node:path";
-import { pathToFileURL } from "node:url";
-import esbuild from "esbuild";
+þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçZ[\Ü\ÜÙ\œ›ÛH››ÙN˜\ÜÙ\ÜÝšXÝŽÂš[\ÜÈZÙ[\›HHœ›ÛH››ÙN™œËÜ›ÛZ\Ù\ÈŽÂš[\ÜÜÈœ›ÛH››ÙN›ÜÈŽÂš[\Ü]œ›ÛH››ÙNœ]ŽÂš[\ÜÈ]Ñš[UT“Hœ›ÛH››ÙN\›ŽÂš[\Ü\ØZ[œ›ÛH™\ØZ[ŽÂ‚˜ÛÛœÝ[\Ü˜\žQ\™XÝÜžHH]ØZ]ZÙ[\
+]š›Ú[ŠÜË\\Š
+K›]™KXØ[˜\Ë]\ÝËHŠJNÂ˜ÛÛœÝÛÜ™P[™T]H]š›Ú[Š[\Ü˜\žQ\™XÝÜžK˜ÛÜ™K›ZœÈŠNÂ˜ÛÛœÝ[™T]H]š›Ú[Š[\Ü˜\žQ\™XÝÜžKœ‹›ZœÈŠNÂ‚žHÂˆ]ØZ]\ØZ[˜Z[
+Âˆ[žTÚ[ÎˆÂˆÛÜ™NˆœÜ˜ËØÛÜ™KÈ‹ˆŽˆœÜ˜ËÜ‹È‚ˆKˆ[™NˆYKˆ›Ü›X]ˆ™\ÛH‹ˆ]›Ü›Nˆ››ÙH‹ˆ\™Ù]ˆ››ÙLŒ‹ˆÝ]\Žˆ[\Ü˜\žQ\™XÝÜžKˆÝ]^[œÚ[ÛŽˆÈ‹šœÈŽˆ‹›ZœÈˆBˆJNÂ‚ˆÛÛœÝÛÜ™HH]ØZ][\Ü
+]Ñš[UT“
+ÛÜ™P[™T]
+Kš™YŠNÂˆÛÛœÝˆH]ØZ][\Ü
+]Ñš[UT“
+[™T]
+Kš™YŠNÂˆÛÛœÝ\ÝÈH×NÂˆÛÛœÝ\ÝH
+˜[YK[ŠHOˆ\ÝËœ\Ú
+È˜[YK[ˆJNÂ‚ˆ\Ý
+™š[\œÈH›Û\ˆ[˜ÛY[™È\ØÙ[™[È]›ÝÚ[Z[\›H˜[YY›Û\œÈ‹
 
-const temporaryDirectory = await mkdtemp(path.join(os.tmpdir(), "live-canvas-tests-"));
-const coreBundlePath = path.join(temporaryDirectory, "core.mjs");
-const pdfBundlePath = path.join(temporaryDirectory, "pdf.mjs");
+HOˆÂˆ\ÜÙ\™\]X[
+ÛÜ™Kš\Ô][‘›Û\Š“›Ý\ËÐ[K›Y‹“›Ý\ÈŠKYJNÂˆ\ÜÙ\™\]X[
+ÛÜ™Kš\Ô][‘›Û\Š“›Ý\ËÔÝX‹Ð™]K›Y‹“›Ý\ËÈŠKYJNÂˆ\ÜÙ\™\]X[
+ÛÜ™Kš\Ô][‘›Û\Š“›ÝX›ÛÚËÑØ[[XK›Y‹“›Ý\ÈŠK˜[ÙJNÂˆ\ÜÙ\™\]X[
+ÛÜ™Kš\Ô][‘›Û\Š[ž]Ú\™K›Y‹‹ÈŠKYJNÂˆJNÂ‚ˆ\Ý
+˜ÚÛÜÙ\ÈHØY™HØ[˜\È]›ÜˆÛ™KXÛXÚÈ›Û\ˆÙ]\‹
 
-try {
-  await esbuild.build({
-    entryPoints: {
-      core: "src/core.ts",
-      pdf: "src/pdf.ts"
-    },
-    bundle: true,
-    format: "esm",
-    platform: "node",
-    target: "node20",
-    outdir: temporaryDirectory,
-    outExtension: { ".js": ".mjs" }
-  });
+HOˆÂˆ\ÜÙ\™\]X[
+ˆÛÜ™K™Ù]]ZXÚÔÝ\Ø[˜\Ô]
+’Û›ÝÛYÙKÒ\ÝÜžH‹™]ÈÙ]
 
-  const core = await import(pathToFileURL(coreBundlePath).href);
-  const pdf = await import(pathToFileURL(pdfBundlePath).href);
-  const tests = [];
-  const test = (name, run) => tests.push({ name, run });
+K™]ÈÙ]
 
-  test("filters a folder including descendants but not similarly named folders", () => {
-    assert.equal(core.isPathInFolder("Notes/Alpha.md", "Notes"), true);
-    assert.equal(core.isPathInFolder("Notes/Sub/Beta.md", "Notes/"), true);
-    assert.equal(core.isPathInFolder("Notebook/Gamma.md", "Notes"), false);
-    assert.equal(core.isPathInFolder("Anywhere.md", "/"), true);
-  });
+JKˆ’Û›ÝÛYÙKÒ\ÝÜžKÓ]™HØ[˜\Ë˜Ø[˜\È‚ˆ
+NÂˆ\ÜÙ\™\]X[
+ˆÛÜ™K™Ù]]ZXÚÔÝ\Ø[˜\Ô]
+ˆ’Û›ÝÛYÙKÒ\ÝÜžH‹ˆ™]ÈÙ]
+È’Û›ÝÛYÙKÒ\ÝÜžKÓ]™HØ[˜\Ë˜Ø[˜\È—JKˆ™]ÈÙ]
 
-  test("chooses a safe Canvas path for one-click folder setup", () => {
-    assert.equal(
-      core.getQuickStartCanvasPath("Knowledge/History", new Set(), new Set()),
-      "Knowledge/History/Live Canvas.canvas"
-    );
-    assert.equal(
-      core.getQuickStartCanvasPath(
-        "Knowledge/History",
-        new Set(["Knowledge/History/Live Canvas.canvas"]),
-        new Set()
-      ),
-      "Knowledge/History/Live Canvas 2.canvas"
-    );
-    assert.equal(
-      core.getQuickStartCanvasPath(
-        "/",
-        new Set(["Live Canvas.canvas"]),
-        new Set(["Live Canvas.canvas"])
-      ),
-      "Live Canvas.canvas"
-    );
-  });
+Bˆ
+Kˆ’Û›ÝÛYÙKÒ\ÝÜžKÓ]™HØ[˜\È‹˜Ø[˜\È‚ˆ
+NÂˆ\ÜÙ\™\]X[
+ˆÛÜ™K™Ù]]ZXÚÔÝ\Ø[˜\Ô]
+ˆ‹È‹ˆ™]ÈÙ]
+È“]™HØ[˜\Ë˜Ø[˜\È—JKˆ™]ÈÙ]
+È“]™HØ[˜\Ë˜Ø[˜\È—JBˆ
+Kˆ“]™HØ[˜\Ë˜Ø[˜\È‚ˆ
+NÂˆJNÂ‚ˆ\Ý
+›X]Ú\ÈYÜÈ[™Z\ˆ\ØÙ[™[È‹
 
-  test("matches tags and their descendants", () => {
-    assert.equal(core.tagMatches(["#history/byzantium"], "#history"), true);
-    assert.equal(core.tagMatches(["#historical"], "history"), false);
-  });
+HOˆÂˆ\ÜÙ\™\]X[
+ÛÜ™KYÓX]Ú\ÊÈˆÚ\ÝÜžKØž^˜[][H—KˆÚ\ÝÜžHŠKYJNÂˆ\ÜÙ\™\]X[
+ÛÜ™KYÓX]Ú\ÊÈˆÚ\ÝÜšXØ[—Kš\ÝÜžHŠK˜[ÙJNÂˆJNÂ‚ˆ\Ý
+œ\œÙ\È[™\Y\È›Û\‹YË[™›Ü\H^Û\Ú[Ûˆ[\È‹
 
-  test("parses and applies folder, tag, and property exclusion rules", () => {
-    const rules = core.parseExclusionRules(
-      "folder:Archive\ntag:draft\nproperty:status=archived\nproperty:hidden"
-    );
-    assert.equal(rules.length, 4);
-    assert.equal(core.matchesExclusionRules("Archive/Old.md", [], {}, rules), true);
-    assert.equal(core.matchesExclusionRules("Notes/Draft.md", ["#draft/rough"], {}, rules), true);
-    assert.equal(
-      core.matchesExclusionRules("Notes/Done.md", [], { status: "archived" }, rules),
-      true
-    );
-    assert.equal(core.matchesExclusionRules("Notes/Secret.md", [], { hidden: true }, rules), true);
-    assert.equal(core.matchesExclusionRules("Notes/Keep.md", ["#published"], {}, rules), false);
-  });
+HOˆÂˆÛÛœÝ[\ÈHÛÜ™Kœ\œÙQ^Û\Ú[Û”[\Êˆ™›Û\Ž\˜Ú]™WYÎ™˜Yœ›Ü\NœÝ]\ÏX\˜Ú]™Yœ›Ü\NšY[ˆ‚ˆ
+NÂˆ\ÜÙ\™\]X[
+[\Ë›[™Ý
+NÂˆ\ÜÙ\™\]X[
+ÛÜ™K›X]Ú\Ñ^Û\Ú[Û”[\Ê\˜Ú]™KÓÛ›Y‹×KßK[\ÊKYJNÂˆ\ÜÙ\™\]X[
+ÛÜ™K›X]Ú\Ñ^Û\Ú[Û”[\Ê“›Ý\ËÑ˜Y›Y‹ÈˆÙ˜YÜ›ÝYÚ—KßK[\ÊKYJNÂˆ\ÜÙ\™\]X[
+ˆÛÜ™K›X]Ú\Ñ^Û\Ú[Û”[\Ê“›Ý\ËÑÛ™K›Y‹×KÈÝ]\Îˆ˜\˜Ú]™YˆK[\ÊKˆYBˆ
+NÂˆ\ÜÙ\™\]X[
+ÛÜ™K›X]Ú\Ñ^Û\Ú[Û”[\Ê“›Ý\ËÔÙXÜ™]›Y‹×KÈY[ŽˆYHK[\ÊKYJNÂˆ\ÜÙ\™\]X[
+ÛÜ™K›X]Ú\Ñ^Û\Ú[Û”[\Ê“›Ý\ËÒÙY\›Y‹ÈˆÜX›\ÚY—KßK[\ÊK˜[ÙJNÂˆJNÂ‚ˆ\Ý
+˜Z[Èš[H›Ù\È[™KY\XØ]\È[šÜÈ‹
 
-  test("builds file nodes and de-duplicates links", () => {
-    const result = core.buildCanvasDocument({
-      existing: core.createEmptyCanvas(),
-      notePaths: ["Notes/B.md", "Notes/A.md"],
-      links: [
-        { from: "Notes/A.md", to: "Notes/B.md" },
-        { from: "Notes/A.md", to: "Notes/B.md" }
-      ]
-    });
-    assert.equal(result.generatedNodeCount, 2);
-    assert.equal(result.generatedEdgeCount, 1);
-    assert.deepEqual(
-      result.document.nodes.map((node) => node.file),
-      ["Notes/A.md", "Notes/B.md"]
-    );
-  });
+HOˆÂˆÛÛœÝ™\Ý[HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÛÜ™K˜Ü™X]Q[\PØ[˜\Ê
+Kˆ›ÝT]ÎˆÈ“›Ý\ËÐ‹›Y‹“›Ý\ËÐK›Y—Kˆ[šÜÎˆÂˆÈœ›ÛNˆ“›Ý\ËÐK›Y‹Îˆ“›Ý\ËÐ‹›YˆKˆÈœ›ÛNˆ“›Ý\ËÐK›Y‹Îˆ“›Ý\ËÐ‹›YˆBˆBˆJNÂˆ\ÜÙ\™\]X[
+™\Ý[™Ù[™\˜]Y›ÙPÛÝ[ŠNÂˆ\ÜÙ\™\]X[
+™\Ý[™Ù[™\˜]YYÙPÛÝ[JNÂˆ\ÜÙ\™Y\\]X[
+ˆ™\Ý[™ØÝ[Y[››Ù\Ë›X\
 
-  test("combines relationship labels on one directed edge", () => {
-    const result = core.buildCanvasDocument({
-      existing: core.createEmptyCanvas(),
-      notePaths: ["People/Ada.md", "Books/Notes.md"],
-      links: [
-        { from: "Books/Notes.md", to: "People/Ada.md", label: "author" },
-        { from: "Books/Notes.md", to: "People/Ada.md", label: "inspired by" },
-        { from: "Books/Notes.md", to: "People/Ada.md", label: "author" }
-      ]
-    });
-    assert.equal(result.generatedEdgeCount, 1);
-    assert.equal(result.document.edges[0].label, "author Â· inspired by");
-  });
+›ÙJHOˆ›ÙK™š[JKˆÈ“›Ý\ËÐK›Y‹“›Ý\ËÐ‹›Y—Bˆ
+NÂˆJNÂ‚ˆ\Ý
+˜ÛÛXš[™\È™[][ÛœÚ\X™[ÈÛˆÛ™H\™XÝYYÙH‹
 
-  test("expands seed notes by incoming and outgoing neighbor levels", () => {
-    const adjacency = new Map([
-      ["A.md", new Set(["B.md"])],
-      ["B.md", new Set(["A.md", "C.md"])],
-      ["C.md", new Set(["B.md", "D.md"])],
-      ["D.md", new Set(["C.md"])]
-    ]);
-    assert.deepEqual(core.expandPathsByNeighbors(["A.md"], adjacency, 0), ["A.md"]);
-    assert.deepEqual(core.expandPathsByNeighbors(["A.md"], adjacency, 1), ["A.md", "B.md"]);
-    assert.deepEqual(core.expandPathsByNeighbors(["A.md"], adjacency, 2), [
-      "A.md",
-      "B.md",
-      "C.md"
-    ]);
-  });
+HOˆÂˆÛÛœÝ™\Ý[HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÛÜ™K˜Ü™X]Q[\PØ[˜\Ê
+Kˆ›ÝT]ÎˆÈ”[ÜKÐYK›Y‹›ÛÚÜËÓ›Ý\Ë›Y—Kˆ[šÜÎˆÂˆÈœ›ÛNˆ›ÛÚÜËÓ›Ý\Ë›Y‹Îˆ”[ÜKÐYK›Y‹X™[ˆ˜]]ÜˆˆKˆÈœ›ÛNˆ›ÛÚÜËÓ›Ý\Ë›Y‹Îˆ”[ÜKÐYK›Y‹X™[ˆš[œÜ\™YžHˆKˆÈœ›ÛNˆ›ÛÚÜËÓ›Ý\Ë›Y‹Îˆ”[ÜKÐYK›Y‹X™[ˆ˜]]ÜˆˆBˆBˆJNÂˆ\ÜÙ\™\]X[
+™\Ý[™Ù[™\˜]YYÙPÛÝ[JNÂˆ\ÜÙ\™\]X[
+™\Ý[™ØÝ[Y[™YÙ\ÖÌK›X™[˜]]Üˆ0­È[œÜ\™YžHŠNÂˆJNÂ‚ˆ\Ý
+™^[™ÈÙYY›Ý\ÈžH[˜ÛÛZ[™È[™Ý]ÛÚ[™È™ZYÚ›Üˆ]™[È‹
 
-  test("applies configured category colors to new and existing nodes", () => {
-    const first = core.buildCanvasDocument({
-      existing: core.createEmptyCanvas(),
-      notePaths: ["History/Byzantium.md"],
-      links: [],
-      noteColors: new Map([["History/Byzantium.md", "1"]])
-    });
-    assert.equal(first.document.nodes[0].color, "1");
+HOˆÂˆÛÛœÝY˜XÙ[˜ÞHH™]ÈX\
+ÂˆÈK›Y‹™]ÈÙ]
+È‹›Y—JWKˆÈ‹›Y‹™]ÈÙ]
+ÈK›Y‹Ë›Y—JWKˆÈË›Y‹™]ÈÙ]
+È‹›Y‹‘›Y—JWKˆÈ‘›Y‹™]ÈÙ]
+ÈË›Y—JWBˆJNÂˆ\ÜÙ\™Y\\]X[
+ÛÜ™K™^[™]ÐžS™ZYÚ›ÜœÊÈK›Y—KY˜XÙ[˜ÞK
+KÈK›Y—JNÂˆ\ÜÙ\™Y\\]X[
+ÛÜ™K™^[™]ÐžS™ZYÚ›ÜœÊÈK›Y—KY˜XÙ[˜ÞKJKÈK›Y‹‹›Y—JNÂˆ\ÜÙ\™Y\\]X[
+ÛÜ™K™^[™]ÐžS™ZYÚ›ÜœÊÈK›Y—KY˜XÙ[˜ÞKŠKÂˆK›Y‹ˆ‹›Y‹ˆË›Y‚ˆJNÂˆJNÂ‚ˆ\Ý
+˜\Y\ÈÛÛ™šYÝ\™YØ]YÛÜžHÛÛÜœÈÈ™]È[™^\Ý[™È›Ù\È‹
 
-    first.document.nodes[0].color = "6";
-    const second = core.buildCanvasDocument({
-      existing: first.document,
-      notePaths: ["History/Byzantium.md"],
-      links: [],
-      noteColors: new Map([["History/Byzantium.md", "#4A90E2"]])
-    });
-    assert.equal(second.document.nodes[0].color, "#4A90E2");
-  });
+HOˆÂˆÛÛœÝš\œÝHÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÛÜ™K˜Ü™X]Q[\PØ[˜\Ê
+Kˆ›ÝT]ÎˆÈ’\ÝÜžKÐž^˜[][K›Y—Kˆ[šÜÎˆ×Kˆ›ÝPÛÛÜœÎˆ™]ÈX\
+ÖÈ’\ÝÜžKÐž^˜[][K›Y‹ŒH—WJBˆJNÂˆ\ÜÙ\™\]X[
+š\œÝ™ØÝ[Y[››Ù\ÖÌK˜ÛÛÜ‹ŒHŠNÂ‚ˆš\œÝ™ØÝ[Y[››Ù\ÖÌK˜ÛÛÜˆHˆŽÂˆÛÛœÝÙXÛÛ™HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™Îˆš\œÝ™ØÝ[Y[ˆ›ÝT]ÎˆÈ’\ÝÜžKÐž^˜[][K›Y—Kˆ[šÜÎˆ×Kˆ›ÝPÛÛÜœÎˆ™]ÈX\
+ÖÈ’\ÝÜžKÐž^˜[][K›Y‹ˆÍNLLˆ—WJBˆJNÂˆ\ÜÙ\™\]X[
+ÙXÛÛ™™ØÝ[Y[››Ù\ÖÌK˜ÛÛÜ‹ˆÍNLLˆŠNÂˆJNÂ‚ˆ\Ý
+˜Ø[ˆÛX\ˆH™]š[Ý\ÛHX[˜YÙYYÚYÚÛÛÜˆ‹
 
-  test("can clear a previously managed highlight color", () => {
-    const first = core.buildCanvasDocument({
-      existing: core.createEmptyCanvas(),
-      notePaths: ["Orphan.md"],
-      links: [],
-      noteColors: new Map([["Orphan.md", "1"]])
-    });
-    assert.equal(first.document.nodes[0].color, "1");
-    const second = core.buildCanvasDocument({
-      existing: first.document,
-      notePaths: ["Orphan.md"],
-      links: [],
-      clearNoteColors: new Set(["Orphan.md"])
-    });
-    assert.equal("color" in second.document.nodes[0], false);
-  });
+HOˆÂˆÛÛœÝš\œÝHÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÛÜ™K˜Ü™X]Q[\PØ[˜\Ê
+Kˆ›ÝT]ÎˆÈ“Üœ[‹›Y—Kˆ[šÜÎˆ×Kˆ›ÝPÛÛÜœÎˆ™]ÈX\
+ÖÈ“Üœ[‹›Y‹ŒH—WJBˆJNÂˆ\ÜÙ\™\]X[
+š\œÝ™ØÝ[Y[››Ù\ÖÌK˜ÛÛÜ‹ŒHŠNÂˆÛÛœÝÙXÛÛ™HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™Îˆš\œÝ™ØÝ[Y[ˆ›ÝT]ÎˆÈ“Üœ[‹›Y—Kˆ[šÜÎˆ×KˆÛX\“›ÝPÛÛÜœÎˆ™]ÈÙ]
+È“Üœ[‹›Y—JBˆJNÂˆ\ÜÙ\™\]X[
+˜ÛÛÜˆˆ[ˆÙXÛÛ™™ØÝ[Y[››Ù\ÖÌK˜[ÙJNÂˆJNÂ‚ˆ\Ý
+˜Ü™X]\È˜]]™H›Ü\HÜ›Ý\ÈÚ]Ý]™\XÚ[™ÈX[X[Ø[˜\ÈÜ›Ý\È‹
 
-  test("preserves moved node geometry and manual canvas content", () => {
-    const first = core.buildCanvasDocument({
-      existing: core.createEmptyCanvas(),
-      notePaths: ["Notes/A.md", "Notes/B.md"],
-      links: [{ from: "Notes/A.md", to: "Notes/B.md" }]
-    });
-    const moved = {
-      ...first.document,
-      nodes: [
-        {
-          id: "manual-text",
-          type: "text",
-          text: "Keep me",
-          x: -500,
-          y: -500,
-          width: 200,
-          height: 100
-        },
-        ...first.document.nodes.map((node, index) =>
-          index === 0 ? { ...node, x: 1234, y: -777, width: 444, height: 333 } : node
-        )
-      ]
-    };
-    const second = core.buildCanvasDocument({
-      existing: moved,
-      notePaths: ["Notes/A.md", "Notes/B.md"],
-      links: [{ from: "Notes/A.md", to: "Notes/B.md" }]
-    });
-    const preserved = second.document.nodes.find((node) => node.file === "Notes/A.md");
-    assert.deepEqual(
-      { x: preserved.x, y: preserved.y, width: preserved.width, height: preserved.height },
-      { x: 1234, y: -777, width: 444, height: 333 }
-    );
-    assert.equal(second.document.nodes.some((node) => node.id === "manual-text"), true);
-  });
+HOˆÂˆÛÛœÝ™\Ý[HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÂˆ›Ù\ÎˆÂˆÂˆYˆ›X[X[YÜ›Ý\‹ˆ\Nˆ™Ü›Ý\‹ˆX™[ˆ“^HÝÛˆ›Ý\È‹ˆˆNˆNˆNˆÚYˆÌˆZYÚˆŒˆBˆKˆYÙ\Îˆ×BˆKˆ›ÝT]ÎˆÈ”›Ú™XÝËÐœšYY‹›Y‹”›Ú™XÝËÐZ[›Y‹”›Ú™XÝËÑÛ™K›Y—Kˆ[šÜÎˆ×Kˆ›ÝQÜ›Ý\Îˆ™]ÈX\
+ÂˆÈ”›Ú™XÝËÐœšYY‹›Y‹”Ý]\ÎˆXÝ]™H—KˆÈ”›Ú™XÝËÐZ[›Y‹”Ý]\ÎˆXÝ]™H—KˆÈ”›Ú™XÝËÑÛ™K›Y‹”Ý]\ÎˆÛ™H—BˆJBˆJNÂ‚ˆ\ÜÙ\™\]X[
+™\Ý[™Ù[™\˜]YÜ›Ý\ÛÝ[ŠNÂˆ\ÜÙ\™\]X[
+™\Ý[™ØÝ[Y[››Ù\ËœÛÛYJ
+›ÙJHOˆ›ÙKšYOOH›X[X[YÜ›Ý\ŠKYJNÂˆÛÛœÝXÝ]™QÜ›Ý\H™\Ý[™ØÝ[Y[››Ù\Ë™š[™
+ˆ
+›ÙJHOˆ›ÙK\HOOH™Ü›Ý\ˆ	‰ˆ›ÙK›X™[OOH”Ý]\ÎˆXÝ]™H‚ˆ
+NÂˆÛÛœÝXÝ]™SY[X™\œÈH™\Ý[™ØÝ[Y[››Ù\Ë™š[\Šˆ
+›ÙJHOˆ›ÙK™š[HOOH”›Ú™XÝËÐœšYY‹›Yˆ›ÙK™š[HOOH”›Ú™XÝËÐZ[›Y‚ˆ
+NÂˆ\ÜÙ\›ÚÊXÝ]™QÜ›Ý\
+NÂˆ›Üˆ
+ÛÛœÝY[X™\ˆÙˆXÝ]™SY[X™\œÊHÂˆ\ÜÙ\›ÚÊY[X™\‹žHXÝ]™QÜ›Ý\ž
+NÂˆ\ÜÙ\›ÚÊY[X™\‹žHHXÝ]™QÜ›Ý\žJNÂˆ\ÜÙ\›ÚÊY[X™\‹ž
+ÈY[X™\‹ÚYHXÝ]™QÜ›Ý\ž
+ÈXÝ]™QÜ›Ý\ÚY
+NÂˆ\ÜÙ\›ÚÊY[X™\‹žH
+ÈY[X™\‹šZYÚHXÝ]™QÜ›Ý\žH
+ÈXÝ]™QÜ›Ý\šZYÚ
+NÂˆBˆJNÂ‚ˆ\Ý
+œ™[[Ý™\ÈÛ›H]ÈÝÛˆ›Ü\HÜ›Ý\ÈÚ[ˆÜ›Ý\[™È\È\›™YÙ™ˆ‹
 
-  test("explicit smart layout resets generated positions but not manual nodes", () => {
-    const first = core.buildCanvasDocument({
-      existing: core.createEmptyCanvas(),
-      notePaths: ["A.md", "B.md", "C.md"],
-      links: [
-        { from: "A.md", to: "B.md" },
-        { from: "B.md", to: "C.md" }
-      ]
-    });
-    first.document.nodes.forEach((node) => {
-      node.x = 9000;
-      node.y = 9000;
-    });
-    first.document.nodes.unshift({
-      id: "manual",
-      type: "text",
-      text: "Keep me",
-      x: -333,
-      y: -444,
-      width: 200,
-      height: 100
-    });
+HOˆÂˆÛÛœÝÜ›Ý\YHÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÛÜ™K˜Ü™X]Q[\PØ[˜\Ê
+Kˆ›ÝT]ÎˆÈK›Y—Kˆ[šÜÎˆ×Kˆ›ÝQÜ›Ý\Îˆ™]ÈX\
+ÖÈK›Y‹”Ý]\ÎˆXÝ]™H—WJBˆJNÂˆÜ›Ý\Y™ØÝ[Y[››Ù\Ë[œÚY
+ÂˆYˆ›X[X[YÜ›Ý\‹ˆ\Nˆ™Ü›Ý\‹ˆX™[ˆ’ÙY\YH‹ˆˆLLˆNˆLLˆÚYˆˆZYÚˆˆJNÂ‚ˆÛÛœÝ[™Ü›Ý\YHÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÜ›Ý\Y™ØÝ[Y[ˆ›ÝT]ÎˆÈK›Y—Kˆ[šÜÎˆ×BˆJNÂˆ\ÜÙ\™\]X[
+[™Ü›Ý\Y™Ù[™\˜]YÜ›Ý\ÛÝ[
+NÂˆ\ÜÙ\™\]X[
+ˆ[™Ü›Ý\Y™ØÝ[Y[››Ù\ËœÛÛYJ
+›ÙJHOˆ›ÙKšYœÝ\ÕÚ]
+›ËYÜ›Ý\HŠJKˆ˜[ÙBˆ
+NÂˆ\ÜÙ\™\]X[
+[™Ü›Ý\Y™ØÝ[Y[››Ù\ËœÛÛYJ
+›ÙJHOˆ›ÙKšYOOH›X[X[YÜ›Ý\ŠKYJNÂˆJNÂ‚ˆ\Ý
+œ™\Ù\™\È[Ý™Y›ÙHÙ[ÛY]žH[™X[X[Ø[˜\ÈÛÛ[‹
 
-    const second = core.buildCanvasDocument({
-      existing: first.document,
-      notePaths: ["A.md", "B.md", "C.md"],
-      links: [
-        { from: "A.md", to: "B.md" },
-        { from: "B.md", to: "C.md" }
-      ],
-      forceLayout: true
-    });
-    const manual = second.document.nodes.find((node) => node.id === "manual");
-    assert.deepEqual({ x: manual.x, y: manual.y }, { x: -333, y: -444 });
-    assert.equal(
-      second.document.nodes.filter((node) => node.id.startsWith("lc-node-")).some((node) => node.x !== 9000),
-      true
-    );
-  });
+HOˆÂˆÛÛœÝš\œÝHÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÛÜ™K˜Ü™X]Q[\PØ[˜\Ê
+Kˆ›ÝT]ÎˆÈ“›Ý\ËÐK›Y‹“›Ý\ËÐ‹›Y—Kˆ[šÜÎˆÞÈœ›ÛNˆ“›Ý\ËÐK›Y‹Îˆ“›Ý\ËÐ‹›YˆWBˆJNÂˆÛÛœÝ[Ý™YHÂˆ‹‹™š\œÝ™ØÝ[Y[ˆ›Ù\ÎˆÂˆÂˆYˆ›X[X[]^‹ˆ\Nˆ^‹ˆ^ˆ’ÙY\YH‹ˆˆMLˆNˆMLˆÚYˆŒˆZYÚˆLˆKˆ‹‹™š\œÝ™ØÝ[Y[››Ù\Ë›X\
 
-  test("removes stale generated items but retains valid manual edges", () => {
-    const first = core.buildCanvasDocument({
-      existing: core.createEmptyCanvas(),
-      notePaths: ["Notes/A.md", "Notes/B.md"],
-      links: [{ from: "Notes/A.md", to: "Notes/B.md" }]
-    });
-    const a = first.document.nodes.find((node) => node.file === "Notes/A.md");
-    const existing = {
-      nodes: [
-        ...first.document.nodes,
-        { id: "manual", type: "text", text: "Note", x: 0, y: 900, width: 200, height: 100 }
-      ],
-      edges: [
-        ...first.document.edges,
-        { id: "manual-edge", fromNode: "manual", toNode: a.id }
-      ]
-    };
-    const second = core.buildCanvasDocument({
-      existing,
-      notePaths: ["Notes/A.md"],
-      links: []
-    });
-    assert.equal(second.generatedNodeCount, 1);
-    assert.equal(second.generatedEdgeCount, 0);
-    assert.equal(second.document.edges.some((edge) => edge.id === "manual-edge"), true);
-  });
+›ÙK[™^
+HO‚ˆ[™^OOHÈÈ‹‹››ÙKˆLŒÍNˆMÍÍËÚYˆZYÚˆÌÌÈHˆ›ÙBˆ
+BˆBˆNÂˆÛÛœÝÙXÛÛ™HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™Îˆ[Ý™Yˆ›ÝT]ÎˆÈ“›Ý\ËÐK›Y‹“›Ý\ËÐ‹›Y—Kˆ[šÜÎˆÞÈœ›ÛNˆ“›Ý\ËÐK›Y‹Îˆ“›Ý\ËÐ‹›YˆWBˆJNÂˆÛÛœÝ™\Ù\™YHÙXÛÛ™™ØÝ[Y[››Ù\Ë™š[™
 
-  test("carries a moved node position through a note rename", () => {
-    const built = core.buildCanvasDocument({
-      existing: core.createEmptyCanvas(),
-      notePaths: ["Notes/Old.md"],
-      links: []
-    });
-    built.document.nodes[0].x = 808;
-    built.document.nodes[0].y = 606;
-    const renamed = core.applyPathRenames(
-      built.document,
-      new Map([["Notes/Old.md", "Notes/New.md"]])
-    );
-    const rebuilt = core.buildCanvasDocument({
-      existing: renamed,
-      notePaths: ["Notes/New.md"],
-      links: []
-    });
-    assert.equal(rebuilt.document.nodes[0].x, 808);
-    assert.equal(rebuilt.document.nodes[0].y, 606);
-    assert.equal(rebuilt.document.nodes[0].file, "Notes/New.md");
-  });
+›ÙJHOˆ›ÙK™š[HOOH“›Ý\ËÐK›YŠNÂˆ\ÜÙ\™Y\\]X[
+ˆÈˆ™\Ù\™YžNˆ™\Ù\™YžKÚYˆ™\Ù\™YÚYZYÚˆ™\Ù\™YšZYÚKˆÈˆLŒÍNˆMÍÍËÚYˆZYÚˆÌÌÈBˆ
+NÂˆ\ÜÙ\™\]X[
+ÙXÛÛ™™ØÝ[Y[››Ù\ËœÛÛYJ
+›ÙJHOˆ›ÙKšYOOH›X[X[]^ŠKYJNÂˆJNÂ‚ˆ\Ý
+™^XÚ]ÛX\^[Ý]™\Ù]ÈÙ[™\˜]YÜÚ][ÛœÈ]›ÝX[X[›Ù\È‹
 
-  test("rejects malformed canvas data", () => {
-    assert.throws(() => core.parseCanvasDocument("not-json"), /valid JSON/);
-    assert.deepEqual(core.parseCanvasDocument("{}"), { nodes: [], edges: [] });
-    assert.throws(() => core.parseCanvasDocument('{"nodes":{}}'), /JSON Canvas structure/);
-  });
+HOˆÂˆÛÛœÝš\œÝHÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÛÜ™K˜Ü™X]Q[\PØ[˜\Ê
+Kˆ›ÝT]ÎˆÈK›Y‹‹›Y‹Ë›Y—Kˆ[šÜÎˆÂˆÈœ›ÛNˆK›Y‹Îˆ‹›YˆKˆÈœ›ÛNˆ‹›Y‹ÎˆË›YˆBˆBˆJNÂˆš\œÝ™ØÝ[Y[››Ù\Ë™›Ü‘XXÚ
 
-  test("exports Canvas nodes, groups, edges, labels, and colors as a valid PDF", () => {
-    const buffer = pdf.createCanvasPdf(
-      {
-        nodes: [
-          {
-            id: "group",
-            type: "group",
-            label: "Solar system",
-            x: -40,
-            y: -40,
-            width: 900,
-            height: 420,
-            color: "5"
-          },
-          {
-            id: "earth",
-            type: "file",
-            file: "Space/Earth.md",
-            x: 0,
-            y: 0,
-            width: 320,
-            height: 200,
-            color: "#4A90E2"
-          },
-          {
-            id: "moon",
-            type: "text",
-            text: "# Moon\nThe Earth's satellite",
-            x: 500,
-            y: 120,
-            width: 320,
-            height: 200
-          }
-        ],
-        edges: [
-          {
-            id: "orbit",
-            fromNode: "moon",
-            toNode: "earth",
-            toEnd: "arrow",
-            label: "orbits"
-          }
-        ]
-      },
-      "Astronomy Canvas"
-    );
-    const contents = new TextDecoder().decode(new Uint8Array(buffer));
-    assert.equal(contents.startsWith("%PDF-1.4"), true);
-    assert.match(contents, /Astronomy Canvas/);
-    assert.match(contents, /Space\/Earth\.md/);
-    assert.match(contents, /Solar system/);
-    assert.match(contents, /orbits/);
-    assert.doesNotMatch(contents, /NaN|Infinity/);
-    assert.match(contents, /%%EOF\n$/);
-  });
+›ÙJHOˆÂˆ›ÙKžHLÂˆ›ÙKžHHLÂˆJNÂˆš\œÝ™ØÝ[Y[››Ù\Ë[œÚY
+ÂˆYˆ›X[X[‹ˆ\Nˆ^‹ˆ^ˆ’ÙY\YH‹ˆˆLÌÌËˆNˆMˆÚYˆŒˆZYÚˆLˆJNÂ‚ˆÛÛœÝÙXÛÛ™HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™Îˆš\œÝ™ØÝ[Y[ˆ›ÝT]ÎˆÈK›Y‹‹›Y‹Ë›Y—Kˆ[šÜÎˆÂˆÈœ›ÛNˆK›Y‹Îˆ‹›YˆKˆÈœ›ÛNˆ‹›Y‹ÎˆË›YˆBˆKˆ›Ü˜ÙS^[Ý]ˆYBˆJNÂˆÛÛœÝX[X[HÙXÛÛ™™ØÝ[Y[››Ù\Ë™š[™
 
-  test("chooses a new PDF filename instead of overwriting an export", () => {
-    assert.equal(pdf.getAvailablePdfPath("Maps/Live Canvas.canvas", new Set()), "Maps/Live Canvas.pdf");
-    assert.equal(
-      pdf.getAvailablePdfPath(
-        "Maps/Live Canvas.canvas",
-        new Set(["Maps/Live Canvas.pdf", "Maps/Live Canvas 2.pdf"])
-      ),
-      "Maps/Live Canvas 3.pdf"
-    );
-  });
+›ÙJHOˆ›ÙKšYOOH›X[X[ŠNÂˆ\ÜÙ\™Y\\]X[
+ÈˆX[X[žNˆX[X[žHKÈˆLÌÌËNˆMJNÂˆ\ÜÙ\™\]X[
+ˆÙXÛÛ™™ØÝ[Y[››Ù\Ë™š[\Š
+›ÙJHOˆ›ÙKšYœÝ\ÕÚ]
+›Ë[›ÙKHŠJKœÛÛYJ
+›ÙJHOˆ›ÙKžOOHL
+KˆYBˆ
+NÂˆJNÂ‚ˆ\Ý
+œ™[[Ý™\ÈÝ[HÙ[™\˜]Y][\È]™]Z[œÈ˜[YX[X[YÙ\È‹
 
-  let failures = 0;
-  for (const { name, run } of tests) {
-    try {
-      await run();
-      console.log(`âœ“ ${name}`);
-    } catch (error) {
-      failures += 1;
-      console.error(`âœ— ${name}`);
-      console.error(error);
-    }
-  }
+HOˆÂˆÛÛœÝš\œÝHÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÛÜ™K˜Ü™X]Q[\PØ[˜\Ê
+Kˆ›ÝT]ÎˆÈ“›Ý\ËÐK›Y‹“›Ý\ËÐ‹›Y—Kˆ[šÜÎˆÞÈœ›ÛNˆ“›Ý\ËÐK›Y‹Îˆ“›Ý\ËÐ‹›YˆWBˆJNÂˆÛÛœÝHHš\œÝ™ØÝ[Y[››Ù\Ë™š[™
 
-  if (failures > 0) process.exitCode = 1;
-  else console.log(`\n${tests.length} tests passed.`);
-} finally {
-  await rm(temporaryDirectory, { recursive: true, force: true });
-}
+›ÙJHOˆ›ÙK™š[HOOH“›Ý\ËÐK›YŠNÂˆÛÛœÝ^\Ý[™ÈHÂˆ›Ù\ÎˆÂˆ‹‹™š\œÝ™ØÝ[Y[››Ù\ËˆÈYˆ›X[X[‹\Nˆ^‹^ˆ“›ÝH‹ˆNˆLÚYˆŒZYÚˆLBˆKˆYÙ\ÎˆÂˆ‹‹™š\œÝ™ØÝ[Y[™YÙ\ËˆÈYˆ›X[X[YYÙH‹œ›ÛS›ÙNˆ›X[X[‹Ó›ÙNˆKšYBˆBˆNÂˆÛÛœÝÙXÛÛ™HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™Ëˆ›ÝT]ÎˆÈ“›Ý\ËÐK›Y—Kˆ[šÜÎˆ×BˆJNÂˆ\ÜÙ\™\]X[
+ÙXÛÛ™™Ù[™\˜]Y›ÙPÛÝ[JNÂˆ\ÜÙ\™\]X[
+ÙXÛÛ™™Ù[™\˜]YYÙPÛÝ[
+NÂˆ\ÜÙ\™\]X[
+ÙXÛÛ™™ØÝ[Y[™YÙ\ËœÛÛYJ
+YÙJHOˆYÙKšYOOH›X[X[YYÙHŠKYJNÂˆJNÂ‚ˆ\Ý
+˜Ø\œšY\ÈH[Ý™Y›ÙHÜÚ][Ûˆ›ÝYÚH›ÝH™[˜[YH‹
+
+HOˆÂˆÛÛœÝZ[HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™ÎˆÛÜ™K˜Ü™X]Q[\PØ[˜\Ê
+Kˆ›ÝT]ÎˆÈ“›Ý\ËÓÛ›Y—Kˆ[šÜÎˆ×BˆJNÂˆZ[™ØÝ[Y[››Ù\ÖÌKžHÂˆZ[™ØÝ[Y[››Ù\ÖÌKžHHŒŽÂˆÛÛœÝ™[˜[YYHÛÜ™K˜\T]™[˜[Y\ÊˆZ[™ØÝ[Y[ˆ™]ÈX\
+ÖÈ“›Ý\ËÓÛ›Y‹“›Ý\ËÓ™]Ë›Y—WJBˆ
+NÂˆÛÛœÝ™XZ[HÛÜ™K˜Z[Ø[˜\ÑØÝ[Y[
+Âˆ^\Ý[™Îˆ™[˜[YYˆ›ÝT]ÎˆÈ“›Ý\ËÓ™]Ë›Y—Kˆ[šÜÎˆ×BˆJNÂˆ\ÜÙ\™\]X[
+™XZ[™ØÝ[Y[››Ù\ÖÌKž
+NÂˆ\ÜÙ\™\]X[
+™XZ[™ØÝ[Y[››Ù\ÖÌKžKŒŠNÂˆ\ÜÙ\™\]X[
+™XZ[™ØÝ[Y[››Ù\ÖÌK™š[K“›Ý\ËÓ™]Ë›YŠNÂˆJNÂ‚ˆ\Ý
+œ™Z™XÝÈX[›Ü›YYØ[˜\È]H‹
+
+HOˆÂˆ\ÜÙ\›ÝÜÊ
+
+HOˆÛÜ™Kœ\œÙPØ[˜\ÑØÝ[Y[
+››ÝZœÛÛˆŠKÝ˜[Y”ÓÓ‹ÊNÂˆ\ÜÙ\™Y\\]X[
+ÛÜ™Kœ\œÙPØ[˜\ÑØÝ[Y[
+žßHŠKÈ›Ù\Îˆ×KYÙ\Îˆ×HJNÂˆ\ÜÙ\›ÝÜÊ
+
+HOˆÛÜ™Kœ\œÙPØ[˜\ÑØÝ[Y[
+	ÞÈ››Ù\ÈŽžß_IÊKÒ”ÓÓˆØ[˜\ÈÝXÝ\™KÊNÂˆJNÂ‚ˆ\Ý
+™^ÜÈØ[˜\È›Ù\ËÜ›Ý\ËYÙ\ËX™[Ë[™ÛÛÜœÈ\ÈH˜[Yˆ‹
+
+HOˆÂˆÛÛœÝY™™\ˆH‹˜Ü™X]PØ[˜\ÔŠˆÂˆ›Ù\ÎˆÂˆÂˆYˆ™Ü›Ý\‹ˆ\Nˆ™Ü›Ý\‹ˆX™[ˆ”ÛÛ\ˆÞ\Ý[H‹ˆˆMˆNˆMˆÚYˆLˆZYÚˆŒˆÛÛÜŽˆH‚ˆKˆÂˆYˆ™X\‹ˆ\Nˆ™š[H‹ˆš[Nˆ”ÜXÙKÑX\›Y‹ˆˆˆNˆˆÚYˆÌŒˆZYÚˆŒˆÛÛÜŽˆˆÍNLLˆ‚ˆKˆÂˆYˆ›[ÛÛˆ‹ˆ\Nˆ^‹ˆ^ˆˆÈ[ÛÛ—•HX\	ÜÈØ][]H‹ˆˆLˆNˆLŒˆÚYˆÌŒˆZYÚˆŒˆBˆKˆYÙ\ÎˆÂˆÂˆYˆ›Ü˜š]‹ˆœ›ÛS›ÙNˆ›[ÛÛˆ‹ˆÓ›ÙNˆ™X\‹ˆÑ[™ˆ˜\œ›ÝÈ‹ˆX™[ˆ›Ü˜š]È‚ˆBˆBˆKˆ\Ý›Û›Û^HØ[˜\È‚ˆ
+NÂˆÛÛœÝÛÛ[ÈH™]È^XÛÙ\Š
+K™XÛÙJ™]ÈZ[\œ˜^JY™™\ŠJNÂˆ\ÜÙ\™\]X[
+ÛÛ[ËœÝ\ÕÚ]
+‰T‹LKŠKYJNÂˆ\ÜÙ\›X]Ú
+ÛÛ[ËÐ\Ý›Û›Û^HØ[˜\ËÊNÂˆ\ÜÙ\›X]Ú
+ÛÛ[ËÔÜXÙWÑX\›YÊNÂˆ\ÜÙ\›X]Ú
+ÛÛ[ËÔÛÛ\ˆÞ\Ý[KÊNÂˆ\ÜÙ\›X]Ú
+ÛÛ[ËÛÜ˜š]ËÊNÂˆ\ÜÙ\™Ù\Ó›ÝX]Ú
+ÛÛ[ËÓ˜SŸ[™š[š]KÊNÂˆ\ÜÙ\›X]Ú
+ÛÛ[ËÉIQSÑ—‰ÊNÂˆJNÂ‚ˆ\Ý
+˜ÚÛÜÙ\ÈH™]Èˆš[[˜[YH[œÝXYÙˆÝ™\Üš][™È[ˆ^Ü‹
+
+HOˆÂˆ\ÜÙ\™\]X[
+‹™Ù]]˜Z[X›T”]
+“X\ËÓ]™HØ[˜\Ë˜Ø[˜\È‹™]ÈÙ]
+
+JK“X\ËÓ]™HØ[˜\ËœˆŠNÂˆ\ÜÙ\™\]X[
+ˆ‹™Ù]]˜Z[X›T”]
+ˆ“X\ËÓ]™HØ[˜\Ë˜Ø[˜\È‹ˆ™]ÈÙ]
+È“X\ËÓ]™HØ[˜\Ëœˆ‹“X\ËÓ]™HØ[˜\È‹œˆ—JBˆ
+Kˆ“X\ËÓ]™HØ[˜\ÈËœˆ‚ˆ
+NÂˆJNÂ‚ˆ]˜Z[\™\ÈHÂˆ›Üˆ
+ÛÛœÝÈ˜[YK[ˆHÙˆ\ÝÊHÂˆžHÂˆ]ØZ][Š
+NÂˆÛÛœÛÛK›ÙÊ8§$È	Û˜[Y_X
+NÂˆHØ]Ú
+\œ›ÜŠHÂˆ˜Z[\™\È
+ÏHNÂˆÛÛœÛÛK™\œ›ÜŠ8§%È	Û˜[Y_X
+NÂˆÛÛœÛÛK™\œ›ÜŠ\œ›ÜŠNÂˆBˆB‚ˆYˆ
+˜Z[\™\Èˆ
+H›ØÙ\ÜË™^]ÛÙHHNÂˆ[ÙHÛÛœÛÛK›ÙÊ‰Ý\ÝË›[™ÝH\ÝÈ\ÜÙY˜
+NÂŸHš[˜[HÂˆ]ØZ]›J[\Ü˜\žQ\™XÝÜžKÈ™XÝ\œÚ]™NˆYK›Ü˜ÙNˆYHJNÂŸB

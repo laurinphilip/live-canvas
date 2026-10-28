@@ -1,181 +1,45 @@
-<p align="center">
-  <img src="docs/assets/live-canvas-banner.svg" alt="Live Canvas â€” Your notes. Your layout. Always in sync." width="100%">
-</p>
-
-<p align="center">
-  <a href="https://obsidian.md"><img alt="Obsidian 1.13.0+" src="https://img.shields.io/badge/Obsidian-1.13.0%2B-7C3AED?logo=obsidian&logoColor=white"></a>
-  <img alt="Version 1.3.4" src="https://img.shields.io/badge/version-1.3.4-2563EB">
-  <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A">
-  <img alt="No network required" src="https://img.shields.io/badge/network-none-059669">
-  <img alt="Desktop and mobile" src="https://img.shields.io/badge/platform-desktop%20%7C%20mobile-475569">
-</p>
-
-Live Canvas is an offline Obsidian community plugin that continuously synchronizes a normal, freely editable `.canvas` file with selected Markdown notes and their relationships.
-
-It is built around one promise: **automation should not take ownership away from you**. Move or resize generated cards, add your own text, groups, links, files, and edges, then keep working. Refreshes update Live Canvas-managed items while preserving the rest of your Canvas.
-
-## What it does
-
-- Selects notes from an explicit folder or tag.
-- Creates a ready-to-use Canvas from the current note's folder with one command.
-- Adds the same quick start to the file explorer's right-click menu for folders and notes.
-- Adds internal links, embeds, and linked properties as directed edges.
-- Preserves manually moved and resized note cards during normal synchronization.
-- Keeps manual Canvas nodes and valid manual edges.
-- Expands the graph through incoming or outgoing linked neighbors.
-- Excludes archive, draft, hidden, or other notes with simple rules.
-- Colors cards by folder or tag and highlights isolated notes.
-- Adds useful relationship labels such as `author`, `embed`, or Wikilink aliases.
-- Offers an optional, confirmed smart relayout for managed cards.
-- Exports the saved Canvas as a print-friendly vector PDF without overwriting earlier exports.
-- Updates after note changes or on demand.
-- Runs locally with no server, account, API key, subscription, analytics, or telemetry.
-
-## Install
-
-### Community plugins
-
-1. Open **Settings â†’ Community plugins** in Obsidian.
-2. Select **Browse**, search for **Live Canvas**, and select **Install**.
-3. Select **Enable**, then open **Settings â†’ Live Canvas**.
-
-### Manual installation
-
-If the Community listing is not available yet, download `main.js`, `manifest.json`, and `styles.css` from the latest GitHub release and place them in your vault's plugin folder:
-
-```text
-Vault/.obsidian/plugins/live-canvas/
-```
-
-The folder must directly contain:
-
-```text
-main.js
-manifest.json
-styles.css
-```
-
-Restart Obsidian, open **Settings â†’ Community plugins**, and enable **Live Canvas**. For step-by-step macOS, Windows, Linux, mobile, update, and uninstall instructions, read the [installation guide](docs/INSTALLATION.md).
-
-## Quick start
-
-The fastest option is to right-click a folder or Markdown note in the file explorer and select **Create Live Canvas for this folder**. You can also open a note and run **Live Canvas: Create Canvas from current note's folder**. Live Canvas selects that folder, chooses a safe Canvas filename, builds it, and opens it automatically.
-
-For manual setup:
-
-1. Create a few notes in a folder such as `Knowledge` and connect them with `[[internal links]]`.
-2. Open **Settings â†’ Live Canvas**.
-3. Choose **Folder** and enter `Knowledge`, or choose **Tag** and enter a tag such as `history`.
-4. Keep the target path `Live Canvas.canvas`.
-5. Select **Refresh and open**.
-6. Move a card, edit a note, then run **Live Canvas: Refresh Canvas now**. The saved position should remain.
-
-New to Canvas? The [beginner user guide](docs/USER_GUIDE.md) includes a complete first test and explains zooming, panning, moving, resizing, opening notes, and adding manual content.
-
-## Example configuration
-
-Exclude notes that should not appear:
-
-```text
-folder:Archive
-tag:draft
-property:status=archived
-property:hidden
-```
-
-Color categories using Obsidian colors `1` through `6` or six-digit hex colors:
-
-```text
-folder:History = 1
-tag:person = 4
-tag:project/active = #4A90E2
-```
-
-See the [rules reference](docs/RULES_REFERENCE.md) for exact matching behavior.
-
-## How synchronization stays safe
-
-Live Canvas reads note metadata through Obsidian APIs and writes only the configured `.canvas` file. It never modifies or deletes Markdown notes.
-
-An existing target Canvas is not overwritten automatically. You must choose **Adopt explicitly** before Live Canvas will manage it. Managed nodes and edges use dedicated internal IDs. Other valid nodes and edges remain. Writes use Obsidian's atomic vault processing API.
-
-Normal synchronization preserves managed card positions and sizes. **Smart relayout** is separate, requires confirmation, moves only managed cards, and leaves manual nodes in place.
-
-Back up an important vault before testing any community plugin.
-
-## Feature details
-
-| Area | Behavior |
-| --- | --- |
-| Sources | Folder, whole vault, or tag including nested tags |
-| Relationships | Wikilinks, resolved Markdown links, embeds, linked properties |
-| Expansion | Zero, one, or two hops; incoming, outgoing, or both |
-| Layout | Deterministic initial placement; optional smart relayout |
-| Preservation | Managed geometry, manual nodes, and valid manual edges |
-| Styling | First-match folder/tag rules plus isolated-note highlighting |
-| Refresh | Startup, debounced note changes, ribbon, command, or settings |
-| PDF export | Local vector overview with cards, groups, connections, colors, and labels |
-| Privacy | Local-only; no network access or telemetry |
-
-## Commands
-
-- **Refresh Canvas now** â€” synchronize immediately.
-- **Create Canvas from current note's folder** â€” configure, create, and open a Canvas in one step.
-- **File explorer menu** â€” right-click a folder or Markdown note to create its Canvas directly.
-- **Open managed Canvas** â€” open the configured Canvas.
-- **Smart relayout managed cards** â€” confirm and rearrange generated note cards.
-- **Export managed Canvas as PDF** â€” create and open a PDF next to the saved Canvas.
-
-## Documentation
-
-- [Installation](docs/INSTALLATION.md)
-- [Beginner user guide](docs/USER_GUIDE.md)
-- [Filter and color rules](docs/RULES_REFERENCE.md)
-- [Troubleshooting](docs/TROUBLESHOOTING.md)
-- [Privacy](docs/PRIVACY.md)
-- [Development](docs/DEVELOPMENT.md)
-- [Publish the repository on GitHub](docs/PUBLISHING_TO_GITHUB.md)
-- [Release and GitHub setup](docs/RELEASING.md)
-- [Changelog](CHANGELOG.md)
-- [Support](SUPPORT.md)
-
-## Limitations
-
-- Live sync runs only while Obsidian and the plugin are active.
-- Unresolved or ambiguous links are ignored.
-- Multiple links in the same direction between two notes become one edge.
-- Obsidian must save a moved card before a refresh can preserve its new position.
-- A note renamed outside a running Obsidian session cannot always be matched to its former card.
-- Very large Canvas files may become slow; use focused filters and the safety limit.
-- Smart relayout is deterministic and connection-based, not a physics simulation.
-- PDF export is a clean overview rather than a pixel-perfect screenshot. Embedded images, websites, and unsupported characters are represented by text, and very large Canvases may have small text when fitted onto one A4 page.
-
-## Development
-
-Requires Node.js 18 or newer.
-
-```bash
-npm ci
-npm run check
-npm run package
-```
-
-The production bundle is written to `main.js`. Packaging creates an install ZIP, a source archive, and a clean GitHub repository archive. See the [development guide](docs/DEVELOPMENT.md) for the full workflow.
-
-## Contributing and security
-
-Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Use the structured issue forms for bugs and features. Please report sensitive vulnerabilities privately as described in [SECURITY.md](SECURITY.md).
-
-## Project principles
-
-Future changes should keep Live Canvas:
-
-- local-first and usable offline;
-- compatible with native, editable Canvas files;
-- conservative with user-created content;
-- understandable without a technical background;
-- useful without accounts, subscriptions, or external services.
-
-## License
-
-Live Canvas is available under the [MIT License](LICENSE).
+şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçO[YÛH˜Ù[\ˆ‚ˆ[YÈÜ˜ÏH™ØÜËØ\ÜÙ]ËÛ]™KXØ[˜\ËX˜[›™\‹œİ™Èˆ[H“]™HØ[˜\È8 %[İ\ˆ›İ\Ëˆ[İ\ˆ^[İ]ˆ[Ø^\È[ˆŞ[˜ËˆˆÚYHŒL	H‚Ü‚‚[YÛH˜Ù[\ˆ‚ˆH™YHšÎ‹ËÛØœÚYX[‹›Y[YÈ[H“ØœÚYX[ˆKŒLËŒ
+ÈˆÜ˜ÏHšÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKÓØœÚYX[‹LKŒLËŒ	L‹MĞÌĞQQÛÙÛÏ[ØœÚYX[‰›ÙÛĞÛÛÜ]Ú]HØO‚ˆ[YÈ[H•™\œÚ[ÛˆKŒˆÜ˜ÏHšÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKİ™\œÚ[Û‹LKŒLMŒÑPˆ‚ˆ[YÈ[H“RUXÙ[œÙHˆÜ˜ÏHšÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKÛXÙ[œÙKSRULMLÍH‚ˆ[YÈ[H“›È™]ÛÜšÈ™\]Z\™YˆÜ˜ÏHšÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKÛ™]ÛÜšË[›Û™KLNMH‚ˆ[YÈ[H‘\ÚİÜ[™[Øš[HˆÜ˜ÏHšÎ‹ËÚ[YËœÚY[Ëš[ËØ˜YÙKÜ]›Ü›KY\ÚİÜ	LŒ	MĞÉLŒ[Øš[KMÍMMH‚Ü‚‚“]™HØ[˜\È\È[ˆÙ™›[™HØœÚYX[ˆÛÛ[][š]HYÚ[ˆ]ÛÛ[[İ\ÛHŞ[˜Ú›Ûš^™\ÈH›Ü›X[œ™Y[HY]X›H˜Ø[˜\Øš[HÚ]Ù[XİYX\šÙİÛˆ›İ\È[™Z\ˆ™[][ÛœÚ\Ë‚‚’]\ÈZ[\›İ[™Û™H›ÛZ\ÙNˆ
+Š˜]]ÛX][ÛˆÚİ[›İZÙHİÛ™\œÚ\]Ø^Hœ›ÛH[İJŠ‹ˆ[İ™HÜˆ™\Ú^™HÙ[™\˜]YØ\™ËY[İ\ˆİÛˆ^Ü›İ\Ë[šÜËš[\Ë[™YÙ\Ë[ˆÙY\ÛÜšÚ[™Ëˆ™Yœ™\Ú\È\]H]™HØ[˜\Ë[X[˜YÙY][\ÈÚ[H™\Ù\š[™ÈH™\İÙˆ[İ\ˆØ[˜\Ë‚‚ˆÈÈÚ]]Ù\Â‚‹HÙ[XİÈ›İ\Èœ›ÛH[ˆ^XÚ]›Û\ˆÜˆYË‚‹HÜ™X]\ÈH™XYK]Ë]\ÙHØ[˜\Èœ›ÛHHİ\œ™[›İIÜÈ›Û\ˆÚ]Û™HÛÛ[X[™‚‹HYÈHØ[YH]ZXÚÈİ\ÈHš[H^Ü™\‰ÜÈšYÚXÛXÚÈY[H›Üˆ›Û\œÈ[™›İ\Ë‚‹HYÈ[\›˜[[šÜË[X™YË[™[šÙY›Ü\Y\È\È\™XİYYÙ\Ë‚‹H™\Ù\™\ÈX[X[H[İ™Y[™™\Ú^™Y›İHØ\™È\š[™È›Ü›X[Ş[˜Ú›Ûš^˜][Û‹‚‹HÙY\ÈX[X[Ø[˜\È›Ù\È[™˜[YX[X[YÙ\Ë‚‹H^[™ÈHÜ˜\›İYÚ[˜ÛÛZ[™ÈÜˆİ]ÛÚ[™È[šÙY™ZYÚ›ÜœË‚‹H^ÛY\È\˜Ú]™K˜YY[‹Üˆİ\ˆ›İ\ÈÚ]Ú[\H[\Ë‚‹HÛÛÜœÈØ\™ÈH›Û\ˆÜˆYÈ[™YÚYÚÈ\ÛÛ]Y›İ\Ë‚‹HÜ›İ\ÈØ\™È[È˜]]™HØ[˜\ÈÙXİ[ÛœÈ\Ú[™È[Hœ›ÛX]\ˆ›Ü\KİXÚ\Èİ]\Ø›Ú™XİÜˆ\X‚‹HYÈ\ÙY[™[][ÛœÚ\X™[ÈİXÚ\È]]Ü˜[X™YÜˆÚZÚ[[šÈ[X\Ù\Ë‚‹HÙ™™\œÈ[ˆÜ[Û˜[ÛÛ™š\›YYÛX\™[^[İ]›ÜˆX[˜YÙYØ\™Ë‚‹H^ÜÈHØ]™YØ[˜\È\ÈHš[YœšY[™H™XİÜˆˆÚ]İ]İ™\Üš][™ÈX\›Y\ˆ^ÜË‚‹H\]\ÈY\ˆ›İHÚ[™Ù\ÈÜˆÛˆ[X[™‚‹H[œÈØØ[HÚ]›ÈÙ\™\‹XØÛİ[THÙ^KİXœØÜš\[Û‹[˜[]XÜËÜˆ[[Y]K‚‚ˆÈÈ[œİ[‚ˆÈÈÈÛÛ[][š]HYÚ[œÂ‚ŒKˆÜ[ˆ
+Š”Ù][™ÜÈ8¡¤ˆÛÛ[][š]HYÚ[œÊŠˆ[ˆØœÚYX[‹‚Œ‹ˆÙ[Xİ
+Šœ›İÜÙJŠ‹ÙX\˜Ú›Üˆ
+Š“]™HØ[˜\ÊŠ‹[™Ù[Xİ
+Š’[œİ[
+Š‹‚ŒËˆÙ[Xİ
+Š‘[˜X›JŠ‹[ˆÜ[ˆ
+Š”Ù][™ÜÈ8¡¤ˆ]™HØ[˜\ÊŠ‹‚‚ˆÈÈÈX[X[[œİ[][Û‚‚’YˆHÛÛ[][š]H\İ[™È\È›İ]˜Z[X›HY]İÛ›ØYXZ[‹šœØX[šY™\İšœÛÛ˜[™İ[\Ë˜ÜÜØœ›ÛHH]\İÚ]Xˆ™[X\ÙH[™XÙH[H[ˆ[İ\ˆ˜][	ÜÈYÚ[ˆ›Û\‚‚˜^•˜][Ë›ØœÚYX[‹ÜYÚ[œËÛ]™KXØ[˜\ËÂ˜‚•H›Û\ˆ]\İ\™XİHÛÛZ[‚‚˜^›XZ[‹šœÂ›X[šY™\İšœÛÛ‚œİ[\Ë˜ÜÜÂ˜‚”™\İ\ØœÚYX[‹Ü[ˆ
+Š”Ù][™ÜÈ8¡¤ˆÛÛ[][š]HYÚ[œÊŠ‹[™[˜X›H
+Š“]™HØ[˜\ÊŠ‹ˆ›Üˆİ\XK\İ\XXÓÔËÚ[™İÜË[^[Øš[K\]K[™[š[œİ[[œİXİ[ÛœË™XYHÚ[œİ[][ÛˆİZYWJØÜËÒS”ÕSUSÓ‹›Y
+K‚‚ˆÈÈ]ZXÚÈİ\‚•H˜\İ\İÜ[Ûˆ\ÈÈšYÚXÛXÚÈH›Û\ˆÜˆX\šÙİÛˆ›İH[ˆHš[H^Ü™\ˆ[™Ù[Xİ
+ŠÜ™X]H]™HØ[˜\È›Üˆ\È›Û\ŠŠ‹ˆ[İHØ[ˆ[ÛÈÜ[ˆH›İH[™[ˆ
+Š“]™HØ[˜\ÎˆÜ™X]HØ[˜\Èœ›ÛHİ\œ™[›İIÜÈ›Û\ŠŠ‹ˆ]™HØ[˜\ÈÙ[XİÈ]›Û\‹ÚÛÜÙ\ÈHØY™HØ[˜\Èš[[˜[YKZ[È][™Ü[œÈ]]]ÛX]XØ[K‚‚‘›ÜˆX[X[Ù]\‚‚ŒKˆÜ™X]HH™]È›İ\È[ˆH›Û\ˆİXÚ\ÈÛ›İÛYÙX[™ÛÛ›™Xİ[HÚ]ÖÚ[\›˜[[šÜ×WX‚Œ‹ˆÜ[ˆ
+Š”Ù][™ÜÈ8¡¤ˆ]™HØ[˜\ÊŠ‹‚ŒËˆÚÛÜÙH
+Š‘›Û\ŠŠˆ[™[\ˆÛ›İÛYÙXÜˆÚÛÜÙH
+Š•YÊŠˆ[™[\ˆHYÈİXÚ\È\İÜX‚ˆÙY\H\™Ù]]]™HØ[˜\Ë˜Ø[˜\Ø‚KˆÙ[Xİ
+Š”™Yœ™\Ú[™Ü[ŠŠ‹‚‹ˆ[İ™HHØ\™Y]H›İK[ˆ[ˆ
+Š“]™HØ[˜\Îˆ™Yœ™\ÚØ[˜\È›İÊŠ‹ˆHØ]™YÜÚ][ÛˆÚİ[™[XZ[‹‚‚“™]ÈÈØ[˜\ÏÈHØ™YÚ[›™\ˆ\Ù\ˆİZYWJØÜËÕTÑT—ÑÕRQK›Y
+H[˜ÛY\ÈHÛÛ\]Hš\œİ\İ[™^Z[œÈ›ÛÛZ[™Ë[›š[™Ë[İš[™Ë™\Ú^š[™ËÜ[š[™È›İ\Ë[™Y[™ÈX[X[ÛÛ[‚‚ˆÈÈ^[\HÛÛ™šYİ\˜][Û‚‚‘^ÛYH›İ\È]Úİ[›İ\X\‚‚˜^™›Û\\˜Ú]™BYÎ™˜Yœ›Ü\Nœİ]\ÏX\˜Ú]™Yœ›Ü\NšY[‚˜‚ÛÛÜˆØ]YÛÜšY\È\Ú[™ÈØœÚYX[ˆÛÛÜœÈX›İYÚ˜ÜˆÚ^YYÚ]^ÛÛÜœÎ‚‚˜^™›Û\’\İÜHHBYÎœ\œÛÛˆHYÎœ›Ú™XİØXİ]™HHÍNLL‚˜‚•\›ˆHØ[˜\È[ÈHš\İX[›Ú™Xİ›Ø\™ÜˆİYHİ™\šY]ÈH[\š[™ÈHœ›ÛX]\ˆ›Ü\HİXÚ\Èİ]\Ø[™\ˆ
+Š‘Ü›İ\Ø\™ÈH›Ü\JŠ‹ˆ]™HØ[˜\ÈÜ™X]\È˜]]™HØ[˜\ÈÜ›İ\ÈİXÚ\Èİ]\ÎˆXİ]™Xİ]\ÎˆÛ™X[™İ]\Îˆ›İÙ]‚‚”ÙYHHÜ[\È™Y™\™[˜ÙWJØÜËÔ•ST×Ô‘Q‘T‘SÑK›Y
+H›Üˆ^XİX]Ú[™È™Z]š[Ü‹‚‚ˆÈÈİÈŞ[˜Ú›Ûš^˜][Ûˆİ^\ÈØY™B‚“]™HØ[˜\È™XYÈ›İHY]Y]H›İYÚØœÚYX[ˆT\È[™Üš]\ÈÛ›HHÛÛ™šYİ\™Y˜Ø[˜\Øš[Kˆ]™]™\ˆ[ÙYšY\ÈÜˆ[]\ÈX\šÙİÛˆ›İ\Ë‚‚[ˆ^\İ[™È\™Ù]Ø[˜\È\È›İİ™\Üš][ˆ]]ÛX]XØ[Kˆ[İH]\İÚÛÜÙH
+ŠYÜ^XÚ]JŠˆ™Y›Ü™H]™HØ[˜\ÈÚ[X[˜YÙH]ˆX[˜YÙY›Ù\È[™YÙ\È\ÙHYXØ]Y[\›˜[QËˆİ\ˆ˜[Y›Ù\È[™YÙ\È™[XZ[‹ˆÜš]\È\ÙHØœÚYX[‰ÜÈ]ÛZXÈ˜][›ØÙ\ÜÚ[™ÈTK‚‚“›Ü›X[Ş[˜Ú›Ûš^˜][Ûˆ™\Ù\™\ÈX[˜YÙYØ\™ÜÚ][ÛœÈ[™Ú^™\Ëˆ
+Š”ÛX\™[^[İ]
+Šˆ\ÈÙ\\˜]K™\]Z\™\ÈÛÛ™š\›X][Û‹[İ™\ÈÛ›HX[˜YÙYØ\™Ë[™X]™\ÈX[X[›Ù\È[ˆXÙK‚‚˜XÚÈ\[ˆ[\Ü[˜][™Y›Ü™H\İ[™È[HÛÛ[][š]HYÚ[‹‚‚ˆÈÈ™X]\™H]Z[Â‚Ÿ\™XH™Z]š[ÜˆŸKKHKKHŸÛİ\˜Ù\È›Û\‹ÚÛH˜][ÜˆYÈ[˜ÛY[™È™\İYYÜÈŸ™[][ÛœÚ\ÈÚZÚ[[šÜË™\ÛÛ™YX\šÙİÛˆ[šÜË[X™YË[šÙY›Ü\Y\ÈŸ^[œÚ[Ûˆ™\›ËÛ™KÜˆÛÈÜÎÈ[˜ÛÛZ[™Ëİ]ÛÚ[™ËÜˆ›İŸ^[İ]ÛÛ›™Xİ[Û‹X˜\ÙYXÙ[Y[Üˆ›Ü\KYÜ›İ\YÙXİ[ÛœÎÈÜ[Û˜[ÛX\™[^[İ]Ÿ™\Ù\˜][ÛˆX[˜YÙYÙ[ÛY]KX[X[›Ù\Ë[™˜[YX[X[YÙ\ÈŸİ[[™Èš\œİ[X]Ú›Û\‹İYÈ[\È\È\ÛÛ]Y[›İHYÚYÚ[™ÈŸ›Ü\HÜ›İ\È˜]]™HØ[˜\ÈÜ›İ\È›Üˆİ]\Ø›Ú™Xİ\XÜˆ[›İ\ˆœ›ÛX]\ˆ›Ü\HŸ™Yœ™\Úİ\\X›İ[˜ÙY›İHÚ[™Ù\ËšX˜›Û‹ÛÛ[X[™ÜˆÙ][™ÜÈŸˆ^ÜØØ[™XİÜˆİ™\šY]ÈÚ]Ø\™ËÜ›İ\ËÛÛ›™Xİ[ÛœËÛÛÜœË[™X™[ÈŸš]˜XŞHØØ[[Û›NÈ›È™]ÛÜšÈXØÙ\ÜÈÜˆ[[Y]H‚ˆÈÈÛÛ[X[™Â‚‹H
+Š”™Yœ™\ÚØ[˜\È›İÊŠˆ8 %Ş[˜Ú›Ûš^™H[[YYX][K‚‹H
+ŠÜ™X]HØ[˜\Èœ›ÛHİ\œ™[›İIÜÈ›Û\ŠŠˆ8 %ÛÛ™šYİ\™KÜ™X]K[™Ü[ˆHØ[˜\È[ˆÛ™Hİ\‚‹H
+Š‘š[H^Ü™\ˆY[JŠˆ8 %šYÚXÛXÚÈH›Û\ˆÜˆX\šÙİÛˆ›İHÈÜ™X]H]ÈØ[˜\È\™XİK‚‹H
+Š“Ü[ˆX[˜YÙYØ[˜\ÊŠˆ8 %Ü[ˆHÛÛ™šYİ\™YØ[˜\Ë‚‹H
+Š”ÛX\™[^[İ]X[˜YÙYØ\™ÊŠˆ8 %ÛÛ™š\›H[™™X\œ˜[™ÙHÙ[™\˜]Y›İHØ\™Ë‚‹H
+Š‘^ÜX[˜YÙYØ[˜\È\ÈŠŠˆ8 %Ü™X]H[™Ü[ˆHˆ™^ÈHØ]™YØ[˜\Ë‚‚ˆÈÈØİ[Y[][Û‚‚‹HÒ[œİ[][Û—JØÜËÒS”ÕSUSÓ‹›Y
+B‹HĞ™YÚ[›™\ˆ\Ù\ˆİZYWJØÜËÕTÑT—ÑÕRQK›Y
+B‹HÑš[\ˆ[™ÛÛÜˆ[\×JØÜËÔ•ST×Ô‘Q‘T‘SÑK›Y
+B‹HÕ›İX›\ÚÛİ[™×JØÜËÕ“ÕP“TÒÓÕS‘Ë›Y
+B‹HÔš]˜XŞWJØÜËÔ’UPÖK›Y
+B‹HÑ]™[ÜY[JØÜËÑU‘SÔQS•›Y
+B‹HÔX›\ÚH™\ÜÚ]ÜHÛˆÚ]X—JØÜËÔP“TÒS‘×Õ×ÑÒUP‹›Y
+B‹HÔ™[X\ÙH[™Ú]XˆÙ]\JØÜËÔ‘SPTÒS‘Ë›Y
+B‹HĞÚ[™Ù[Ù×JÒS‘ÑSÑË›Y
+B‹HÔİ\ÜJÕTÔ•›Y
+B‚ˆÈÈ[Z]][ÛœÂ‚‹H]™HŞ[˜È[œÈÛ›HÚ[HØœÚYX[ˆ[™HYÚ[ˆ\™HXİ]™K‚‹H[œ™\ÛÛ™YÜˆ[XšYİ[İ\È[šÜÈ\™HYÛ›Ü™Y‚‹H][\H[šÜÈ[ˆHØ[YH\™Xİ[Ûˆ™]ÙY[ˆÛÈ›İ\È™XÛÛYHÛ™HYÙK‚‹HØœÚYX[ˆ]\İØ]™HH[İ™YØ\™™Y›Ü™HH™Yœ™\ÚØ[ˆ™\Ù\™H]È™]ÈÜÚ][Û‹‚‹HH›İH™[˜[YYİ]ÚYHH[›š[™ÈØœÚYX[ˆÙ\ÜÚ[ÛˆØ[››İ[Ø^\È™HX]ÚYÈ]È›Ü›Y\ˆØ\™‚‹H™\H\™ÙHØ[˜\Èš[\ÈX^H™XÛÛYHÛİÎÈ\ÙH›Øİ\ÙYš[\œÈ[™HØY™]H[Z]‚‹HÛX\™[^[İ]\È]\›Z[š\İXÈ[™ÛÛ›™Xİ[Û‹X˜\ÙY›İH\ÚXÜÈÚ[][][Û‹‚‹Hˆ^Ü\ÈHÛX[ˆİ™\šY]È˜]\ˆ[ˆH^[\\™™XİØÜ™Y[œÚİˆ[X™YY[XYÙ\ËÙXœÚ]\Ë[™[œİ\ÜYÚ\˜Xİ\œÈ\™H™\™\Ù[YH^[™™\H\™ÙHØ[˜\Ù\ÈX^H]™HÛX[^Ú[ˆš]YÛÈÛ™HMYÙK‚‚ˆÈÈ]™[ÜY[‚”™\]Z\™\È›ÙKšœÈNÜˆ™]Ù\‹‚‚˜˜\Ú›œHÚB›œH[ˆÚXÚÂ›œH[ˆXÚØYÙB˜‚•H›ÙXİ[Ûˆ[™H\ÈÜš][ˆÈXZ[‹šœØˆXÚØYÚ[™ÈÜ™X]\È[ˆ[œİ[’THÛİ\˜ÙH\˜Ú]™K[™HÛX[ˆÚ]Xˆ™\ÜÚ]ÜH\˜Ú]™KˆÙYHHÙ]™[ÜY[İZYWJØÜËÑU‘SÔQS•›Y
+H›ÜˆH[ÛÜšÙ›İË‚‚ˆÈÈÛÛšX][™È[™ÙXİ\š]B‚ÛÛšX][ÛœÈ\™HÙ[ÛÛYKˆ™XYĞÓÓ•’P•US‘Ë›YJÓÓ•’P•US‘Ë›Y
+H™Y›Ü™HÜ[š[™ÈH[™\]Y\İˆ\ÙHHİXİ\™Y\ÜİYH›Ü›\È›ÜˆYÜÈ[™™X]\™\ËˆX\ÙH™\ÜÙ[œÚ]]™H[™\˜Xš[]Y\Èš]˜][H\È\ØÜšX™Y[ˆÔÑPÕT’UK›YJÑPÕT’UK›Y
+K‚‚ˆÈÈ›Ú™Xİš[˜Ú\\Â‚‘]\™HÚ[™Ù\ÈÚİ[ÙY\]™HØ[˜\Î‚‚‹HØØ[Yš\œİ[™\ØX›HÙ™›[™NÂ‹HÛÛ\]X›HÚ]˜]]™KY]X›HØ[˜\Èš[\ÎÂ‹HÛÛœÙ\˜]]™HÚ]\Ù\‹XÜ™X]YÛÛ[Â‹H[™\œİ[™X›HÚ]İ]HXÚšXØ[˜XÚÙÜ›İ[™Â‹H\ÙY[Ú]İ]XØÛİ[ËİXœØÜš\[ÛœËÜˆ^\›˜[Ù\šXÙ\Ë‚‚ˆÈÈXÙ[œÙB‚“]™HØ[˜\È\È]˜Z[X›H[™\ˆHÓRUXÙ[œÙWJPÑS”ÑJK‚

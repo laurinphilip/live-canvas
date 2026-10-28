@@ -1,32 +1,1 @@
-{
-  "name": "live-canvas",
-  "version": "1.3.4",
-  "description": "Offline Obsidian community plugin that continuously synchronizes a native, editable Canvas.",
-  "type": "module",
-  "main": "main.js",
-  "scripts": {
-    "build": "tsc --noEmit --skipLibCheck && node esbuild.config.mjs production",
-    "dev": "node esbuild.config.mjs",
-    "test": "node scripts/test.mjs",
-    "check": "npm run test && npm run build",
-    "package": "npm run check && node scripts/package-release.mjs",
-    "version": "node scripts/version-bump.mjs && git add manifest.json versions.json"
-  },
-  "keywords": [
-    "obsidian",
-    "canvas",
-    "knowledge-graph",
-    "visual-notes",
-    "offline-first"
-  ],
-  "engines": {
-    "node": ">=18"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^24.0.0",
-    "esbuild": "^0.25.0",
-    "obsidian": "latest",
-    "typescript": "^5.8.0"
-  }
-}
+þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µç^Âˆ›˜[YHŽˆ›]™KXØ[˜\È‹ˆ™\œÚ[ÛˆŽˆŒKŒ‹ˆ™\ØÜš\[ÛˆŽˆ“Ù™›[™HØœÚYX[ˆÛÛ[][š]HYÚ[ˆ]ÛÛ[[Ý\ÛHÞ[˜Ú›Ûš^™\ÈH˜]]™KY]X›HØ[˜\Ëˆ‹ˆ\HŽˆ›[Ù[H‹ˆ›XZ[ˆŽˆ›XZ[‹šœÈ‹ˆœØÜš\ÈŽˆÂˆ˜Z[ŽˆØÈK[›Ñ[Z]K\ÚÚ\XÚXÚÈ	‰ˆ›ÙH\ØZ[˜ÛÛ™šYË›ZœÈ›ÙXÝ[Ûˆ‹ˆ™]ˆŽˆ››ÙH\ØZ[˜ÛÛ™šYË›ZœÈ‹ˆ\ÝŽˆ››ÙHØÜš\ËÝ\Ý›ZœÈ‹ˆ˜ÚXÚÈŽˆ›œH[ˆ\Ý	‰ˆœH[ˆZ[‹ˆœXÚØYÙHŽˆ›œH[ˆÚXÚÈ	‰ˆ›ÙHØÜš\ËÜXÚØYÙK\™[X\ÙK›ZœÈ‹ˆ™\œÚ[ÛˆŽˆ››ÙHØÜš\ËÝ™\œÚ[Û‹X[\›ZœÈ	‰ˆÚ]YX[šY™\ÝšœÛÛˆ™\œÚ[ÛœËšœÛÛˆ‚ˆKˆšÙ^]ÛÜ™ÈŽˆÂˆ›ØœÚYX[ˆ‹ˆ˜Ø[˜\È‹ˆšÛ›ÝÛYÙKYÜ˜\‹ˆš\ÝX[[›Ý\È‹ˆ›Ù™›[™KYš\œÝ‚ˆKˆ™[™Ú[™\ÈŽˆÂˆ››ÙHŽˆLN‚ˆKˆ›XÙ[œÙHŽˆ“RU‹ˆ™]‘\[™[˜ÚY\ÈŽˆÂˆ\\ËÛ›ÙHŽˆ—ŒŒŒ‹ˆ™\ØZ[Žˆ—ŒŒKŒ‹ˆ›ØœÚYX[ˆŽˆ›]\Ý‹ˆ\\ØÜš\Žˆ—KŽŒ‚ˆBŸB
